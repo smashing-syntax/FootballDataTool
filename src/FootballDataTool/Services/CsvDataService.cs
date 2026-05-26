@@ -143,13 +143,15 @@ public class CsvDataService
         return !string.IsNullOrWhiteSpace(value) && int.TryParse(value.Trim(), out result);
     }
 
+    private static readonly string[] DateFormats =
+        ["dd/MM/yyyy", "dd/MM/yy", "yyyy-MM-dd", "MM/dd/yyyy", "d/M/yyyy", "d/M/yy"];
+
     private static DateTime? TryParseDate(string? value)
     {
         if (string.IsNullOrWhiteSpace(value))
             return null;
 
-        string[] formats = ["dd/MM/yyyy", "dd/MM/yy", "yyyy-MM-dd", "MM/dd/yyyy", "d/M/yyyy", "d/M/yy"];
-        if (DateTime.TryParseExact(value.Trim(), formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dt))
+        if (DateTime.TryParseExact(value.Trim(), DateFormats, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dt))
             return dt;
 
         if (DateTime.TryParse(value.Trim(), CultureInfo.InvariantCulture, DateTimeStyles.None, out dt))

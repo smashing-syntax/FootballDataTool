@@ -118,26 +118,28 @@ public static class ResultMatrixVisualiser
 
     private static void RenderHeadToHead(MatchAnalyzer analyzer, List<string> teams)
     {
-        string team1, team2;
+        var (team1, team2) = PickTwoTeams(teams);
+        ShowHeadToHeadTable(analyzer, team1, team2);
+    }
 
-        bool interactive = !Console.IsInputRedirected;
-
-        if (interactive)
+    private static (string Team1, string Team2) PickTwoTeams(List<string> teams)
+    {
+        if (!Console.IsInputRedirected)
         {
             try
             {
-                team1 = AnsiConsole.Prompt(
+                var t1 = AnsiConsole.Prompt(
                     new SelectionPrompt<string>()
                         .Title("Select [bold]first team[/]:")
                         .AddChoices(teams));
 
-                var rem = teams.Where(t => !string.Equals(t, team1, StringComparison.OrdinalIgnoreCase)).ToList();
-                team2 = AnsiConsole.Prompt(
+                var rem = teams.Where(t => !string.Equals(t, t1, StringComparison.OrdinalIgnoreCase)).ToList();
+                var t2 = AnsiConsole.Prompt(
                     new SelectionPrompt<string>()
                         .Title("Select [bold]second team[/]:")
                         .AddChoices(rem));
 
-                goto render;
+                return (t1, t2);
             }
             catch (NotSupportedException) { }
         }
@@ -150,19 +152,22 @@ public static class ResultMatrixVisualiser
         int t1idx = 0;
         if (int.TryParse(Console.ReadLine()?.Trim(), out int t1n) && t1n >= 1 && t1n <= teams.Count)
             t1idx = t1n - 1;
-        team1 = teams[t1idx];
+        string team1 = teams[t1idx];
 
         var remaining = teams.Where(t => !string.Equals(t, team1, StringComparison.OrdinalIgnoreCase)).ToList();
         AnsiConsole.MarkupLine("Select [bold]second team[/]:");
         for (int i = 0; i < remaining.Count; i++)
             AnsiConsole.MarkupLine($"  [bold]{i + 1}.[/] {Markup.Escape(remaining[i])}");
         AnsiConsole.Markup("[green]>[/] ");
-        team2 = remaining[0];
+        string team2 = remaining[0];
         if (int.TryParse(Console.ReadLine()?.Trim(), out int t2n) && t2n >= 1 && t2n <= remaining.Count)
             team2 = remaining[t2n - 1];
 
-        render:
+        return (team1, team2);
+    }
 
+    private static void ShowHeadToHeadTable(MatchAnalyzer analyzer, string team1, string team2)
+    {
         var homeMatrix = analyzer.GetResultMatrix(MatrixMode.Home);
         var awayMatrix = analyzer.GetResultMatrix(MatrixMode.Away);
 
