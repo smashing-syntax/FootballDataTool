@@ -113,7 +113,12 @@ public class ExtendedDataParser
 
     /// <summary>
     /// Parses a delimited list of players (semi-colon or comma separated).
-    /// Format: "1. Player Name; 2. Another Player" or "Player Name, Another Player"
+    /// Formats supported:
+    /// - "Player Name, Another Player"
+    /// - "1. Player Name; 2. Another Player"
+    /// - "1. Player Name (25); 2. Another Player (28)"
+    /// - "Player Name [25], Another Player [28]"
+    /// - "1. Player Name (25) [GK]; 2. Another (23) [DEF]"
     /// </summary>
     private static List<Player> ParsePlayerList(string? playerList)
     {
@@ -129,23 +134,70 @@ public class ExtendedDataParser
             if (string.IsNullOrWhiteSpace(trimmed))
                 continue;
 
-            // Try to parse "1. Player Name" format
-            var match = PlayerNumberRegex.Match(trimmed);
-            if (match.Success)
-            {
-                players.Add(new Player
-                {
-                    ShirtNumber = int.Parse(match.Groups[1].Value),
-                    Name = match.Groups[2].Value.Trim()
-                });
-            }
-            else
-            {
-                players.Add(new Player { Name = trimmed });
-            }
+            var player = ParsePlayerEntry(trimmed);
+            if (player != null)
+                players.Add(player);
         }
 
         return players;
+    }
+
+    /// <summary>
+    /// Parses a single player entry with optional number, name, age, and position.
+    /// Examples:
+    /// - "Player Name"
+    /// - "1. Player Name"
+    /// - "1. Player Name (25)"
+    /// - "Player Name [25]"
+    /// - "1. Player Name (25) [GK]"
+    /// - "Player Name (25, GK)"
+    /// </summary>
+    private static Player? ParsePlayerEntry(string entry)
+    {
+        if (string.IsNullOrWhiteSpace(entry))
+            return null;
+
+        var player = new Player();
+
+        // Try comprehensive format: "1. Player Name (25) [GK]" or "1. Player Name (25, GK)"
+        var fullMatch = PlayerFullRegex.Match(entry);
+        if (fullMatch.Success)
+        {
+            if (fullMatch.Groups[1].Success)
+                player.ShirtNumber = int.Parse(fullMatch.Groups[1].Value);
+
+            player.Name = fullMatch.Groups[2].Value.Trim();
+
+            if (fullMatch.Groups[3].Success && int.TryParse(fullMatch.Groups[3].Value, out int age))
+                player.Age = age;
+
+            if (fullMatch.Groups[4].Success)
+                player.Position = fullMatch.Groups[4].Value.Trim();
+
+            return player;
+        }
+
+        // Try with square brackets for age: "Player Name [25]"
+        var ageSquareMatch = PlayerAgeSquareRegex.Match(entry);
+        if (ageSquareMatch.Success)
+        {
+            player.Name = ageSquareMatch.Groups[1].Value.Trim();
+            player.Age = int.Parse(ageSquareMatch.Groups[2].Value);
+            return player;
+        }
+
+        // Try number and name: "1. Player Name"
+        var numberMatch = PlayerNumberRegex.Match(entry);
+        if (numberMatch.Success)
+        {
+            player.ShirtNumber = int.Parse(numberMatch.Groups[1].Value);
+            player.Name = numberMatch.Groups[2].Value.Trim();
+            return player;
+        }
+
+        // Just a name
+        player.Name = entry.Trim();
+        return player;
     }
 
     /// <summary>
@@ -304,6 +356,15 @@ public class ExtendedDataParser
 
     // Regex patterns
     private static readonly Regex PlayerNumberRegex = new(@"^(\d+)\.\s*(.+)$", RegexOptions.Compiled);
+
+    // Comprehensive player format: "1. Player Name (25) [GK]" or "1. Player Name (25, GK)"
+    private static readonly Regex PlayerFullRegex = new(
+        @"^(?:(\d+)\.\s*)?(.+?)(?:\s*\((\d+)(?:,\s*([^\)]+))?\))?(?:\s*\[([^\]]+)\])?$", 
+        RegexOptions.Compiled);
+
+    // Player with age in square brackets: "Player Name [25]"
+    private static readonly Regex PlayerAgeSquareRegex = new(@"^(.+?)\s*\[(\d+)\]$", RegexOptions.Compiled);
+
     private static readonly Regex GoalRegex = new(@"^(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?['\s]*", RegexOptions.Compiled);
     private static readonly Regex AssistRegex = new(@"assist:?\s*(.+?)(?:\s|$|\)|\])", RegexOptions.Compiled);
     private static readonly Regex SubstitutionRegex = new(@"^(.+?)\s*(?:←|<-|->|→)\s*(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?", RegexOptions.Compiled);

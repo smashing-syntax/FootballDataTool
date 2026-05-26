@@ -1,0 +1,146 @@
+{
+  "team": "Arsenal",
+  "season": "2023/24",
+  "startingManager": {
+    "name": "Mikel Arteta",
+    "age": 41,
+    "dateOfBirth": "1982-03-26",
+    "nationality": "Spain",
+    "appointmentDate": "2019-12-20",
+    "yearsOfExperience": 5,
+    "previousClubs": ["Manchester City (Assistant)"],
+    "preferredFormations": ["4-3-3", "4-2-3-1"]
+  },
+  "summerSignings": [
+    {
+      "player": {
+        "name": "Declan Rice",
+        "shirtNumber": 41,
+        "position": "Midfielder",
+        "nationality": "England",
+        "dateOfBirth": "1999-01-14"
+      },
+      "fromClub": "West Ham United",
+      "toClub": "Arsenal",
+      "transferDate": "2023-07-15",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 105000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 24,
+      "contractYears": 5,
+      "contractExpiry": "2028-06-30",
+      "isLoan": false,
+      "notes": "Club record signing"
+    },
+    {
+      "player": {
+        "name": "Kai Havertz",
+        "shirtNumber": 29,
+        "position": "Midfielder",
+        "nationality": "Germany",
+        "dateOfBirth": "1999-06-11"
+      },
+      "fromClub": "Chelsea",
+      "toClub": "Arsenal",
+      "transferDate": "2023-06-28",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 65000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 24,
+      "contractYears": 5,
+      "contractExpiry": "2028-06-30",
+      "isLoan": false
+    },
+    {
+      "player": {
+        "name": "Jurrien Timber",
+        "shirtNumber": 12,
+        "position": "Defender",
+        "nationality": "Netherlands",
+        "dateOfBirth": "2001-06-17"
+      },
+      "fromClub": "Ajax",
+      "toClub": "Arsenal",
+      "transferDate": "2023-07-14",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 38500000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 22,
+      "contractYears": 5,
+      "contractExpiry": "2028-06-30",
+      "isLoan": false
+    },
+    {
+      "player": {
+        "name": "David Raya",
+        "shirtNumber": 22,
+        "position": "Goalkeeper",
+        "nationality": "Spain",
+        "dateOfBirth": "1995-09-15"
+      },
+      "fromClub": "Brentford",
+      "toClub": "Arsenal",
+      "transferDate": "2023-09-01",
+      "window": "Summer",
+      "type": "Loan",
+      "fee": 3000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 27,
+      "contractYears": 1,
+      "isLoan": true,
+      "notes": "Loan with option to buy for £27m"
+    }
+  ],
+  "summerDepartures": [
+    {
+      "player": {
+        "name": "Granit Xhaka",
+        "shirtNumber": 34,
+        "position": "Midfielder",
+        "nationality": "Switzerland",
+        "dateOfBirth": "1992-09-27"
+      },
+      "fromClub": "Arsenal",
+      "toClub": "Bayer Leverkusen",
+      "transferDate": "2023-06-21",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 25000000,
+      "feeCurrency": "EUR",
+      "playerAgeAtTransfer": 30,
+      "isLoan": false,
+      "notes": "End of 7-year Arsenal career"
+    },
+    {
+      "player": {
+        "name": "Folarin Balogun",
+        "position": "Forward",
+        "nationality": "England/USA",
+        "dateOfBirth": "2001-07-03"
+      },
+      "fromClub": "Arsenal",
+      "toClub": "AS Monaco",
+      "transferDate": "2023-08-23",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 35000000,
+      "feeCurrency": "EUR",
+      "playerAgeAtTransfer": 22,
+      "isLoan": false
+    }
+  ],
+  "winterSignings": [],
+  "winterDepartures": [],
+  "homeStadium": {
+    "name": "Emirates Stadium",
+    "city": "London",
+    "country": "England",
+    "capacity": 60704,
+    "yearOpened": 2006,
+    "hasRoof": true,
+    "surfaceType": "Grass"
+  }
+}

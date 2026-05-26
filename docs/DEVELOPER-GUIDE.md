@@ -113,22 +113,45 @@ private static (int Minute, int? AddedTime) ParseMatchTime(string timeStr)
 }
 ```
 
-### Parse Player with Number
+### Parse Player with Number and Age
 ```csharp
 private static Player ParsePlayer(string playerStr)
 {
-    var match = Regex.Match(playerStr, @"^(\d+)\.\s*(.+)$");
-    if (match.Success)
+    // Comprehensive format: "1. Player Name (25) [GK]"
+    var fullMatch = Regex.Match(playerStr, 
+        @"^(?:(\d+)\.\s*)?(.+?)(?:\s*\((\d+)(?:,\s*([^\)]+))?\))?(?:\s*\[([^\]]+)\])?$");
+
+    if (fullMatch.Success)
     {
-        return new Player
-        {
-            ShirtNumber = int.Parse(match.Groups[1].Value),
-            Name = match.Groups[2].Value.Trim()
-        };
+        var player = new Player { Name = fullMatch.Groups[2].Value.Trim() };
+
+        if (fullMatch.Groups[1].Success)
+            player.ShirtNumber = int.Parse(fullMatch.Groups[1].Value);
+
+        if (fullMatch.Groups[3].Success && int.TryParse(fullMatch.Groups[3].Value, out int age))
+            player.Age = age;
+
+        if (fullMatch.Groups[4].Success)
+            player.Position = fullMatch.Groups[4].Value.Trim();
+        else if (fullMatch.Groups[5].Success)
+            player.Position = fullMatch.Groups[5].Value.Trim();
+
+        return player;
     }
-    
+
+    // Fallback: just the name
     return new Player { Name = playerStr.Trim() };
 }
+```
+
+**Supported formats:**
+- `Player Name` → Name only
+- `1. Player Name` → Number + Name
+- `Player Name (25)` → Name + Age
+- `Player Name [25]` → Name + Age (alternate)
+- `1. Player Name (25)` → Number + Name + Age
+- `1. Player Name (25) [GK]` → Number + Name + Age + Position
+- `1. Player Name (25, GK)` → Number + Name + Age + Position (alternate)
 ```
 
 ## Testing Extended Data
@@ -190,6 +213,15 @@ public enum CardType
 ```csharp
 // Player with number: "10. Messi"
 @"^(\d+)\.\s*(.+)$"
+
+// Player with age in parentheses: "Messi (25)"
+@"^(.+?)\s*\((\d+)\)$"
+
+// Player with age in square brackets: "Messi [25]"
+@"^(.+?)\s*\[(\d+)\]$"
+
+// Comprehensive player format: "1. Messi (25) [FW]" or "1. Messi (25, FW)"
+@"^(?:(\d+)\.\s*)?(.+?)(?:\s*\((\d+)(?:,\s*([^\)]+))?\))?(?:\s*\[([^\]]+)\])?$"
 
 // Time with added time: "45+2'"
 @"(\d+)(?:\+(\d+))?['\s]*"

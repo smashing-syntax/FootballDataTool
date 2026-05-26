@@ -102,9 +102,29 @@ Ramsdale, White, Saliba, Gabriel, Zinchenko, Partey, Odegaard, Saka, Havertz, Ma
 1. Ramsdale; 4. White; 6. Gabriel; 2. Saliba; 35. Zinchenko
 ```
 
+**With player ages (parentheses):**
+```
+1. Ramsdale (25); 4. White (25); 6. Gabriel (25); 2. Saliba (22)
+```
+
+**With player ages (square brackets):**
+```
+Ramsdale [25], White [25], Gabriel [25], Saliba [22]
+```
+
+**With ages and positions:**
+```
+1. Ramsdale (25) [GK]; 4. White (25) [DEF]; 6. Gabriel (25) [DEF]
+```
+
+**Alternative format with position in parentheses:**
+```
+1. Ramsdale (25, GK); 4. White (25, DEF); 8. Odegaard (24, MID)
+```
+
 **Mixed format:**
 ```
-1. Ramsdale, 4. White, 6. Gabriel, 2. Saliba, 35. Zinchenko, Partey, Odegaard
+1. Ramsdale (25), 4. White (25), 6. Gabriel, 2. Saliba (22), Zinchenko
 ```
 
 ### Substitutions
@@ -180,6 +200,13 @@ Fernandes 90+4'
 
 ## Example: Full Extended CSV
 
+**With player ages:**
+```csv
+Div,Season,GW,Date,HomeTeam,AwayTeam,FTHG,FTAG,HomeManager,AwayManager,HomeLineup,Stadium,Attendance
+E0,2023/24,1,11/08/2023,Arsenal,Nottm Forest,2,1,Mikel Arteta,Steve Cooper,"1. Ramsdale (25); 4. White (25); 6. Gabriel (25); 2. Saliba (22); 35. Zinchenko (26); 5. Partey (30); 8. Odegaard (24); 7. Saka (21); 29. Havertz (24); 11. Martinelli (22); 9. Jesus (26)",Emirates Stadium,60184
+```
+
+**With all match events:**
 ```csv
 Div,Season,GW,Date,HomeTeam,AwayTeam,FTHG,FTAG,HomeManager,AwayManager,Stadium,Capacity,Attendance,HomeFormation,AwayFormation,HomeGoalscorers,AwayGoalscorers,HomeYellowCards,HomeRedCards,Referee
 E0,2023/24,1,11/08/2023,Arsenal,Nottm Forest,2,1,Mikel Arteta,Steve Cooper,Emirates Stadium,60704,60184,4-3-3,5-4-1,Saka 72' (assist: Odegaard); Nketiah 86',Awoniyi 82',White 34'; Xhaka 67',,Simon Hooper
@@ -262,7 +289,7 @@ For tracking transfers, managerial changes, and squad rosters, you can use separ
 All extended data is represented by these strongly-typed models:
 
 - **`MatchExtendedData`** - Container for all extended match information
-- **`Player`** - Player with name, number, position, nationality
+- **`Player`** - Player with name, number, position, nationality, **age**
 - **`Stadium`** - Venue with capacity, location, surface type
 - **`GoalEvent`** - Goal with scorer, assister, minute, type
 - **`SubstitutionEvent`** - Substitution with players, minute, reason
@@ -271,6 +298,32 @@ All extended data is represented by these strongly-typed models:
 - **`ManagerialChange`** - Manager change with date, reason
 - **`TeamSeasonInfo`** - Complete team information for a season
 - **`WeatherConditions`** - Temperature, conditions, wind, humidity
+
+### Player Age Support
+
+The `Player` model includes comprehensive age support:
+
+- **`Age`** - Direct age value (can be provided in lineup)
+- **`DateOfBirth`** - Birth date for age calculation
+- **`CalculateAge(referenceDate)`** - Method to calculate age at match time
+
+**Age-based computed properties on `MatchExtendedData`:**
+- `HomeAverageAge` - Average age of home starting XI
+- `AwayAverageAge` - Average age of away starting XI
+- `HomeYoungestPlayer` - Youngest home starter
+- `HomeOldestPlayer` - Oldest home starter
+- `AwayYoungestPlayer` - Youngest away starter
+- `AwayOldestPlayer` - Oldest away starter
+
+**Example usage in analytics:**
+```csharp
+if (match.ExtendedData?.HomeAverageAge.HasValue == true)
+{
+    Console.WriteLine($"Home team average age: {match.ExtendedData.HomeAverageAge:F1} years");
+    Console.WriteLine($"Youngest: {match.ExtendedData.HomeYoungestPlayer}");
+    Console.WriteLine($"Oldest: {match.ExtendedData.HomeOldestPlayer}");
+}
+```
 
 ## Future Extensions
 
@@ -299,6 +352,8 @@ When extended data is available, the tool can provide:
    - Goalscorer charts and statistics
    - Attendance trends
    - Home advantage metrics
+   - **Team age profiles and trends**
+   - **Experience vs youth analysis**
 
 2. **Advanced Analytics**
    - Impact of managerial changes on results
@@ -306,6 +361,9 @@ When extended data is available, the tool can provide:
    - Formation vs opponent formation analysis
    - Substitution timing and effectiveness
    - Card accumulation and suspensions
+   - **Age-based performance patterns**
+   - **Squad age diversity analysis**
+   - **Impact of young vs experienced players**
 
 3. **Historical Context**
    - Track player transfers between clubs

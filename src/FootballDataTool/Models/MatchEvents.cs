@@ -7,9 +7,26 @@ namespace FootballDataTool.Models;
 public class MatchExtendedData
 {
     // Team Management
+    /// <summary>
+    /// Home team manager (string for simple cases).
+    /// </summary>
     public string? HomeManager { get; set; }
+
+    /// <summary>
+    /// Away team manager (string for simple cases).
+    /// </summary>
     public string? AwayManager { get; set; }
-    
+
+    /// <summary>
+    /// Home team manager (full Manager object with age/details).
+    /// </summary>
+    public Manager? HomeManagerDetails { get; set; }
+
+    /// <summary>
+    /// Away team manager (full Manager object with age/details).
+    /// </summary>
+    public Manager? AwayManagerDetails { get; set; }
+
     // Lineups
     public List<Player> HomeStartingLineup { get; set; } = new();
     public List<Player> AwayStartingLineup { get; set; } = new();
@@ -47,9 +64,59 @@ public class MatchExtendedData
     public List<string> AssistantReferees { get; set; } = new();
     public string? FourthOfficial { get; set; }
     public string? VarReferee { get; set; }
-    
+
     // Weather (optional but interesting!)
     public WeatherConditions? Weather { get; set; }
+
+    // Computed properties for lineup analysis
+
+    /// <summary>
+    /// Average age of home starting XI (if age data is available).
+    /// </summary>
+    public double? HomeAverageAge => CalculateAverageAge(HomeStartingLineup);
+
+    /// <summary>
+    /// Average age of away starting XI (if age data is available).
+    /// </summary>
+    public double? AwayAverageAge => CalculateAverageAge(AwayStartingLineup);
+
+    /// <summary>
+    /// Gets the youngest player in the home starting lineup.
+    /// </summary>
+    public Player? HomeYoungestPlayer => HomeStartingLineup
+        .Where(p => p.Age.HasValue)
+        .OrderBy(p => p.Age)
+        .FirstOrDefault();
+
+    /// <summary>
+    /// Gets the oldest player in the home starting lineup.
+    /// </summary>
+    public Player? HomeOldestPlayer => HomeStartingLineup
+        .Where(p => p.Age.HasValue)
+        .OrderByDescending(p => p.Age)
+        .FirstOrDefault();
+
+    /// <summary>
+    /// Gets the youngest player in the away starting lineup.
+    /// </summary>
+    public Player? AwayYoungestPlayer => AwayStartingLineup
+        .Where(p => p.Age.HasValue)
+        .OrderBy(p => p.Age)
+        .FirstOrDefault();
+
+    /// <summary>
+    /// Gets the oldest player in the away starting lineup.
+    /// </summary>
+    public Player? AwayOldestPlayer => AwayStartingLineup
+        .Where(p => p.Age.HasValue)
+        .OrderByDescending(p => p.Age)
+        .FirstOrDefault();
+
+    private static double? CalculateAverageAge(List<Player> lineup)
+    {
+        var ages = lineup.Where(p => p.Age.HasValue).Select(p => p.Age!.Value).ToList();
+        return ages.Any() ? ages.Average() : null;
+    }
 }
 
 /// <summary>
