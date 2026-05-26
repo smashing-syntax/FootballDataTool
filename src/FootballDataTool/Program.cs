@@ -10,8 +10,11 @@ AnsiConsole.Write(
 AnsiConsole.MarkupLine("[dim]CSV football season analyser · visualise form, points & results[/]\n");
 
 string csvPath = GetCsvPath(args);
-List<FootballDataTool.Models.Match> matches = LoadMatches(csvPath);
+var (matches, metadata) = LoadMatches(csvPath);
 var analyzer = new MatchAnalyzer(matches);
+
+// Display metadata banner
+DisplayMetadataBanner(metadata);
 
 AnsiConsole.MarkupLine(
     $"[green]✓[/] Loaded [bold]{matches.Count}[/] matches across " +
@@ -54,8 +57,9 @@ while (running)
 
         case 5:
             csvPath = PromptForPath();
-            matches = LoadMatches(csvPath);
+            (matches, metadata) = LoadMatches(csvPath);
             analyzer = new MatchAnalyzer(matches);
+            DisplayMetadataBanner(metadata);
             AnsiConsole.MarkupLine(
                 $"[green]✓[/] Loaded [bold]{matches.Count}[/] matches across " +
                 $"[bold]{analyzer.GetGameweeks().Count}[/] gameweeks " +
@@ -167,7 +171,7 @@ static string PromptForPath()
     }
 }
 
-static List<FootballDataTool.Models.Match> LoadMatches(string path)
+static (List<FootballDataTool.Models.Match> Matches, FootballDataTool.Models.SeasonMetadata Metadata) LoadMatches(string path)
 {
     return AnsiConsole.Status()
         .Spinner(Spinner.Known.Dots)
@@ -176,15 +180,29 @@ static List<FootballDataTool.Models.Match> LoadMatches(string path)
             try
             {
                 var service = new CsvDataService();
-                return service.LoadFromFile(path);
+                var matches = service.LoadFromFile(path);
+                return (matches, service.Metadata ?? new FootballDataTool.Models.SeasonMetadata());
             }
             catch (Exception ex)
             {
                 AnsiConsole.MarkupLine($"[red]Error loading CSV:[/] {Markup.Escape(ex.Message)}");
                 Environment.Exit(1);
-                return [];
+                return ([], new FootballDataTool.Models.SeasonMetadata());
             }
         });
+}
+
+static void DisplayMetadataBanner(FootballDataTool.Models.SeasonMetadata metadata)
+{
+    var panel = new Panel(
+        Align.Center(
+            new Markup($"[bold cyan]{Markup.Escape(metadata.ToString())}[/]")
+        ))
+        .Border(BoxBorder.Rounded)
+        .BorderColor(Color.Blue);
+
+    AnsiConsole.Write(panel);
+    AnsiConsole.WriteLine();
 }
 
 static void RenderStandings(MatchAnalyzer analyzer)
