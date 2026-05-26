@@ -1,0 +1,27 @@
+## .NET build artifacts
+bin/
+obj/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+
+## Visual Studio / Rider files
+.vs/
+*.user
+*.suo
+.idea/
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Test results
+TestResults/
+*.trx
+coverage.xml
+*.coverage
+
+## Publish output
+publish/

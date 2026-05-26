@@ -1,0 +1,31 @@
+GW,Date,HomeTeam,AwayTeam,FTHG,FTAG
+1,12/08/2023,Arsenal,West Ham,2,1
+1,12/08/2023,Chelsea,Spurs,2,2
+1,12/08/2023,Liverpool,Man City,1,0
+2,19/08/2023,Arsenal,Spurs,3,1
+2,19/08/2023,West Ham,Man City,0,2
+2,19/08/2023,Chelsea,Liverpool,1,1
+3,26/08/2023,Arsenal,Man City,1,1
+3,26/08/2023,Spurs,Liverpool,2,1
+3,26/08/2023,West Ham,Chelsea,0,2
+4,02/09/2023,Arsenal,Liverpool,2,0
+4,02/09/2023,Man City,Chelsea,3,1
+4,02/09/2023,Spurs,West Ham,1,0
+5,16/09/2023,Arsenal,Chelsea,1,0
+5,16/09/2023,Liverpool,West Ham,3,0
+5,16/09/2023,Man City,Spurs,4,1
+6,23/09/2023,West Ham,Arsenal,0,3
+6,23/09/2023,Spurs,Chelsea,1,2
+6,23/09/2023,Man City,Liverpool,2,2
+7,30/09/2023,Spurs,Arsenal,1,3
+7,30/09/2023,Man City,West Ham,3,0
+7,30/09/2023,Liverpool,Chelsea,2,1
+8,07/10/2023,Man City,Arsenal,2,1
+8,07/10/2023,Liverpool,Spurs,3,2
+8,07/10/2023,Chelsea,West Ham,4,0
+9,28/10/2023,Liverpool,Arsenal,1,2
+9,28/10/2023,Chelsea,Man City,0,3
+9,28/10/2023,West Ham,Spurs,1,1
+10,04/11/2023,Chelsea,Arsenal,0,1
+10,04/11/2023,West Ham,Liverpool,1,2
+10,04/11/2023,Spurs,Man City,0,2
