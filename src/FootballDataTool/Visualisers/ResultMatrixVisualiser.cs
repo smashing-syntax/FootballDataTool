@@ -246,11 +246,18 @@ public static class ResultMatrixVisualiser
     {
         if (name.Length <= 10) return name;
 
-        // Try initials or split on space
+        // Abbreviate multi-word names: e.g. "Manchester City" → "ManCit"
         var parts = name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length > 1)
-            return string.Concat(parts.Select(p => p[0].ToString().ToUpper() + (p.Length > 1 ? p[1..Math.Min(4, p.Length)] : "")));
+            return string.Concat(parts.Select(Abbreviate));
 
+        // Single long word: truncate with ellipsis
         return name[..8] + "..";
+
+        static string Abbreviate(string word)
+        {
+            int length = Math.Min(word.Length, 4);
+            return char.ToUpper(word[0]) + word[1..length];
+        }
     }
 }
