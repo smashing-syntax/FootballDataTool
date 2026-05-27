@@ -262,4 +262,25 @@ public class SeasonData
                 teamSeason.SeasonInfo = transferData;
         }
     }
+
+    /// <summary>
+    /// Load transfer data from CSV file (easier for users than JSON).
+    /// CSV can contain transfers for multiple teams in one file.
+    /// </summary>
+    public void LoadTransferDataFromCsv(string csvFilePath)
+    {
+        var transferData = TransferCsvLoader.LoadFromCsv(csvFilePath);
+
+        foreach (var (teamName, teamInfo) in transferData)
+        {
+            TeamTransferData[teamName] = teamInfo;
+        }
+
+        // Re-link to team seasons
+        foreach (var (teamName, teamSeason) in Teams)
+        {
+            if (TeamTransferData.TryGetValue(teamName, out var transferInfo))
+                teamSeason.SeasonInfo = transferInfo;
+        }
+    }
 }

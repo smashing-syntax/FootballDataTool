@@ -30,10 +30,11 @@ A C# .NET 8 console application that loads raw CSV football season data with **a
   - Nationality and previous club history
   - Birthday tracking with zodiac signs (Western & Chinese) 🎂
 
-- 💰 **Transfer Analysis** (JSON data):
+- 💰 **Transfer Analysis** (CSV or JSON):
   - Transfer fees and contract details
   - Player ages at transfer
   - Net spend and financial analytics
+  - **NEW**: Easy CSV format for manual data entry!
 
 - 🏗️ **Dual-View Architecture**:
   - **Match-Centric**: Simple list of matches for basic analysis (CSV-friendly)

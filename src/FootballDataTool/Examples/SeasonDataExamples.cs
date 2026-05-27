@@ -191,10 +191,10 @@ public class SeasonDataExamples
             .OrderBy(t => t.HomeWins)
             .ThenBy(t => t.HomeMatches.Sum(m => m.HomeGoals))
             .First();
-        
+
         Console.WriteLine($"\nBest Home Record: {bestHomeRecord.Name} (W{bestHomeRecord.HomeWins} D{bestHomeRecord.HomeDraws} L{bestHomeRecord.HomeLosses})");
         Console.WriteLine($"Worst Home Record: {worstHomeRecord.Name} (W{worstHomeRecord.HomeWins} D{worstHomeRecord.HomeDraws} L{worstHomeRecord.HomeLosses})");
-        
+
         // Zodiac distribution (if birthday data available)
         if (seasonData.HasLineupData)
         {
@@ -208,6 +208,81 @@ public class SeasonDataExamples
                 }
             }
         }
+        Console.WriteLine();
+    }
+
+    /// <summary>
+    /// Example 7: Loading and analyzing transfer data (CSV or JSON)
+    /// </summary>
+    public static void Example7_TransferAnalysis(SeasonData seasonData, string transferCsvPath)
+    {
+        Console.WriteLine("--- Example 7: Transfer Analysis ---");
+
+        // Load transfers from CSV (easier than JSON!)
+        seasonData.LoadTransferDataFromCsv(transferCsvPath);
+
+        Console.WriteLine($"\nTransfer data loaded for {seasonData.TeamTransferData.Count} teams\n");
+
+        // Analyze a specific team's transfers
+        var team = seasonData.GetTeam("Arsenal");
+        if (team?.SeasonInfo != null)
+        {
+            Console.WriteLine($"{team.Name} Transfers:");
+
+            // Summer signings
+            Console.WriteLine($"\n  Summer Signings: {team.SeasonInfo.SummerSignings.Count}");
+            foreach (var transfer in team.SeasonInfo.SummerSignings.Take(3))
+            {
+                var feeStr = transfer.Fee.HasValue 
+                    ? $"{transfer.FeeCurrency} {transfer.Fee:N0}" 
+                    : transfer.IsLoan ? "Loan" : "Free";
+
+                Console.WriteLine($"    {transfer.Player.Name} ({transfer.PlayerAgeAtTransfer}) from {transfer.FromClub} - {feeStr}");
+            }
+
+            // Summer departures
+            Console.WriteLine($"\n  Summer Departures: {team.SeasonInfo.SummerDepartures.Count}");
+            foreach (var transfer in team.SeasonInfo.SummerDepartures.Take(3))
+            {
+                var feeStr = transfer.Fee.HasValue 
+                    ? $"{transfer.FeeCurrency} {transfer.Fee:N0}" 
+                    : "Free";
+
+                Console.WriteLine($"    {transfer.Player.Name} ({transfer.PlayerAgeAtTransfer}) to {transfer.ToClub} - {feeStr}");
+            }
+
+            // Net spend
+            var totalSpent = team.SeasonInfo.SummerSignings.Sum(t => t.Fee ?? 0) 
+                           + team.SeasonInfo.WinterSignings.Sum(t => t.Fee ?? 0);
+            var totalReceived = team.SeasonInfo.SummerDepartures.Sum(t => t.Fee ?? 0) 
+                              + team.SeasonInfo.WinterDepartures.Sum(t => t.Fee ?? 0);
+            var netSpend = totalSpent - totalReceived;
+
+            Console.WriteLine($"\n  Total Spent: {team.SeasonInfo.SummerSignings.FirstOrDefault()?.FeeCurrency ?? "GBP"} {totalSpent:N0}");
+            Console.WriteLine($"  Total Received: {team.SeasonInfo.SummerSignings.FirstOrDefault()?.FeeCurrency ?? "GBP"} {totalReceived:N0}");
+            Console.WriteLine($"  Net Spend: {team.SeasonInfo.SummerSignings.FirstOrDefault()?.FeeCurrency ?? "GBP"} {netSpend:+#,0;-#,0;0}");
+        }
+
+        // League-wide transfer stats
+        Console.WriteLine("\n\nLeague-Wide Transfer Analysis:");
+
+        var allSignings = seasonData.TeamTransferData.Values
+            .SelectMany(t => t.SummerSignings.Concat(t.WinterSignings))
+            .ToList();
+
+        Console.WriteLine($"  Total Signings: {allSignings.Count}");
+        Console.WriteLine($"  Average Age: {allSignings.Where(t => t.PlayerAgeAtTransfer.HasValue).Average(t => t.PlayerAgeAtTransfer):F1}");
+
+        var biggestSigning = allSignings
+            .Where(t => t.Fee.HasValue)
+            .OrderByDescending(t => t.Fee)
+            .FirstOrDefault();
+
+        if (biggestSigning != null)
+        {
+            Console.WriteLine($"  Biggest Signing: {biggestSigning.Player.Name} to {biggestSigning.ToClub} for {biggestSigning.FeeCurrency} {biggestSigning.Fee:N0}");
+        }
+
         Console.WriteLine();
     }
 }

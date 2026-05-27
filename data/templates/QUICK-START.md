@@ -73,6 +73,30 @@ Copy `data/templates/match_template_extended.csv` and follow the guide!
 | **3. Assists** | +0 | 2 hours | Playmaker rankings |
 | **4. Lineups** | +4 | 5 hours | Squad age analysis |
 | **5. Full** | +15 | 10+ hours | Complete analytics |
+| **6. Transfers** | CSV | 2 hours | Transfer analysis 🆕 |
+
+---
+
+## 🔄 Transfer Data (NEW - CSV Format!)
+
+### Quick Add Transfers
+```csv
+Team,Season,PlayerName,FromClub,ToClub,TransferDate,Window,Type,Fee,FeeCurrency
+Man United,2014/15,Ander Herrera,Athletic Bilbao,Man United,2014-06-26,Summer,Permanent,29000000,GBP
+Man United,2014/15,Angel Di Maria,Real Madrid,Man United,2014-08-26,Summer,Permanent,59700000,GBP
+Man United,2014/15,Radamel Falcao,Monaco,Man United,2014-09-01,Summer,Loan,6000000,GBP
+```
+
+**Templates**: 
+- `data/templates/transfers_template.csv` (with examples)
+- `data/templates/transfers_template_blank.csv` (blank)
+- `data/templates/TRANSFER-CSV-GUIDE.md` (full guide)
+
+**Benefits**:
+- ✅ Much easier than JSON!
+- ✅ Multiple teams in one file
+- ✅ Auto-calculates ages
+- ✅ Excel/Google Sheets friendly
 
 ---
 

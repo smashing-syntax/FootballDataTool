@@ -11,15 +11,19 @@ data/
 │   ├── match_template_extended.csv    # With managers, formations, goals
 │   ├── match_template_full.csv        # Complete example with all fields
 │   ├── match_template_blank.csv       # Empty template (all columns)
-│   └── TEMPLATE-GUIDE.md              # Comprehensive field reference
+│   ├── transfers_template.csv         # Transfer data template with examples 🆕
+│   ├── transfers_template_blank.csv   # Blank transfer template 🆕
+│   ├── TEMPLATE-GUIDE.md              # Comprehensive field reference
+│   └── TRANSFER-CSV-GUIDE.md          # Transfer CSV format guide 🆕
 │
 ├── premier-league/      # Premier League match and transfer data
 │   ├── premier_league_2023-24_basic.csv        # Basic match results
 │   ├── premier_league_2023-24_with_ages.csv    # With player ages in lineups
 │   ├── premier_league_2023-24_extended.csv     # With extended match data
 │   ├── premier_league_2023-24_full_sample.csv  # Full example (injuries, minutes)
-│   ├── arsenal_2023-24_transfers.json          # Arsenal transfer window
-│   └── chelsea_2023-24_transfers.json          # Chelsea transfer window
+│   ├── arsenal_2023-24_transfers.json          # Arsenal transfer window (JSON)
+│   ├── chelsea_2023-24_transfers.json          # Chelsea transfer window (JSON)
+│   └── 2023-24_transfers.csv                   # All PL transfers (CSV) 🆕
 │
 ├── la-liga/             # La Liga match data
 │   └── laliga_2022-23.csv
@@ -70,11 +74,15 @@ var seasonData = csvService.LoadSeasonDataFromFile("data/premier-league/premier_
   - `bundesliga_2023-24_with_ages.csv`
 
 ### Transfer Data Files
-- **Format**: `{team}_{season}_transfers.json`
+- **CSV Format** (recommended for manual entry): `{season}_transfers.csv` or `{league}_{season}_transfers.csv` 🆕
+- **JSON Format** (per team): `{team}_{season}_transfers.json`
 - **Examples**:
+  - `2014-15_transfers.csv` (all teams in one file - easier!)
   - `arsenal_2014-15_transfers.json`
   - `chelsea_2023-24_transfers.json`
-  - `liverpool_2015-16_transfers.json`
+  - `premier_league_2023-24_transfers.csv`
+
+**Why CSV?** Much easier to fill out in Excel/Google Sheets! Multiple teams in one file!
 
 ---
 

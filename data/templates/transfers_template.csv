@@ -1,0 +1,11 @@
+Team,Season,PlayerName,ShirtNumber,Position,Nationality,DateOfBirth,FromClub,ToClub,TransferDate,Window,Type,Fee,FeeCurrency,IsLoan,PlayerAge,ContractYears,ContractExpiry,Notes,PreviousClub
+Arsenal,2023/24,Declan Rice,41,Midfielder,England,1999-01-14,West Ham United,Arsenal,2023-07-15,Summer,Permanent,105000000,GBP,No,24,5,2028-06-30,Club record signing,West Ham United
+Arsenal,2023/24,Kai Havertz,29,Midfielder,Germany,1999-06-11,Chelsea,Arsenal,2023-06-28,Summer,Permanent,65000000,GBP,No,24,5,2028-06-30,,Chelsea
+Arsenal,2023/24,Jurrien Timber,12,Defender,Netherlands,2001-06-17,Ajax,Arsenal,2023-07-14,Summer,Permanent,38500000,GBP,No,22,5,2028-06-30,,Ajax
+Arsenal,2023/24,David Raya,22,Goalkeeper,Spain,1995-09-15,Brentford,Arsenal,2023-09-01,Summer,Loan,3000000,GBP,Yes,27,1,,Loan with option to buy for £27m,Brentford
+Arsenal,2023/24,Granit Xhaka,34,Midfielder,Switzerland,1992-09-27,Arsenal,Bayer Leverkusen,2023-06-06,Summer,Permanent,21500000,GBP,No,30,,,Departure after 7 seasons,Basel
+Chelsea,2023/24,Moises Caicedo,25,Midfielder,Ecuador,2001-11-02,Brighton,Chelsea,2023-08-14,Summer,Permanent,115000000,GBP,No,21,8,2031-06-30,British record signing,Independiente
+Chelsea,2023/24,Christopher Nkunku,18,Forward,France,1997-11-14,RB Leipzig,Chelsea,2023-07-03,Summer,Permanent,52000000,GBP,No,25,6,2029-06-30,Signed injured,Paris Saint-Germain
+Chelsea,2023/24,Axel Disasi,2,Defender,France,1998-03-11,Monaco,Chelsea,2023-08-03,Summer,Permanent,38600000,GBP,No,25,6,2029-06-30,,Monaco
+Manchester United,2023/24,Mason Mount,7,Midfielder,England,1999-01-10,Chelsea,Manchester United,2023-07-05,Summer,Permanent,55000000,GBP,No,24,5,2028-06-30,Free agent in 2024,Chelsea
+Manchester United,2023/24,Andre Onana,24,Goalkeeper,Cameroon,1996-04-02,Inter Milan,Manchester United,2023-07-20,Summer,Permanent,43800000,GBP,No,27,5,2028-06-30,,Ajax
