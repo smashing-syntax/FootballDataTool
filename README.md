@@ -7,7 +7,6 @@ A C# .NET 8 console application that loads raw CSV football season data with **a
 - 🔍 **Automatic Season Detection** - Detects season and league from CSV data or filename
 - 🌍 **Multi-League Support** - Works with Premier League, La Liga, Serie A, Bundesliga, and more
 - 📊 **Rich Visualizations**:
-- 📊 **Rich Visualizations**:
 
 | View | Description |
 |------|-------------|
@@ -15,6 +14,28 @@ A C# .NET 8 console application that loads raw CSV football season data with **a
 | **Points Breakdown** | Cumulative points table by gameweek, final bar chart, and cross-group analysis (e.g. Top N vs Bottom N) |
 | **Result Matrix** | N×N results grid in Home, Away, or Aggregate mode with head-to-head drill-down |
 | **League Standings** | Full table (P/W/D/L/GF/GA/GD/Pts) filterable to any gameweek |
+
+- 🔬 **Extended Match Data** (optional):
+  - Player lineups with ages, positions, and shirt numbers
+  - Goalscorers and assists
+  - Substitutions and cards (yellow/red)
+  - Team managers with experience and nationalities
+  - Stadium information and attendance
+  - Match officials (referee, assistants, VAR)
+  - Weather conditions
+
+- 👥 **Player Profiling**:
+  - Injury tracking with start/end dates and severity levels
+  - Minutes played tracking per match
+  - Nationality and previous club history
+  - Birthday tracking with zodiac signs (Western & Chinese) 🎂
+
+- 💰 **Transfer Analysis** (JSON data):
+  - Transfer fees and contract details
+  - Player ages at transfer
+  - Net spend and financial analytics
+
+
 
 ## Supported Leagues
 
@@ -83,6 +104,30 @@ The tool accepts flexible CSV formats with automatic metadata detection. **Any c
 | Time | `Time`, `KickOff` |
 | Referee | `Referee`, `Ref` |
 
+### Extended Data Columns (All Optional)
+
+**Player & Team Data:**
+- `HomeLineup`, `AwayLineup` - Starting XIs with optional ages/positions
+- `HomeSubstitutes`, `AwaySubstitutes` - Bench players
+- `HomeManager`, `AwayManager` - Team managers
+- `HomeFormation`, `AwayFormation` - Tactical formations (e.g., "4-3-3")
+
+**Match Events:**
+- `HomeGoalscorers`, `AwayGoalscorers` - Goals with times and assisters
+- `HomeSubstitutions`, `AwaySubstitutions` - Substitution events
+- `HomeYellowCards`, `AwayYellowCards`, `HomeRedCards`, `AwayRedCards` - Disciplinary cards
+
+**Injuries & Minutes:**
+- `HomeInjuries`, `AwayInjuries` - Injured players with dates
+- `HomeMinutesPlayed`, `AwayMinutesPlayed` - Playing time per player
+
+**Venue & Context:**
+- `Stadium`, `Attendance`, `StadiumCapacity`
+- `Temperature`, `WeatherConditions`
+- `AssistantReferee1`, `AssistantReferee2`, `FourthOfficial`, `VarReferee`
+
+> See [CSV-FORMAT-GUIDE.md](docs/CSV-FORMAT-GUIDE.md) for complete column reference and [EXTENDED-DATA-GUIDE.md](docs/EXTENDED-DATA-GUIDE.md) for format specifications.
+
 ### Example (simple format)
 
 ```csv
@@ -113,26 +158,49 @@ If no `Gameweek` column is present, gameweeks are inferred from dates (or file o
 FootballDataTool/
 ├── src/FootballDataTool/
 │   ├── Models/
-│   │   ├── CsvMatchRecord.cs      # Discrete CSV representation
-│   │   ├── Match.cs               # Business model
-│   │   ├── SeasonMetadata.cs      # Detected league/season info
-│   │   └── TeamRecord.cs          # Aggregated team stats
+│   │   ├── CsvMatchRecord.cs          # Discrete CSV representation
+│   │   ├── Match.cs                   # Business model
+│   │   ├── MatchEvents.cs             # Extended match data
+│   │   ├── Player.cs                  # Player with age, nationality, zodiac
+│   │   ├── Manager.cs                 # Manager profile
+│   │   ├── Transfer.cs                # Transfer records
+│   │   ├── Injury.cs                  # Injury tracking & player appearances
+│   │   ├── Stadium.cs                 # Venue information
+│   │   ├── TeamSeasonInfo.cs          # Team season data (transfers, managers)
+│   │   ├── SeasonMetadata.cs          # Detected league/season info
+│   │   └── TeamRecord.cs              # Aggregated team stats
 │   ├── Services/
 │   │   ├── CsvDataService.cs              # Flexible CSV parser
 │   │   ├── MetadataDetectionService.cs    # Auto-detection logic
+│   │   ├── ExtendedDataParser.cs          # Parse lineups, events, injuries
+│   │   ├── TeamDataLoader.cs              # Load transfer JSON data
 │   │   └── MatchAnalyzer.cs               # Statistics & analysis engine
 │   ├── Visualisers/
 │   │   ├── HomeFormVisualiser.cs          # Home form by gameweek
 │   │   ├── PointBreakdownVisualiser.cs    # Cumulative points & cross-group
-│   │   └── ResultMatrixVisualiser.cs      # Results matrix
-│   └── Program.cs                 # Interactive menu (Spectre.Console)
+│   │   ├── ResultMatrixVisualiser.cs      # Results matrix
+│   │   ├── AgeProfileVisualiser.cs        # Age-based analytics
+│   │   └── TransferAnalysisVisualiser.cs  # Transfer spending analysis
+│   └── Program.cs                         # Interactive menu (Spectre.Console)
 ├── tests/FootballDataTool.Tests/
 │   ├── MatchAnalyzerTests.cs      # Unit tests for analytics
 │   └── CsvDataServiceTests.cs     # Unit tests for CSV parsing
-└── data/
-    ├── sample_season.csv          # 6-team, 10-gameweek sample
-    ├── premier_league_2023-24.csv # Premier League sample
-    └── laliga_2022-23.csv         # La Liga sample
+├── data/
+│   ├── sample_season.csv                      # 6-team, 10-gameweek sample
+│   ├── premier_league_2023-24.csv             # Premier League basic
+│   ├── premier_league_2023-24_with_ages.csv   # With player ages in lineups
+│   ├── premier_league_2023-24_full_sample.csv # With injuries & minutes
+│   ├── laliga_2022-23.csv                     # La Liga sample
+│   ├── arsenal_2023-24_transfers.json         # Arsenal transfer window
+│   └── chelsea_2023-24_transfers.json         # Chelsea transfer window
+└── docs/
+    ├── ARCHITECTURE.md                    # Discrete model explanation
+    ├── CSV-FORMAT-GUIDE.md                # Complete CSV column reference
+    ├── EXTENDED-DATA-GUIDE.md             # Extended fields format guide
+    ├── AGE-FEATURE-SUMMARY.md             # Player age tracking
+    ├── TRANSFER-MANAGER-AGE-GUIDE.md      # Transfer & manager features
+    ├── INJURY-PLAYER-TRACKING-GUIDE.md    # Injury & player profiling 🆕
+    └── DEVELOPER-GUIDE.md                 # Development guidelines
 ```
 
 ## Running Tests

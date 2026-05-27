@@ -48,6 +48,12 @@ public class CsvDataService
     private static readonly string[] WeatherConditionsColumns = ["Weather", "WeatherConditions", "Conditions"];
     private static readonly string[] OtherCompetitionsColumns = ["OtherCompetitions", "OtherFixtures", "MidweekFixtures"];
 
+    // New fields for injuries, minutes, nationality, previous clubs
+    private static readonly string[] HomeInjuriesColumns = ["HomeInjuries", "Home Injuries", "HInjuries", "HomeOut", "HomeMissing"];
+    private static readonly string[] AwayInjuriesColumns = ["AwayInjuries", "Away Injuries", "AInjuries", "AwayOut", "AwayMissing"];
+    private static readonly string[] HomeMinutesColumns = ["HomeMinutes", "Home Minutes", "HMinutes", "HomeMinutesPlayed"];
+    private static readonly string[] AwayMinutesColumns = ["AwayMinutes", "Away Minutes", "AMinutes", "AwayMinutesPlayed"];
+
     public SeasonMetadata? Metadata { get; private set; }
 
     /// <summary>
@@ -141,7 +147,11 @@ public class CsvDataService
             ["VarReferee"] = FindColumnIndex(headers, VarRefereeColumns),
             ["Temperature"] = FindColumnIndex(headers, TemperatureColumns),
             ["WeatherConditions"] = FindColumnIndex(headers, WeatherConditionsColumns),
-            ["OtherCompetitions"] = FindColumnIndex(headers, OtherCompetitionsColumns)
+            ["OtherCompetitions"] = FindColumnIndex(headers, OtherCompetitionsColumns),
+            ["HomeInjuries"] = FindColumnIndex(headers, HomeInjuriesColumns),
+            ["AwayInjuries"] = FindColumnIndex(headers, AwayInjuriesColumns),
+            ["HomeMinutesPlayed"] = FindColumnIndex(headers, HomeMinutesColumns),
+            ["AwayMinutesPlayed"] = FindColumnIndex(headers, AwayMinutesColumns)
         };
 
         // Validate required columns
@@ -210,6 +220,10 @@ public class CsvDataService
                     case "Temperature": record.Temperature = value; break;
                     case "WeatherConditions": record.WeatherConditions = value; break;
                     case "OtherCompetitions": record.OtherCompetitions = value; break;
+                    case "HomeInjuries": record.HomeInjuries = value; break;
+                    case "AwayInjuries": record.AwayInjuries = value; break;
+                    case "HomeMinutesPlayed": record.HomeMinutesPlayed = value; break;
+                    case "AwayMinutesPlayed": record.AwayMinutesPlayed = value; break;
                 }
             }
 

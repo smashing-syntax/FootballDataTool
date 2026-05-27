@@ -59,6 +59,14 @@ public class CsvMatchRecord
     public string? HomeRedCards { get; set; }
     public string? AwayRedCards { get; set; }
 
+    // Injuries (formatted strings: "Player Name (Injury Type, dd/MM/yyyy - dd/MM/yyyy)")
+    public string? HomeInjuries { get; set; }
+    public string? AwayInjuries { get; set; }
+
+    // Minutes played (can be part of lineup or separate field)
+    public string? HomeMinutesPlayed { get; set; }
+    public string? AwayMinutesPlayed { get; set; }
+
     // Competition context
     public string? OtherCompetitions { get; set; }  // JSON or formatted string
 

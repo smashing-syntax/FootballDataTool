@@ -92,6 +92,16 @@ public class ExtendedDataParser
                 extendedData.Weather.Temperature = temp;
         }
 
+        // Parse injuries
+        extendedData.HomeInjuries = ParseInjuries(record.HomeInjuries, match.Date ?? DateTime.Today);
+        extendedData.AwayInjuries = ParseInjuries(record.AwayInjuries, match.Date ?? DateTime.Today);
+
+        // Parse player appearances (minutes played)
+        extendedData.HomeAppearances = ParseAppearances(record.HomeMinutesPlayed, match.HomeTeam, 
+            extendedData.HomeStartingLineup, extendedData.HomeSubstitutes);
+        extendedData.AwayAppearances = ParseAppearances(record.AwayMinutesPlayed, match.AwayTeam,
+            extendedData.AwayStartingLineup, extendedData.AwaySubstitutes);
+
         return extendedData;
     }
 
@@ -108,7 +118,11 @@ public class ExtendedDataParser
             || !string.IsNullOrWhiteSpace(record.AwayLineup)
             || !string.IsNullOrWhiteSpace(record.HomeSubstitutions)
             || !string.IsNullOrWhiteSpace(record.AssistantReferee1)
-            || !string.IsNullOrWhiteSpace(record.Temperature);
+            || !string.IsNullOrWhiteSpace(record.Temperature)
+            || !string.IsNullOrWhiteSpace(record.HomeInjuries)
+            || !string.IsNullOrWhiteSpace(record.AwayInjuries)
+            || !string.IsNullOrWhiteSpace(record.HomeMinutesPlayed)
+            || !string.IsNullOrWhiteSpace(record.AwayMinutesPlayed);
     }
 
     /// <summary>
@@ -369,4 +383,164 @@ public class ExtendedDataParser
     private static readonly Regex AssistRegex = new(@"assist:?\s*(.+?)(?:\s|$|\)|\])", RegexOptions.Compiled);
     private static readonly Regex SubstitutionRegex = new(@"^(.+?)\s*(?:←|<-|->|→)\s*(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?", RegexOptions.Compiled);
     private static readonly Regex CardRegex = new(@"^(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?", RegexOptions.Compiled);
+
+    // Injury format: "Player Name (Injury Type, dd/MM/yyyy - dd/MM/yyyy)" or "Player Name (Hamstring, 01/09/2023 - 15/09/2023)"
+    private static readonly Regex InjuryRegex = new(
+        @"^(.+?)\s*\(([^,]+),\s*(\d{1,2}/\d{1,2}/\d{4})(?:\s*-\s*(\d{1,2}/\d{1,2}/\d{4}))?\)", 
+        RegexOptions.Compiled);
+
+    // Minutes format: "Player Name 90'" or "Player Name (65')" or "Player Name 65"
+    private static readonly Regex MinutesRegex = new(@"^(.+?)\s*[(\[]?(\d+)['\)]?$", RegexOptions.Compiled);
+
+    /// <summary>
+    /// Parses injury list.
+    /// Format: "Player1 (Hamstring, 01/09/2023 - 15/09/2023); Player2 (Knee, 10/08/2023 - )"
+    /// </summary>
+    private static List<Injury> ParseInjuries(string? injuries, DateTime matchDate)
+    {
+        if (string.IsNullOrWhiteSpace(injuries))
+            return new List<Injury>();
+
+        var injuryList = new List<Injury>();
+        var entries = injuries.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var entry in entries)
+        {
+            var injury = ParseInjuryEntry(entry.Trim(), matchDate);
+            if (injury != null)
+                injuryList.Add(injury);
+        }
+
+        return injuryList;
+    }
+
+    private static Injury? ParseInjuryEntry(string entry, DateTime matchDate)
+    {
+        var match = InjuryRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var playerName = match.Groups[1].Value.Trim();
+        var injuryType = match.Groups[2].Value.Trim();
+        var injuryDateStr = match.Groups[3].Value;
+        var returnDateStr = match.Groups[4].Success ? match.Groups[4].Value : null;
+
+        if (!DateTime.TryParseExact(injuryDateStr, "dd/MM/yyyy", null, 
+            System.Globalization.DateTimeStyles.None, out DateTime injuryDate))
+            return null;
+
+        DateTime? returnDate = null;
+        if (!string.IsNullOrWhiteSpace(returnDateStr))
+        {
+            DateTime.TryParseExact(returnDateStr, "dd/MM/yyyy", null, 
+                System.Globalization.DateTimeStyles.None, out DateTime parsed);
+            returnDate = parsed;
+        }
+
+        // Calculate severity based on duration
+        var severity = InjurySeverity.Minor;
+        if (returnDate.HasValue)
+        {
+            var days = (returnDate.Value - injuryDate).Days;
+            severity = days switch
+            {
+                <= 7 => InjurySeverity.Minor,
+                <= 28 => InjurySeverity.Moderate,
+                <= 90 => InjurySeverity.Serious,
+                _ => InjurySeverity.LongTerm
+            };
+        }
+        else
+        {
+            // If still injured on match date, estimate severity
+            var daysOut = (matchDate - injuryDate).Days;
+            severity = daysOut switch
+            {
+                <= 7 => InjurySeverity.Minor,
+                <= 28 => InjurySeverity.Moderate,
+                <= 90 => InjurySeverity.Serious,
+                _ => InjurySeverity.LongTerm
+            };
+        }
+
+        return new Injury
+        {
+            Player = new Player { Name = playerName },
+            InjuryType = injuryType,
+            InjuryDate = injuryDate,
+            ReturnDate = returnDate,
+            Severity = severity
+        };
+    }
+
+    /// <summary>
+    /// Parses player appearances with minutes played.
+    /// Format: "Player1 90'; Player2 65'; Player3 (20')"
+    /// If no minutes data is provided, creates appearances from lineups with estimated minutes.
+    /// </summary>
+    private static List<PlayerAppearance> ParseAppearances(string? minutesData, string team, 
+        List<Player> starters, List<Player> substitutes)
+    {
+        var appearances = new List<PlayerAppearance>();
+
+        if (!string.IsNullOrWhiteSpace(minutesData))
+        {
+            // Parse explicit minutes data
+            var entries = minutesData.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var entry in entries)
+            {
+                var appearance = ParseAppearanceEntry(entry.Trim(), team);
+                if (appearance != null)
+                    appearances.Add(appearance);
+            }
+        }
+        else
+        {
+            // Generate default appearances from lineups
+            // Starters assumed to play 90 minutes, subs assumed unused
+            foreach (var player in starters)
+            {
+                appearances.Add(new PlayerAppearance
+                {
+                    Player = player,
+                    Team = team,
+                    IsStarting = true,
+                    MinutesPlayed = 90
+                });
+            }
+
+            foreach (var player in substitutes)
+            {
+                appearances.Add(new PlayerAppearance
+                {
+                    Player = player,
+                    Team = team,
+                    IsStarting = false,
+                    MinutesPlayed = 0
+                });
+            }
+        }
+
+        return appearances;
+    }
+
+    private static PlayerAppearance? ParseAppearanceEntry(string entry, string team)
+    {
+        var match = MinutesRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var playerName = match.Groups[1].Value.Trim();
+        var minutes = int.Parse(match.Groups[2].Value);
+
+        return new PlayerAppearance
+        {
+            Player = new Player { Name = playerName },
+            Team = team,
+            IsStarting = minutes > 60, // Rough heuristic
+            MinutesPlayed = minutes
+        };
+    }
 }
+

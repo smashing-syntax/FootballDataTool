@@ -68,6 +68,28 @@ public class MatchExtendedData
     // Weather (optional but interesting!)
     public WeatherConditions? Weather { get; set; }
 
+    // Injuries & Availability
+    /// <summary>
+    /// Players injured/unavailable for home team in this match.
+    /// </summary>
+    public List<Injury> HomeInjuries { get; set; } = new();
+
+    /// <summary>
+    /// Players injured/unavailable for away team in this match.
+    /// </summary>
+    public List<Injury> AwayInjuries { get; set; } = new();
+
+    // Player Appearances & Minutes
+    /// <summary>
+    /// Detailed appearance records for home team players (including minutes played).
+    /// </summary>
+    public List<PlayerAppearance> HomeAppearances { get; set; } = new();
+
+    /// <summary>
+    /// Detailed appearance records for away team players (including minutes played).
+    /// </summary>
+    public List<PlayerAppearance> AwayAppearances { get; set; } = new();
+
     // Computed properties for lineup analysis
 
     /// <summary>
@@ -111,6 +133,52 @@ public class MatchExtendedData
         .Where(p => p.Age.HasValue)
         .OrderByDescending(p => p.Age)
         .FirstOrDefault();
+
+    /// <summary>
+    /// Total injuries affecting home team for this match.
+    /// </summary>
+    public int HomeInjuryCount => HomeInjuries.Count;
+
+    /// <summary>
+    /// Total injuries affecting away team for this match.
+    /// </summary>
+    public int AwayInjuryCount => AwayInjuries.Count;
+
+    /// <summary>
+    /// Total minutes played by all home team players (sum of all appearances).
+    /// </summary>
+    public int HomeTotalMinutes => HomeAppearances.Sum(a => a.MinutesPlayed);
+
+    /// <summary>
+    /// Total minutes played by all away team players (sum of all appearances).
+    /// </summary>
+    public int AwayTotalMinutes => AwayAppearances.Sum(a => a.MinutesPlayed);
+
+    /// <summary>
+    /// Players having birthday on match day (both teams).
+    /// </summary>
+    public List<Player> PlayersWithBirthday(DateTime matchDate)
+    {
+        var allPlayers = HomeStartingLineup
+            .Concat(HomeSubstitutes)
+            .Concat(AwayStartingLineup)
+            .Concat(AwaySubstitutes);
+
+        return allPlayers.Where(p => p.IsBirthdayOn(matchDate)).ToList();
+    }
+
+    /// <summary>
+    /// Managers having birthday on match day.
+    /// </summary>
+    public List<Manager> ManagersWithBirthday(DateTime matchDate)
+    {
+        var managers = new List<Manager>();
+        if (HomeManagerDetails?.IsBirthdayOn(matchDate) == true)
+            managers.Add(HomeManagerDetails);
+        if (AwayManagerDetails?.IsBirthdayOn(matchDate) == true)
+            managers.Add(AwayManagerDetails);
+        return managers;
+    }
 
     private static double? CalculateAverageAge(List<Player> lineup)
     {
