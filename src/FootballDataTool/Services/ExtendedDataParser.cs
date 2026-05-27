@@ -102,6 +102,9 @@ public class ExtendedDataParser
         extendedData.AwayAppearances = ParseAppearances(record.AwayMinutesPlayed, match.AwayTeam,
             extendedData.AwayStartingLineup, extendedData.AwaySubstitutes);
 
+        // Populate goals and assists in appearances from goal events
+        PopulateGoalsAndAssists(extendedData);
+
         return extendedData;
     }
 
@@ -541,6 +544,58 @@ public class ExtendedDataParser
             IsStarting = minutes > 60, // Rough heuristic
             MinutesPlayed = minutes
         };
+    }
+
+    /// <summary>
+    /// Populates goals and assists in player appearances from goal events.
+    /// This links the parsed goal data to the player appearance records.
+    /// </summary>
+    private static void PopulateGoalsAndAssists(MatchExtendedData extendedData)
+    {
+        if (extendedData.Goals.Count == 0)
+            return;
+
+        // Create lookup dictionaries for fast access
+        var homeAppearances = extendedData.HomeAppearances.ToDictionary(
+            a => a.Player.Name, 
+            a => a,
+            StringComparer.OrdinalIgnoreCase
+        );
+
+        var awayAppearances = extendedData.AwayAppearances.ToDictionary(
+            a => a.Player.Name, 
+            a => a,
+            StringComparer.OrdinalIgnoreCase
+        );
+
+        // Process each goal event
+        foreach (var goal in extendedData.Goals)
+        {
+            // Add goal to scorer's appearance
+            var scorerAppearances = goal.TeamScoring == extendedData.HomeStartingLineup.FirstOrDefault()?.Name 
+                || homeAppearances.ContainsKey(goal.Scorer.Name)
+                ? homeAppearances 
+                : awayAppearances;
+
+            if (scorerAppearances.TryGetValue(goal.Scorer.Name, out var scorerAppearance))
+            {
+                scorerAppearance.Goals++;
+            }
+
+            // Add assist to assister's appearance (if exists)
+            if (goal.Assister != null)
+            {
+                var assisterAppearances = goal.TeamScoring == extendedData.HomeStartingLineup.FirstOrDefault()?.Name 
+                    || homeAppearances.ContainsKey(goal.Assister.Name)
+                    ? homeAppearances 
+                    : awayAppearances;
+
+                if (assisterAppearances.TryGetValue(goal.Assister.Name, out var assisterAppearance))
+                {
+                    assisterAppearance.Assists++;
+                }
+            }
+        }
     }
 }
 

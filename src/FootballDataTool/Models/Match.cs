@@ -34,4 +34,19 @@ public class Match
     public bool HasGoalEvents => ExtendedData?.Goals.Count > 0;
 
     public bool HasAttendanceData => ExtendedData?.Attendance.HasValue == true;
+
+    // Optional reference to parent SeasonData for accessing team objects
+    internal SeasonData? ParentSeason { get; set; }
+
+    /// <summary>
+    /// Get the home team's full season object (if SeasonData is available).
+    /// Provides access to team-level aggregated data.
+    /// </summary>
+    public TeamSeason? GetHomeTeamObject() => ParentSeason?.GetTeam(HomeTeam);
+
+    /// <summary>
+    /// Get the away team's full season object (if SeasonData is available).
+    /// Provides access to team-level aggregated data.
+    /// </summary>
+    public TeamSeason? GetAwayTeamObject() => ParentSeason?.GetTeam(AwayTeam);
 }

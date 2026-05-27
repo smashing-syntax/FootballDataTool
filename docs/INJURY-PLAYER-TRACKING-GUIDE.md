@@ -104,13 +104,15 @@ public class PlayerAppearance
     public string? Position { get; set; }
     public int? SubbedOn { get; set; }
     public int? SubbedOff { get; set; }
-    public int Goals { get; set; }
-    public int Assists { get; set; }
+    public int Goals { get; set; }              // Auto-populated from goal events
+    public int Assists { get; set; }            // Auto-populated from goal events
     public List<CardType> Cards { get; set; }
-    
+
     public bool PlayedFullMatch => MinutesPlayed >= 90;
 }
 ```
+
+**Note**: `Goals` and `Assists` are automatically populated from parsed goal events. If your CSV has goalscorers with assists (e.g., `"Player 45' (assist: Assister)"`), the system will automatically link them to player appearances.
 
 ### CSV Format
 

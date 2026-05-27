@@ -35,6 +35,11 @@ A C# .NET 8 console application that loads raw CSV football season data with **a
   - Player ages at transfer
   - Net spend and financial analytics
 
+- 🏗️ **Dual-View Architecture**:
+  - **Match-Centric**: Simple list of matches for basic analysis (CSV-friendly)
+  - **Team-Centric**: Rich team objects with aggregated squad, stats, and history
+  - Seamlessly switch between views as needed
+  - See [Season Aggregation Guide](docs/SEASON-AGGREGATION-GUIDE.md)
 
 
 ## Supported Leagues

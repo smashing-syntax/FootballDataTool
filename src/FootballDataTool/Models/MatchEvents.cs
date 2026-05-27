@@ -155,6 +155,54 @@ public class MatchExtendedData
     public int AwayTotalMinutes => AwayAppearances.Sum(a => a.MinutesPlayed);
 
     /// <summary>
+    /// Total goals scored by home team (from player appearances).
+    /// </summary>
+    public int HomeTotalGoals => HomeAppearances.Sum(a => a.Goals);
+
+    /// <summary>
+    /// Total goals scored by away team (from player appearances).
+    /// </summary>
+    public int AwayTotalGoals => AwayAppearances.Sum(a => a.Goals);
+
+    /// <summary>
+    /// Total assists by home team (from player appearances).
+    /// </summary>
+    public int HomeTotalAssists => HomeAppearances.Sum(a => a.Assists);
+
+    /// <summary>
+    /// Total assists by away team (from player appearances).
+    /// </summary>
+    public int AwayTotalAssists => AwayAppearances.Sum(a => a.Assists);
+
+    /// <summary>
+    /// Top scorer in this match.
+    /// </summary>
+    public (Player? Player, int Goals)? TopScorer()
+    {
+        var allAppearances = HomeAppearances.Concat(AwayAppearances);
+        var topScorer = allAppearances
+            .Where(a => a.Goals > 0)
+            .OrderByDescending(a => a.Goals)
+            .FirstOrDefault();
+
+        return topScorer != null ? (topScorer.Player, topScorer.Goals) : null;
+    }
+
+    /// <summary>
+    /// Top assister in this match.
+    /// </summary>
+    public (Player? Player, int Assists)? TopAssister()
+    {
+        var allAppearances = HomeAppearances.Concat(AwayAppearances);
+        var topAssister = allAppearances
+            .Where(a => a.Assists > 0)
+            .OrderByDescending(a => a.Assists)
+            .FirstOrDefault();
+
+        return topAssister != null ? (topAssister.Player, topAssister.Assists) : null;
+    }
+
+    /// <summary>
     /// Players having birthday on match day (both teams).
     /// </summary>
     public List<Player> PlayersWithBirthday(DateTime matchDate)

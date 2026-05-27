@@ -58,8 +58,9 @@ public class CsvDataService
 
     /// <summary>
     /// Loads match data from a CSV file and automatically detects season/league metadata.
+    /// Returns complete SeasonData with team aggregations built.
     /// </summary>
-    public List<Match> LoadFromFile(string filePath)
+    public SeasonData LoadSeasonDataFromFile(string filePath)
     {
         if (!File.Exists(filePath))
             throw new FileNotFoundException($"CSV file not found: {filePath}");
@@ -81,7 +82,20 @@ public class CsvDataService
         if (!hasGameweeks)
             AssignGameweeks(matches);
 
-        return matches;
+        // Step 5: Build SeasonData with team aggregations
+        var seasonData = SeasonData.FromMatches(matches, Metadata);
+
+        return seasonData;
+    }
+
+    /// <summary>
+    /// Loads match data from a CSV file (legacy method - returns just matches).
+    /// Use LoadSeasonDataFromFile for richer team-level analysis.
+    /// </summary>
+    public List<Match> LoadFromFile(string filePath)
+    {
+        var seasonData = LoadSeasonDataFromFile(filePath);
+        return seasonData.Matches;
     }
 
     /// <summary>
