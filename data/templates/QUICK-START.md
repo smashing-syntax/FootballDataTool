@@ -1,66 +1,67 @@
-# Quick Reference: Creating a 2014/15 Dataset
+# Quick Reference: Creating Your Dataset
 
-## 📋 Cheat Sheet
+## 📋 Three Simple Files
 
-### Minimum Required (Works Immediately)
+To create a complete season dataset, you need just **3 CSV files**:
+
+1. **`matches.csv`** - Match results and events
+2. **`squads.csv`** - Player biographies (birthdays, nationalities)
+3. **`transfers.csv`** - Transfer movements (optional)
+
+---
+
+## 🚀 Quick Start (3 Steps)
+
+### Step 1: Copy Templates (30 seconds)
+
+```bash
+cp data/templates/matches.csv data/premier-league/2014-15_matches.csv
+cp data/templates/squads.csv data/premier-league/2014-15_squads.csv
+cp data/templates/transfers.csv data/premier-league/2014-15_transfers.csv
+```
+
+### Step 2: Fill In Data (1-10 hours depending on detail)
+
+Open in Excel/Google Sheets and start with the basics:
+
+**matches.csv** - Minimum 4 columns:
 ```csv
 HomeTeam,AwayTeam,FTHG,FTAG
 Man United,Swansea,1,2
-Leicester,Everton,2,2
 Arsenal,Crystal Palace,2,1
 ```
 
-### Recommended Basic
+**squads.csv** - Player birthdays (enter once!):
 ```csv
-Div,Season,GW,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Referee
-E0,2014/15,1,16/08/2014,Man United,Swansea,1,2,A,Mike Dean
-E0,2014/15,1,16/08/2014,Arsenal,Crystal Palace,2,1,H,Martin Atkinson
+Team,Season,PlayerName,DateOfBirth,Position
+Arsenal,2014/15,Mesut Ozil,1988-10-15,Attacking Midfielder
+Arsenal,2014/15,Aaron Ramsey,1990-12-26,Central Midfielder
 ```
+
+### Step 3: Load & Analyze
+
+```csharp
+var data = csvService.LoadSeasonDataFromFile("2014-15_matches.csv");
+data.LoadSquadDataFromCsv("2014-15_squads.csv");  // Ages auto-calculated!
+data.LoadTransferDataFromCsv("2014-15_transfers.csv");
+```
+
+**Done!** ✅
 
 ---
 
-## 🎯 Quick Start Steps
+## 📂 Template Locations
 
-### 1. Download Basic Data (5 minutes)
-```bash
-# Go to: https://www.football-data.co.uk/englandm.php
-# Download: 2014-15 > E0.csv
-# Save as: data/premier-league/premier_league_2014-15_basic.csv
-```
+All blank templates are in `data/templates/`:
+- **`matches.csv`** - Match data template
+- **`squads.csv`** - Squad data template  
+- **`transfers.csv`** - Transfer data template
 
-### 2. Test It
-```bash
-dotnet run --project src/FootballDataTool -- data/premier-league/premier_league_2014-15_basic.csv
-```
-
-### 3. Enrich (Optional)
-Copy `data/templates/match_template_extended.csv` and follow the guide!
-
----
-
-## 🔑 Field Formats (Quick Reference)
-
-### Goals with Assists
-```
-"Player1 45'; Player2 67' (assist: Helper)"
-"Rooney 45' (pen); Van Persie 67' (assist: Mata)"
-```
-
-### Lineups with Ages
-```
-"1. De Gea (23, GK); 2. Rafael (24, RB); 5. Ferdinand (35, CB)"
-```
-
-### Injuries
-```
-"Player (Type, dd/MM/yyyy - dd/MM/yyyy)"
-"Rooney (Groin, 01/08/2014 - 20/08/2014); RVP (Knee, 10/08/2014 - )"
-```
-
-### Minutes
-```
-"De Gea 90'; Rooney 90'; Mata 78'; Kagawa (12')"
-```
+**Examples** are in `data/examples/`:
+- `match_examples_basic.csv`
+- `match_examples_full.csv`
+- `squad_examples.csv`
+- `transfer_examples.csv`
 
 ---
 
@@ -73,11 +74,43 @@ Copy `data/templates/match_template_extended.csv` and follow the guide!
 | **3. Assists** | +0 | 2 hours | Playmaker rankings |
 | **4. Lineups** | +4 | 5 hours | Squad age analysis |
 | **5. Full** | +15 | 10+ hours | Complete analytics |
-| **6. Transfers** | CSV | 2 hours | Transfer analysis 🆕 |
+| **6. Squads** | CSV | 1 hour | Auto age calculation! 🆕 |
+| **7. Transfers** | CSV | 2 hours | Transfer analysis |
 
 ---
 
-## 🔄 Transfer Data (NEW - CSV Format!)
+## 👥 Squad Data (NEW - Enter Birthdays Once!) 🆕
+
+Instead of entering ages in every match, create ONE squad file:
+
+```csv
+Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality
+Arsenal,2014/15,Mesut Ozil,1988-10-15,Attacking Midfielder,11,Germany
+Arsenal,2014/15,Aaron Ramsey,1990-12-26,Central Midfielder,16,Wales
+Chelsea,2014/15,Eden Hazard,1991-01-07,Winger,10,Belgium
+```
+
+**Then match lineups become simple:**
+```csv
+HomeLineup,"Szczesny; Gibbs; Mertesacker; Ramsey; Ozil"
+```
+
+**Ages calculated automatically!** 🎂
+
+**Templates**:
+- `data/templates/squads_template.csv` (70+ player examples)
+- `data/templates/squads_template_blank.csv` (blank)
+- `data/templates/SQUAD-DATA-GUIDE.md` (quick guide)
+
+**Benefits**:
+- ✅ Enter birthday ONCE (not 38 times!)
+- ✅ Automatic age calculation per match
+- ✅ Mid-season birthdays handled
+- ✅ 97% less repetition!
+
+---
+
+## 🔄 Transfer Data (CSV Format!)
 
 ### Quick Add Transfers
 ```csv

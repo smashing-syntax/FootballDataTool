@@ -6,29 +6,34 @@ This folder contains all match data, transfer data, and templates for FootballDa
 
 ```
 data/
-├── templates/           # Template CSV files for creating your own datasets
-│   ├── match_template_basic.csv       # Minimum required fields
-│   ├── match_template_extended.csv    # With managers, formations, goals
-│   ├── match_template_full.csv        # Complete example with all fields
-│   ├── match_template_blank.csv       # Empty template (all columns)
-│   ├── transfers_template.csv         # Transfer data template with examples 🆕
-│   ├── transfers_template_blank.csv   # Blank transfer template 🆕
-│   ├── TEMPLATE-GUIDE.md              # Comprehensive field reference
-│   └── TRANSFER-CSV-GUIDE.md          # Transfer CSV format guide 🆕
+├── templates/           # Blank templates for creating datasets 📝
+│   ├── matches.csv                  # Match data template (all columns)
+│   ├── squads.csv                   # Squad biographical data template
+│   ├── transfers.csv                # Transfer data template
+│   ├── README.md                    # Template folder guide 🆕
+│   ├── TEMPLATE-GUIDE.md            # Complete field reference (matches)
+│   ├── SQUAD-DATA-GUIDE.md          # Squad data quick reference
+│   ├── TRANSFER-CSV-GUIDE.md        # Transfer CSV complete guide
+│   └── QUICK-START.md               # Quick reference cheat sheet
 │
-├── premier-league/      # Premier League match and transfer data
-│   ├── premier_league_2023-24_basic.csv        # Basic match results
-│   ├── premier_league_2023-24_with_ages.csv    # With player ages in lineups
-│   ├── premier_league_2023-24_extended.csv     # With extended match data
-│   ├── premier_league_2023-24_full_sample.csv  # Full example (injuries, minutes)
-│   ├── arsenal_2023-24_transfers.json          # Arsenal transfer window (JSON)
-│   ├── chelsea_2023-24_transfers.json          # Chelsea transfer window (JSON)
-│   └── 2023-24_transfers.csv                   # All PL transfers (CSV) 🆕
+├── examples/            # Example data for reference 📚
+│   ├── match_examples_basic.csv     # Basic match results (10 matches)
+│   ├── match_examples_extended.csv  # With managers and goals
+│   ├── match_examples_full.csv      # Complete with all fields
+│   ├── squad_examples.csv           # Arsenal/Chelsea/Man Utd squads
+│   └── transfer_examples.csv        # 2023/24 transfer examples
 │
-├── la-liga/             # La Liga match data
+├── premier-league/      # Premier League data
+│   ├── 2023-24_matches.csv
+│   ├── 2023-24_squads.csv
+│   ├── 2023-24_transfers.csv
+│   ├── arsenal_2023-24_transfers.json  (legacy JSON format still supported)
+│   └── chelsea_2023-24_transfers.json
+│
+├── la-liga/             # La Liga data
 │   └── laliga_2022-23.csv
 │
-└── archive/             # Sample/test files
+└── archive/             # Deprecated/test files
     └── sample_season.csv
 ```
 
@@ -36,53 +41,86 @@ data/
 
 ## Quick Start
 
-### 1. Use Existing Data
+### 1. Copy Blank Templates
 
-Load any existing dataset:
-```csharp
-var seasonData = csvService.LoadSeasonDataFromFile("data/premier-league/premier_league_2023-24_basic.csv");
+```bash
+# For 2014/15 Premier League season
+cp data/templates/matches.csv data/premier-league/2014-15_matches.csv
+cp data/templates/squads.csv data/premier-league/2014-15_squads.csv
+cp data/templates/transfers.csv data/premier-league/2014-15_transfers.csv
 ```
 
-### 2. Create Your Own Dataset
+### 2. Fill In Your Data
 
-**Option A: Start from Blank Template**
-1. Copy `templates/match_template_blank.csv`
-2. Rename to your season (e.g., `premier_league_2014-15.csv`)
-3. Fill in the fields (see `templates/TEMPLATE-GUIDE.md`)
-4. Save in appropriate league folder
+Open in Excel/Google Sheets:
+1. **`matches.csv`** - Match results and events
+2. **`squads.csv`** - Player birthdays and biographies (enter once!)
+3. **`transfers.csv`** - Transfer movements (optional)
 
-**Option B: Start from Example**
-1. Copy `templates/match_template_full.csv`
-2. Replace the example data with your matches
-3. Remove columns you don't have data for
+### 3. Load in Code
 
-**Option C: Quick Basic Dataset**
-1. Use `templates/match_template_basic.csv` as reference
-2. Only fill in required fields: `HomeTeam`, `AwayTeam`, `FTHG`, `FTAG`
-3. Add more fields as you gather data
+```csharp
+// Load match data
+var seasonData = csvService.LoadSeasonDataFromFile("data/premier-league/2014-15_matches.csv");
+
+// Load squad data (auto-calculates ages!)
+seasonData.LoadSquadDataFromCsv("data/premier-league/2014-15_squads.csv");
+
+// Load transfers (optional)
+seasonData.LoadTransferDataFromCsv("data/premier-league/2014-15_transfers.csv");
+```
+
+**📖 See:** `data/templates/README.md` for complete template guide
 
 ---
 
-## Naming Conventions
+## 📊 Progressive Enhancement
 
-### Match Data Files
-- **Format**: `{league}_{season}_{variant}.csv`
-- **Examples**:
-  - `premier_league_2014-15_basic.csv`
-  - `premier_league_2014-15_full.csv`
-  - `laliga_2022-23.csv`
-  - `bundesliga_2023-24_with_ages.csv`
+Start simple, add detail over time:
 
-### Transfer Data Files
-- **CSV Format** (recommended for manual entry): `{season}_transfers.csv` or `{league}_{season}_transfers.csv` 🆕
-- **JSON Format** (per team): `{team}_{season}_transfers.json`
-- **Examples**:
-  - `2014-15_transfers.csv` (all teams in one file - easier!)
-  - `arsenal_2014-15_transfers.json`
-  - `chelsea_2023-24_transfers.json`
-  - `premier_league_2023-24_transfers.csv`
+| Stage | Files | What to Add | Time |
+|-------|-------|-------------|------|
+| **1. Basic** | matches.csv | 4 columns (teams, goals) | 1 hour |
+| **2. Squads** | +squads.csv | Player birthdays | 1 hour |
+| **3. Goals** | matches.csv | Goalscorers | 2 hours |
+| **4. Full** | matches.csv | All 33 columns | 10+ hours |
 
-**Why CSV?** Much easier to fill out in Excel/Google Sheets! Multiple teams in one file!
+You decide how much detail you want!
+
+---
+
+## File Naming Conventions
+
+### Match Data
+```
+{league}_{season}_matches.csv
+Examples:
+  - premier_league_2014-15_matches.csv
+  - la_liga_2022-23_matches.csv
+```
+
+### Squad Data 🆕
+```
+{league}_{season}_squads.csv  OR  {season}_squads.csv
+Examples:
+  - premier_league_2014-15_squads.csv
+  - 2014-15_squads.csv (if in league-specific folder)
+```
+
+### Transfer Data
+```
+{league}_{season}_transfers.csv  OR  {season}_transfers.csv
+Examples:
+  - 2014-15_transfers.csv (all teams in one file - easier!)
+  - premier_league_2023-24_transfers.csv
+```
+
+**Legacy JSON format** (per team) still supported:
+```
+{team}_{season}_transfers.json
+Examples:
+  - arsenal_2014-15_transfers.json
+```
 
 ---
 

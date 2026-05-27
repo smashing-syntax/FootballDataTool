@@ -27,11 +27,17 @@ public class SeasonData
     public Dictionary<string, TeamSeason> Teams { get; private set; } = new();
     
     /// <summary>
-    /// Optional team transfer and manager data (from JSON files).
+    /// Optional team transfer and manager data (from JSON/CSV files).
     /// Keyed by team name.
     /// </summary>
     public Dictionary<string, TeamSeasonInfo> TeamTransferData { get; set; } = new();
-    
+
+    /// <summary>
+    /// Optional squad biographical data (from CSV files).
+    /// Keyed by team name. Contains player birthdays, nationalities, etc.
+    /// </summary>
+    public Dictionary<string, List<Player>> SquadData { get; set; } = new();
+
     // Computed season-wide statistics
     public int TotalMatches => Matches.Count;
     public int TotalGameweeks => Matches.Max(m => m.Gameweek);
@@ -53,7 +59,8 @@ public class SeasonData
     public bool HasMinutesData => Matches.Any(m => m.ExtendedData?.HomeAppearances.Count > 0);
     public bool HasAttendanceData => Matches.Any(m => m.HasAttendanceData);
     public bool HasTransferData => TeamTransferData.Any();
-    
+    public bool HasSquadData => SquadData.Any();
+
     /// <summary>
     /// Build team aggregations from match data.
     /// Call this after loading matches to enable team-centric analysis.
@@ -281,6 +288,70 @@ public class SeasonData
         {
             if (TeamTransferData.TryGetValue(teamName, out var transferInfo))
                 teamSeason.SeasonInfo = transferInfo;
+        }
+    }
+
+    /// <summary>
+    /// Load squad biographical data from CSV file.
+    /// Enriches all match lineups with player birthdays, ages, positions, etc.
+    /// This automatically calculates ages per match based on birthdays!
+    /// </summary>
+    public void LoadSquadDataFromCsv(string csvFilePath)
+    {
+        SquadData = SquadCsvLoader.LoadFromCsv(csvFilePath);
+
+        // Enrich all existing match lineups with squad data
+        EnrichMatchesWithSquadData();
+    }
+
+    /// <summary>
+    /// Enriches all matches with squad biographical data.
+    /// Automatically calculates player ages based on match date and birthday.
+    /// </summary>
+    private void EnrichMatchesWithSquadData()
+    {
+        if (!SquadData.Any())
+            return;
+
+        foreach (var match in Matches)
+        {
+            if (match.ExtendedData == null || !match.Date.HasValue)
+                continue;
+
+            // Enrich home team players
+            if (SquadData.TryGetValue(match.HomeTeam, out var homeSquad))
+            {
+                EnrichPlayerList(match.ExtendedData.HomeStartingLineup, homeSquad, match.Date.Value);
+                EnrichPlayerList(match.ExtendedData.HomeSubstitutes, homeSquad, match.Date.Value);
+
+                foreach (var appearance in match.ExtendedData.HomeAppearances)
+                {
+                    SquadCsvLoader.EnrichPlayer(appearance.Player, homeSquad, match.Date.Value);
+                }
+            }
+
+            // Enrich away team players
+            if (SquadData.TryGetValue(match.AwayTeam, out var awaySquad))
+            {
+                EnrichPlayerList(match.ExtendedData.AwayStartingLineup, awaySquad, match.Date.Value);
+                EnrichPlayerList(match.ExtendedData.AwaySubstitutes, awaySquad, match.Date.Value);
+
+                foreach (var appearance in match.ExtendedData.AwayAppearances)
+                {
+                    SquadCsvLoader.EnrichPlayer(appearance.Player, awaySquad, match.Date.Value);
+                }
+            }
+        }
+
+        // Rebuild team aggregates to pick up enriched data
+        BuildTeamAggregates();
+    }
+
+    private static void EnrichPlayerList(List<Player> players, List<Player> squadData, DateTime matchDate)
+    {
+        foreach (var player in players)
+        {
+            SquadCsvLoader.EnrichPlayer(player, squadData, matchDate);
         }
     }
 }
