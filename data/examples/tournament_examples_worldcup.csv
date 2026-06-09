@@ -1,0 +1,24 @@
+Div,Season,GW,Stage,Group,Leg,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Referee
+World Cup,2022,1,GS,A,,20/11/2022,Qatar,Ecuador,0,2,A,Daniele Orsato
+World Cup,2022,1,GS,A,,25/11/2022,Qatar,Senegal,1,3,A,Antonio Mateu Lahoz
+World Cup,2022,1,GS,A,,25/11/2022,Netherlands,Ecuador,1,1,D,Wilton Sampaio
+World Cup,2022,1,GS,A,,29/11/2022,Ecuador,Senegal,1,2,A,Clément Turpin
+World Cup,2022,1,GS,A,,29/11/2022,Netherlands,Qatar,2,0,H,Fernando Rapallini
+World Cup,2022,1,GS,B,,21/11/2022,England,Iran,6,2,H,Raphael Claus
+World Cup,2022,1,GS,B,,21/11/2022,USA,Wales,1,1,D,Abdulrahman Al-Jassim
+World Cup,2022,1,GS,B,,25/11/2022,Wales,Iran,0,2,A,Mario Escobar
+World Cup,2022,1,GS,B,,25/11/2022,England,USA,0,0,D,Jesús Valenzuela
+World Cup,2022,1,GS,B,,29/11/2022,Wales,England,0,3,A,Chris Beath
+World Cup,2022,1,GS,B,,29/11/2022,Iran,USA,0,1,A,Mateu Lahoz
+World Cup,2022,2,R16,,,03/12/2022,Netherlands,USA,3,1,H,Wilton Sampaio
+World Cup,2022,2,R16,,,04/12/2022,Argentina,Australia,2,1,H,Szymon Marciniak
+World Cup,2022,2,R16,,,05/12/2022,France,Poland,3,1,H,Jesús Valenzuela
+World Cup,2022,2,R16,,,05/12/2022,England,Senegal,3,0,H,Iván Barton
+World Cup,2022,3,QF,,,09/12/2022,Croatia,Brazil,1,1,D,Michael Oliver
+World Cup,2022,3,QF,,,09/12/2022,Netherlands,Argentina,2,2,D,Antonio Mateu Lahoz
+World Cup,2022,3,QF,,,10/12/2022,Morocco,Portugal,1,0,H,Facundo Tello
+World Cup,2022,3,QF,,,10/12/2022,England,France,1,2,A,Wilton Sampaio
+World Cup,2022,4,SF,,,13/12/2022,Argentina,Croatia,3,0,H,Daniele Orsato
+World Cup,2022,4,SF,,,14/12/2022,France,Morocco,2,0,H,César Ramos
+World Cup,2022,5,3P,,,17/12/2022,Croatia,Morocco,2,1,H,Abdulrahman Al-Jassim
+World Cup,2022,6,F,,,18/12/2022,Argentina,France,3,3,D,Szymon Marciniak

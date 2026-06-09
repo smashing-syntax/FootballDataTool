@@ -1,0 +1,98 @@
+Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,CurrentClub,ClubLeague,Height,Weight,PreferredFoot
+Argentina,2022,Emiliano Martínez,02/09/1992,GK,23,Argentina,Aston Villa,Premier League,195,88,Right
+Argentina,2022,Franco Armani,16/10/1986,GK,12,Argentina,River Plate,Liga Profesional,189,83,Right
+Argentina,2022,Gerónimo Rulli,20/05/1992,GK,1,Argentina,Villarreal,La Liga,189,86,Right
+Argentina,2022,Gonzalo Montiel,01/01/1997,RB,4,Argentina,Sevilla,La Liga,176,71,Right
+Argentina,2022,Nahuel Molina,06/04/1998,RB,26,Argentina,Atlético Madrid,La Liga,175,70,Right
+Argentina,2022,Nicolás Otamendi,12/02/1988,CB,19,Argentina,Benfica,Primeira Liga,183,81,Right
+Argentina,2022,Cristian Romero,27/04/1998,CB,13,Argentina,Tottenham,Premier League,185,79,Right
+Argentina,2022,Lisandro Martínez,18/01/1998,CB,25,Argentina,Manchester United,Premier League,175,78,Left
+Argentina,2022,Nicolás Tagliafico,31/08/1992,LB,3,Argentina,Lyon,Ligue 1,172,65,Left
+Argentina,2022,Marcos Acuña,28/10/1991,LB,8,Argentina,Sevilla,La Liga,172,70,Left
+Argentina,2022,Rodrigo De Paul,24/05/1994,CM,7,Argentina,Atlético Madrid,La Liga,180,70,Right
+Argentina,2022,Leandro Paredes,29/06/1994,DM,5,Argentina,Juventus,Serie A,180,75,Right
+Argentina,2022,Guido Rodríguez,12/04/1994,DM,18,Argentina,Real Betis,La Liga,185,80,Right
+Argentina,2022,Enzo Fernández,17/01/2001,CM,24,Argentina,Benfica,Primeira Liga,178,76,Right
+Argentina,2022,Alexis Mac Allister,24/12/1998,CM,20,Argentina,Brighton,Premier League,174,71,Right
+Argentina,2022,Exequiel Palacios,05/10/1998,CM,14,Argentina,Bayer Leverkusen,Bundesliga,177,70,Right
+Argentina,2022,Alejandro Gómez,15/02/1988,LW,17,Argentina,Sevilla,La Liga,167,60,Right
+Argentina,2022,Ángel Di María,14/02/1988,RW,11,Argentina,Juventus,Serie A,180,75,Left
+Argentina,2022,Lionel Messi,24/06/1987,FW,10,Argentina,Paris Saint-Germain,Ligue 1,170,72,Left
+Argentina,2022,Lautaro Martínez,22/08/1997,ST,22,Argentina,Inter Milan,Serie A,174,72,Right
+Argentina,2022,Julián Álvarez,31/01/2000,ST,9,Argentina,Manchester City,Premier League,170,71,Right
+Argentina,2022,Paulo Dybala,15/11/1993,FW,21,Argentina,Roma,Serie A,177,75,Left
+Argentina,2022,Thiago Almada,26/04/2001,AM,16,Argentina,Atlanta United,MLS,171,63,Right
+France,2022,Hugo Lloris,26/12/1986,GK,1,France,Tottenham,Premier League,188,82,Left
+France,2022,Steve Mandanda,28/03/1985,GK,16,France,Rennes,Ligue 1,185,85,Right
+France,2022,Alphonse Areola,27/02/1993,GK,23,France,West Ham,Premier League,195,94,Right
+France,2022,Benjamin Pavard,28/03/1996,RB,2,France,Bayern Munich,Bundesliga,186,75,Right
+France,2022,Jules Koundé,12/11/1998,CB,5,France,Barcelona,La Liga,178,70,Right
+France,2022,Raphaël Varane,25/04/1993,CB,4,France,Manchester United,Premier League,191,78,Right
+France,2022,Ibrahima Konaté,25/05/1999,CB,24,France,Liverpool,Premier League,194,95,Right
+France,2022,Dayot Upamecano,27/10/1998,CB,15,France,Bayern Munich,Bundesliga,186,90,Right
+France,2022,William Saliba,24/03/2001,CB,17,France,Arsenal,Premier League,192,83,Right
+France,2022,Lucas Hernández,14/02/1996,LB,21,France,Bayern Munich,Bundesliga,184,76,Left
+France,2022,Theo Hernández,06/10/1997,LB,22,France,AC Milan,Serie A,184,78,Left
+France,2022,Aurélien Tchouaméni,27/01/2000,DM,8,France,Real Madrid,La Liga,187,81,Right
+France,2022,Adrien Rabiot,03/04/1995,CM,14,France,Juventus,Serie A,188,71,Left
+France,2022,Youssouf Fofana,10/01/1999,DM,13,France,Monaco,Ligue 1,183,80,Right
+France,2022,Eduardo Camavinga,10/11/2002,CM,18,France,Real Madrid,La Liga,182,68,Left
+France,2022,Mattéo Guendouzi,14/04/1999,CM,6,France,Marseille,Ligue 1,185,66,Right
+France,2022,Antoine Griezmann,21/03/1991,AM,7,France,Atlético Madrid,La Liga,176,73,Left
+France,2022,Kylian Mbappé,20/12/1998,LW,10,France,Paris Saint-Germain,Ligue 1,178,73,Right
+France,2022,Ousmane Dembélé,15/05/1997,RW,11,France,Barcelona,La Liga,178,67,Right
+France,2022,Olivier Giroud,30/09/1986,ST,9,France,AC Milan,Serie A,193,91,Left
+France,2022,Karim Benzema,19/12/1987,ST,19,France,Real Madrid,La Liga,185,81,Right
+France,2022,Kingsley Coman,13/06/1996,LW,20,France,Bayern Munich,Bundesliga,180,70,Right
+France,2022,Randal Kolo Muani,05/12/1998,ST,12,France,Eintracht Frankfurt,Bundesliga,187,80,Right
+Brazil,2022,Alisson,02/10/1992,GK,1,Brazil,Liverpool,Premier League
+Brazil,2022,Ederson,17/08/1993,GK,23,Brazil,Manchester City,Premier League
+Brazil,2022,Weverton,13/12/1987,GK,12,Brazil,Palmeiras,Brasileirão
+Brazil,2022,Danilo,13/07/1991,RB,2,Brazil,Juventus,Serie A
+Brazil,2022,Éder Militão,18/01/1998,CB,14,Brazil,Real Madrid,La Liga
+Brazil,2022,Thiago Silva,22/09/1984,CB,3,Brazil,Chelsea,Premier League
+Brazil,2022,Marquinhos,14/05/1994,CB,4,Brazil,Paris Saint-Germain,Ligue 1
+Brazil,2022,Alex Sandro,26/01/1991,LB,6,Brazil,Juventus,Serie A
+Brazil,2022,Alex Telles,15/12/1992,LB,16,Brazil,Sevilla,La Liga
+Brazil,2022,Dani Alves,06/05/1983,RB,13,Brazil,UNAM,Liga MX
+Brazil,2022,Bremer,18/03/1997,CB,12,Brazil,Juventus,Serie A
+Brazil,2022,Casemiro,23/02/1992,DM,5,Brazil,Manchester United,Premier League
+Brazil,2022,Fabinho,23/10/1993,DM,15,Brazil,Liverpool,Premier League
+Brazil,2022,Fred,05/03/1993,CM,17,Brazil,Manchester United,Premier League
+Brazil,2022,Lucas Paquetá,27/08/1997,AM,7,Brazil,West Ham,Premier League
+Brazil,2022,Bruno Guimarães,16/11/1997,CM,8,Brazil,Newcastle,Premier League
+Brazil,2022,Éverton Ribeiro,10/04/1989,AM,25,Brazil,Flamengo,Brasileirão
+Brazil,2022,Neymar,05/02/1992,LW,10,Brazil,Paris Saint-Germain,Ligue 1
+Brazil,2022,Vinícius Júnior,12/07/2000,LW,20,Brazil,Real Madrid,La Liga
+Brazil,2022,Raphinha,14/12/1996,RW,19,Brazil,Barcelona,La Liga
+Brazil,2022,Antony,24/02/2000,RW,11,Brazil,Manchester United,Premier League
+Brazil,2022,Richarlison,10/05/1997,ST,9,Brazil,Tottenham,Premier League
+Brazil,2022,Gabriel Jesus,03/04/1997,ST,18,Brazil,Arsenal,Premier League
+Brazil,2022,Rodrygo,09/01/2001,RW,21,Brazil,Real Madrid,La Liga
+Brazil,2022,Pedro,20/06/1997,ST,26,Brazil,Flamengo,Brasileirão
+England,2022,Jordan Pickford,07/03/1994,GK,1,England,Everton,Premier League
+England,2022,Aaron Ramsdale,14/05/1998,GK,23,England,Arsenal,Premier League
+England,2022,Nick Pope,19/04/1992,GK,13,England,Newcastle,Premier League
+England,2022,Trent Alexander-Arnold,07/10/1998,RB,2,England,Liverpool,Premier League
+England,2022,Kyle Walker,28/05/1990,RB,3,England,Manchester City,Premier League
+England,2022,Harry Maguire,05/03/1993,CB,6,England,Manchester United,Premier League
+England,2022,John Stones,28/05/1994,CB,5,England,Manchester City,Premier League
+England,2022,Eric Dier,15/01/1994,CB,15,England,Tottenham,Premier League
+England,2022,Conor Coady,25/02/1993,CB,16,England,Everton,Premier League
+England,2022,Luke Shaw,12/07/1995,LB,4,England,Manchester United,Premier League
+England,2022,Ben White,08/10/1997,CB,17,England,Arsenal,Premier League
+England,2022,Kieran Trippier,19/09/1990,RB,12,England,Newcastle,Premier League
+England,2022,Declan Rice,14/01/1999,DM,8,England,West Ham,Premier League
+England,2022,Jordan Henderson,17/06/1990,CM,7,England,Liverpool,Premier League
+England,2022,Jude Bellingham,29/06/2003,CM,22,England,Borussia Dortmund,Bundesliga
+England,2022,Kalvin Phillips,02/12/1995,DM,14,England,Manchester City,Premier League
+England,2022,Mason Mount,10/01/1999,AM,19,England,Chelsea,Premier League
+England,2022,Conor Gallagher,06/02/2000,CM,26,England,Chelsea,Premier League
+England,2022,Phil Foden,28/05/2000,LW,20,England,Manchester City,Premier League
+England,2022,Jack Grealish,10/09/1995,LW,11,England,Manchester City,Premier League
+England,2022,Raheem Sterling,08/12/1994,RW,10,England,Chelsea,Premier League
+England,2022,Bukayo Saka,05/09/2001,RW,18,England,Arsenal,Premier League
+England,2022,Harry Kane,28/07/1993,ST,9,England,Tottenham,Premier League
+England,2022,Callum Wilson,27/02/1992,ST,24,England,Newcastle,Premier League
+England,2022,Marcus Rashford,31/10/1997,LW,21,England,Manchester United,Premier League
+England,2022,James Maddison,23/11/1996,AM,25,England,Leicester City,Premier League

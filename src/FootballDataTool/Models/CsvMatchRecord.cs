@@ -1,0 +1,96 @@
+namespace FootballDataTool.Models;
+
+/// <summary>
+/// Represents a raw CSV match record with all available fields from the source data.
+/// This is the discrete representation before transformation into the Match model.
+/// Supports both basic match data and rich extended fields.
+/// </summary>
+public class CsvMatchRecord
+{
+    // Core match data
+    public string? Division { get; set; }
+    public string? Season { get; set; }
+    public string? Date { get; set; }
+    public string? Time { get; set; }
+    public string? Gameweek { get; set; }
+    public string? HomeTeam { get; set; }
+    public string? AwayTeam { get; set; }
+    public string? HomeGoals { get; set; }
+    public string? AwayGoals { get; set; }
+    public string? Result { get; set; }
+
+    // Tournament/knockout stage data (optional)
+    /// <summary>
+    /// Tournament stage (e.g., "GS", "R16", "QF", "SF", "F").
+    /// Empty/null for regular league matches.
+    /// </summary>
+    public string? Stage { get; set; }
+
+    /// <summary>
+    /// Group identifier for group stage matches (e.g., "A", "B", "Group A").
+    /// </summary>
+    public string? Group { get; set; }
+
+    /// <summary>
+    /// Leg number for two-legged knockout ties (1 or 2).
+    /// </summary>
+    public string? Leg { get; set; }
+
+    // Match officials
+    public string? Referee { get; set; }
+    public string? AssistantReferee1 { get; set; }
+    public string? AssistantReferee2 { get; set; }
+    public string? FourthOfficial { get; set; }
+    public string? VarReferee { get; set; }
+
+    // Team management
+    public string? HomeManager { get; set; }
+    public string? AwayManager { get; set; }
+
+    // Formations
+    public string? HomeFormation { get; set; }
+    public string? AwayFormation { get; set; }
+
+    // Venue & attendance
+    public string? Stadium { get; set; }
+    public string? StadiumCapacity { get; set; }
+    public string? Attendance { get; set; }
+
+    // Goalscorers (semi-colon or comma separated)
+    public string? HomeGoalscorers { get; set; }
+    public string? AwayGoalscorers { get; set; }
+
+    // Lineups (semi-colon or comma separated player names)
+    public string? HomeLineup { get; set; }
+    public string? AwayLineup { get; set; }
+    public string? HomeSubstitutes { get; set; }
+    public string? AwaySubstitutes { get; set; }
+
+    // Substitutions (formatted strings)
+    public string? HomeSubstitutions { get; set; }
+    public string? AwaySubstitutions { get; set; }
+
+    // Cards
+    public string? HomeYellowCards { get; set; }
+    public string? AwayYellowCards { get; set; }
+    public string? HomeRedCards { get; set; }
+    public string? AwayRedCards { get; set; }
+
+    // Injuries (formatted strings: "Player Name (Injury Type, dd/MM/yyyy - dd/MM/yyyy)")
+    public string? HomeInjuries { get; set; }
+    public string? AwayInjuries { get; set; }
+
+    // Minutes played (can be part of lineup or separate field)
+    public string? HomeMinutesPlayed { get; set; }
+    public string? AwayMinutesPlayed { get; set; }
+
+    // Competition context
+    public string? OtherCompetitions { get; set; }  // JSON or formatted string
+
+    // Weather
+    public string? Temperature { get; set; }
+    public string? WeatherConditions { get; set; }
+
+    // Additional optional fields common in football datasets
+    public Dictionary<string, string> AdditionalFields { get; set; } = new();
+}

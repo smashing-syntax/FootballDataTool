@@ -1,0 +1,7 @@
+Div,Season,GW,Date,HomeTeam,AwayTeam,FTHG,FTAG,HomeManager,AwayManager,Stadium,Capacity,Attendance,HomeFormation,AwayFormation,HomeGoalscorers,AwayGoalscorers,Referee
+E0,2023/24,1,11/08/2023,Arsenal,Nottm Forest,2,1,Mikel Arteta,Steve Cooper,Emirates Stadium,60704,60184,4-3-3,5-4-1,Saka 72'; Nketiah 86',Awoniyi 82',Simon Hooper
+E0,2023/24,1,12/08/2023,Bournemouth,West Ham,1,1,Andoni Iraola,David Moyes,Vitality Stadium,11329,10625,4-2-3-1,4-2-3-1,Solanke 9',Paqueta 51',Michael Salisbury
+E0,2023/24,1,12/08/2023,Brighton,Luton,4,1,Roberto De Zerbi,Rob Edwards,Amex Stadium,31800,31511,4-2-3-1,3-5-2,Mitoma 18'; Gross 37' (pen); Pedro 81'; Dunk 87',Adebayo 65',Peter Bankes
+E0,2023/24,1,12/08/2023,Burnley,Man City,0,3,Vincent Kompany,Pep Guardiola,Turf Moor,21944,21467,4-4-2,4-3-3,None,Haaland 4'; Rodri 36'; Haaland 60',John Brooks
+E0,2023/24,1,12/08/2023,Chelsea,Liverpool,1,1,Mauricio Pochettino,Jurgen Klopp,Stamford Bridge,40343,39752,4-2-3-1,4-3-3,Axel Disasi 37',Luis Diaz 18',Paul Tierney
+E0,2023/24,1,13/08/2023,Man Utd,Wolves,1,0,Erik ten Hag,Gary O'Neil,Old Trafford,74310,73738,4-2-3-1,4-4-2,Raphinha 76' (assist: Fernandes),None,Simon Hooper

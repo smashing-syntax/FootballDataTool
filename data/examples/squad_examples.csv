@@ -1,0 +1,71 @@
+Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,PreviousClub,Height,PreferredFoot,JoinDate
+Arsenal,2014/15,Wojciech Szczesny,1990-04-18,Goalkeeper,1,Poland,Legia Warsaw,196,Right,2006-01-10
+Arsenal,2014/15,Lukasz Fabianski,1985-04-18,Goalkeeper,21,Poland,Legia Warsaw,190,Right,2007-05-25
+Arsenal,2014/15,Damian Martinez,1992-09-02,Goalkeeper,26,Argentina,Independiente,195,Right,2010-09-01
+Arsenal,2014/15,Mathieu Debuchy,1985-07-28,Right Back,2,France,Lille,178,Right,2014-07-13
+Arsenal,2014/15,Kieran Gibbs,1989-09-26,Left Back,3,England,Arsenal Academy,178,Left,2007-07-01
+Arsenal,2014/15,Per Mertesacker,1984-09-29,Centre Back,4,Germany,Werder Bremen,198,Right,2011-08-31
+Arsenal,2014/15,Laurent Koscielny,1985-09-10,Centre Back,6,France,Lorient,186,Right,2010-07-07
+Arsenal,2014/15,Thomas Vermaelen,1985-11-14,Centre Back,5,Belgium,Ajax,183,Left,2009-06-20
+Arsenal,2014/15,Nacho Monreal,1986-02-26,Left Back,18,Spain,Malaga,178,Left,2013-01-31
+Arsenal,2014/15,Calum Chambers,1995-01-20,Centre Back,21,England,Southampton,183,Right,2014-07-28
+Arsenal,2014/15,Hector Bellerin,1995-03-19,Right Back,39,Spain,Barcelona,178,Right,2011-07-15
+Arsenal,2014/15,Mikel Arteta,1982-03-26,Defensive Midfielder,8,Spain,Everton,175,Right,2011-08-31
+Arsenal,2014/15,Mathieu Flamini,1984-03-07,Defensive Midfielder,20,France,AC Milan,178,Right,2013-08-28
+Arsenal,2014/15,Aaron Ramsey,1990-12-26,Central Midfielder,16,Wales,Cardiff City,178,Both,2008-06-01
+Arsenal,2014/15,Jack Wilshere,1992-01-01,Central Midfielder,10,England,Arsenal Academy,173,Left,2008-07-01
+Arsenal,2014/15,Abou Diaby,1986-05-11,Central Midfielder,2,France,Auxerre,190,Right,2006-01-13
+Arsenal,2014/15,Tomas Rosicky,1980-10-04,Attacking Midfielder,7,Czech Republic,Borussia Dortmund,180,Both,2006-05-23
+Arsenal,2014/15,Mesut Ozil,1988-10-15,Attacking Midfielder,11,Germany,Real Madrid,180,Left,2013-09-02
+Arsenal,2014/15,Santi Cazorla,1984-12-13,Attacking Midfielder,19,Spain,Malaga,168,Both,2012-08-07
+Arsenal,2014/15,Alex Oxlade-Chamberlain,1993-08-15,Winger,15,England,Southampton,180,Right,2011-08-08
+Arsenal,2014/15,Alexis Sanchez,1988-12-19,Winger,17,Chile,Barcelona,168,Right,2014-07-10
+Arsenal,2014/15,Lukas Podolski,1985-06-04,Forward,9,Germany,FC Koln,182,Left,2012-05-08
+Arsenal,2014/15,Olivier Giroud,1986-09-30,Striker,12,France,Montpellier,193,Left,2012-06-26
+Arsenal,2014/15,Yaya Sanogo,1993-01-27,Striker,22,France,Auxerre,188,Right,2013-07-01
+Arsenal,2014/15,Joel Campbell,1992-06-26,Forward,28,Costa Rica,Deportivo Saprissa,175,Left,2011-07-27
+Chelsea,2014/15,Thibaut Courtois,1992-05-11,Goalkeeper,13,Belgium,Genk,199,Left,2011-07-17
+Chelsea,2014/15,Petr Cech,1982-05-20,Goalkeeper,1,Czech Republic,Rennes,196,Right,2004-07-01
+Chelsea,2014/15,Branislav Ivanovic,1984-02-22,Right Back,2,Serbia,Lokomotiv Moscow,185,Right,2008-01-15
+Chelsea,2014/15,Gary Cahill,1985-12-19,Centre Back,24,England,Bolton Wanderers,193,Right,2012-01-16
+Chelsea,2014/15,John Terry,1980-12-07,Centre Back,26,England,Chelsea Academy,187,Right,1998-07-01
+Chelsea,2014/15,Kurt Zouma,1994-10-27,Centre Back,5,France,Saint-Etienne,190,Right,2014-01-31
+Chelsea,2014/15,Cesar Azpilicueta,1989-08-28,Left Back,28,Spain,Marseille,178,Right,2012-08-26
+Chelsea,2014/15,Filipe Luis,1985-08-09,Left Back,3,Brazil,Deportivo La Coruna,182,Left,2014-08-25
+Chelsea,2014/15,Nemanja Matic,1988-08-01,Defensive Midfielder,21,Serbia,Benfica,194,Left,2014-01-05
+Chelsea,2014/15,Cesc Fabregas,1987-05-04,Central Midfielder,4,Spain,Barcelona,175,Right,2014-06-12
+Chelsea,2014/15,John Obi Mikel,1987-04-22,Defensive Midfielder,12,Nigeria,Lyn Oslo,188,Right,2006-06-02
+Chelsea,2014/15,Ramires,1987-03-24,Central Midfielder,7,Brazil,Benfica,180,Right,2010-08-04
+Chelsea,2014/15,Oscar,1991-09-09,Attacking Midfielder,8,Brazil,Internacional,179,Right,2012-07-25
+Chelsea,2014/15,Willian,1988-08-09,Winger,22,Brazil,Shakhtar Donetsk,175,Right,2013-08-25
+Chelsea,2014/15,Eden Hazard,1991-01-07,Winger,10,Belgium,Lille,173,Both,2012-06-04
+Chelsea,2014/15,Andre Schurrle,1990-11-06,Winger,14,Germany,Bayer Leverkusen,184,Right,2013-06-18
+Chelsea,2014/15,Mohamed Salah,1992-06-15,Winger,15,Egypt,Basel,175,Left,2014-01-26
+Chelsea,2014/15,Diego Costa,1988-10-07,Striker,19,Spain,Atletico Madrid,188,Right,2014-07-01
+Chelsea,2014/15,Didier Drogba,1978-03-11,Striker,11,Ivory Coast,Galatasaray,188,Right,2014-07-28
+Chelsea,2014/15,Loic Remy,1987-01-02,Striker,18,France,Queens Park Rangers,185,Right,2014-08-31
+Manchester United,2014/15,David De Gea,1990-11-07,Goalkeeper,1,Spain,Atletico Madrid,192,Right,2011-06-29
+Manchester United,2014/15,Anders Lindegaard,1984-04-13,Goalkeeper,13,Denmark,Aalesund,193,Right,2010-12-29
+Manchester United,2014/15,Victor Valdes,1982-01-14,Goalkeeper,32,Spain,Barcelona,183,Right,2015-01-08
+Manchester United,2014/15,Rafael,1990-07-09,Right Back,2,Brazil,Fluminense,173,Right,2008-07-01
+Manchester United,2014/15,Jonny Evans,1988-01-03,Centre Back,6,Northern Ireland,Manchester United Academy,188,Right,2006-07-01
+Manchester United,2014/15,Phil Jones,1992-02-21,Centre Back,4,England,Blackburn Rovers,185,Right,2011-06-13
+Manchester United,2014/15,Chris Smalling,1989-11-22,Centre Back,12,England,Fulham,194,Right,2010-01-07
+Manchester United,2014/15,Marcos Rojo,1990-03-20,Centre Back,5,Argentina,Sporting CP,187,Left,2014-08-20
+Manchester United,2014/15,Paddy McNair,1995-04-27,Centre Back,33,Northern Ireland,Manchester United Academy,183,Right,2011-07-01
+Manchester United,2014/15,Tyler Blackett,1994-04-02,Centre Back,42,England,Manchester United Academy,186,Left,2011-07-01
+Manchester United,2014/15,Luke Shaw,1995-07-12,Left Back,23,England,Southampton,185,Left,2014-06-27
+Manchester United,2014/15,Daley Blind,1990-03-09,Defensive Midfielder,17,Netherlands,Ajax,180,Left,2014-09-01
+Manchester United,2014/15,Michael Carrick,1981-07-28,Defensive Midfielder,16,England,Tottenham Hotspur,188,Right,2006-07-31
+Manchester United,2014/15,Darren Fletcher,1984-02-01,Central Midfielder,24,Scotland,Manchester United Academy,183,Right,2003-07-01
+Manchester United,2014/15,Marouane Fellaini,1987-11-22,Central Midfielder,31,Belgium,Everton,194,Right,2013-09-02
+Manchester United,2014/15,Ander Herrera,1989-08-14,Central Midfielder,21,Spain,Athletic Bilbao,182,Right,2014-06-26
+Manchester United,2014/15,Juan Mata,1988-04-28,Attacking Midfielder,8,Spain,Chelsea,170,Left,2014-01-24
+Manchester United,2014/15,Angel Di Maria,1988-02-14,Winger,7,Argentina,Real Madrid,180,Left,2014-08-26
+Manchester United,2014/15,Ashley Young,1985-07-09,Winger,18,England,Aston Villa,175,Both,2011-06-23
+Manchester United,2014/15,Adnan Januzaj,1995-02-05,Winger,11,Belgium,Manchester United Academy,185,Left,2011-07-01
+Manchester United,2014/15,Antonio Valencia,1985-08-04,Winger,25,Ecuador,Wigan Athletic,181,Right,2009-06-30
+Manchester United,2014/15,Wayne Rooney,1985-10-24,Striker,10,England,Everton,176,Right,2004-08-31
+Manchester United,2014/15,Robin van Persie,1983-08-06,Striker,20,Netherlands,Arsenal,183,Left,2012-08-17
+Manchester United,2014/15,Radamel Falcao,1986-02-10,Striker,9,Colombia,Monaco,177,Right,2014-09-01
+Manchester United,2014/15,James Wilson,1995-12-01,Striker,49,England,Manchester United Academy,175,Right,2011-07-01

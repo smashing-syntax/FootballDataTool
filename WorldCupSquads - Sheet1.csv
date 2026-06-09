@@ -1,0 +1,1093 @@
+﻿Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,CurrentClub,ClubLeague,Height,Weight,PreferredFoot
+Algeria,2026,Player ALG-1,11/05/1998,DF,1,Algeria,Manchester City,Premier League,181,71,Right
+Algeria,2026,Player ALG-2,12/05/1998,DF,2,Algeria,Bayern Munich,Bundesliga,182,72,Right
+Algeria,2026,Player ALG-3,13/05/1998,DF,3,Algeria,PSG,Ligue 1,183,73,Left
+Algeria,2026,Player ALG-4,14/05/1998,MF,4,Algeria,Inter Milan,Serie A,184,74,Right
+Algeria,2026,Player ALG-5,15/05/1998,MF,5,Algeria,Al-Hilal,Saudi Pro League,185,75,Right
+Algeria,2026,Player ALG-6,16/05/1998,MF,6,Algeria,Real Madrid,LaLiga,186,76,Right
+Algeria,2026,Player ALG-7,17/05/1998,FW,7,Algeria,Manchester City,Premier League,187,77,Left
+Algeria,2026,Player ALG-8,18/05/1998,FW,8,Algeria,Bayern Munich,Bundesliga,188,78,Right
+Algeria,2026,Player ALG-9,19/05/1998,FW,9,Algeria,PSG,Ligue 1,189,79,Right
+Algeria,2026,Player ALG-10,20/05/1998,GK,10,Algeria,Inter Milan,Serie A,192,86,Right
+Algeria,2026,Player ALG-11,21/05/1998,DF,11,Algeria,Al-Hilal,Saudi Pro League,191,81,Left
+Algeria,2026,Player ALG-12,22/05/1998,DF,12,Algeria,Real Madrid,LaLiga,192,82,Right
+Algeria,2026,Player ALG-13,23/05/1998,DF,13,Algeria,Manchester City,Premier League,193,83,Right
+Algeria,2026,Player ALG-14,24/05/1998,MF,14,Algeria,Bayern Munich,Bundesliga,194,84,Right
+Algeria,2026,Player ALG-15,25/05/1998,MF,15,Algeria,PSG,Ligue 1,180,85,Right
+Algeria,2026,Player ALG-16,26/05/1998,MF,16,Algeria,Inter Milan,Serie A,181,86,Right
+Algeria,2026,Player ALG-17,27/05/1998,FW,17,Algeria,Al-Hilal,Saudi Pro League,182,87,Right
+Algeria,2026,Player ALG-18,10/05/1998,FW,18,Algeria,Real Madrid,LaLiga,183,70,Right
+Algeria,2026,Player ALG-19,11/05/1998,FW,19,Algeria,Manchester City,Premier League,184,71,Right
+Algeria,2026,Player ALG-20,12/05/1998,GK,20,Algeria,Bayern Munich,Bundesliga,192,86,Right
+Algeria,2026,Player ALG-21,13/05/1998,DF,21,Algeria,PSG,Ligue 1,186,73,Left
+Algeria,2026,Player ALG-22,14/05/1998,DF,22,Algeria,Inter Milan,Serie A,187,74,Right
+Algeria,2026,Player ALG-23,15/05/1998,DF,23,Algeria,Al-Hilal,Saudi Pro League,188,75,Right
+Algeria,2026,Player ALG-24,16/05/1998,MF,24,Algeria,Real Madrid,LaLiga,189,76,Right
+Algeria,2026,Player ALG-25,17/05/1998,MF,25,Algeria,Manchester City,Premier League,190,77,Right
+Algeria,2026,Player ALG-26,18/05/1998,MF,26,Algeria,Bayern Munich,Bundesliga,191,78,Right
+Argentina,2026,Player ARG-1,11/05/1998,DF,1,Argentina,Manchester City,Premier League,181,71,Right
+Argentina,2026,Player ARG-2,12/05/1998,DF,2,Argentina,Bayern Munich,Bundesliga,182,72,Right
+Argentina,2026,Player ARG-3,13/05/1998,DF,3,Argentina,PSG,Ligue 1,183,73,Left
+Argentina,2026,Player ARG-4,14/05/1998,MF,4,Argentina,Inter Milan,Serie A,184,74,Right
+Argentina,2026,Player ARG-5,15/05/1998,MF,5,Argentina,Al-Hilal,Saudi Pro League,185,75,Right
+Argentina,2026,Player ARG-6,16/05/1998,MF,6,Argentina,Real Madrid,LaLiga,186,76,Right
+Argentina,2026,Player ARG-7,17/05/1998,FW,7,Argentina,Manchester City,Premier League,187,77,Left
+Argentina,2026,Player ARG-8,18/05/1998,FW,8,Argentina,Bayern Munich,Bundesliga,188,78,Right
+Argentina,2026,Player ARG-9,19/05/1998,FW,9,Argentina,PSG,Ligue 1,189,79,Right
+Argentina,2026,Player ARG-10,20/05/1998,GK,10,Argentina,Inter Milan,Serie A,192,86,Right
+Argentina,2026,Player ARG-11,21/05/1998,DF,11,Argentina,Al-Hilal,Saudi Pro League,191,81,Left
+Argentina,2026,Player ARG-12,22/05/1998,DF,12,Argentina,Real Madrid,LaLiga,192,82,Right
+Argentina,2026,Player ARG-13,23/05/1998,DF,13,Argentina,Manchester City,Premier League,193,83,Right
+Argentina,2026,Player ARG-14,24/05/1998,MF,14,Argentina,Bayern Munich,Bundesliga,194,84,Right
+Argentina,2026,Player ARG-15,25/05/1998,MF,15,Argentina,PSG,Ligue 1,180,85,Right
+Argentina,2026,Player ARG-16,26/05/1998,MF,16,Argentina,Inter Milan,Serie A,181,86,Right
+Argentina,2026,Player ARG-17,27/05/1998,FW,17,Argentina,Al-Hilal,Saudi Pro League,182,87,Right
+Argentina,2026,Player ARG-18,10/05/1998,FW,18,Argentina,Real Madrid,LaLiga,183,70,Right
+Argentina,2026,Player ARG-19,11/05/1998,FW,19,Argentina,Manchester City,Premier League,184,71,Right
+Argentina,2026,Player ARG-20,12/05/1998,GK,20,Argentina,Bayern Munich,Bundesliga,192,86,Right
+Argentina,2026,Player ARG-21,13/05/1998,DF,21,Argentina,PSG,Ligue 1,186,73,Left
+Argentina,2026,Player ARG-22,14/05/1998,DF,22,Argentina,Inter Milan,Serie A,187,74,Right
+Argentina,2026,Player ARG-23,15/05/1998,DF,23,Argentina,Al-Hilal,Saudi Pro League,188,75,Right
+Argentina,2026,Player ARG-24,16/05/1998,MF,24,Argentina,Real Madrid,LaLiga,189,76,Right
+Argentina,2026,Player ARG-25,17/05/1998,MF,25,Argentina,Manchester City,Premier League,190,77,Right
+Argentina,2026,Player ARG-26,18/05/1998,MF,26,Argentina,Bayern Munich,Bundesliga,191,78,Right
+Brazil,2026,Player BRA-1,11/05/1998,DF,1,Brazil,Manchester City,Premier League,181,71,Right
+Brazil,2026,Player BRA-2,12/05/1998,DF,2,Brazil,Bayern Munich,Bundesliga,182,72,Right
+Brazil,2026,Player BRA-3,13/05/1998,DF,3,Brazil,PSG,Ligue 1,183,73,Left
+Brazil,2026,Player BRA-4,14/05/1998,MF,4,Brazil,Inter Milan,Serie A,184,74,Right
+Brazil,2026,Player BRA-5,15/05/1998,MF,5,Brazil,Al-Hilal,Saudi Pro League,185,75,Right
+Brazil,2026,Player BRA-6,16/05/1998,MF,6,Brazil,Real Madrid,LaLiga,186,76,Right
+Brazil,2026,Player BRA-7,17/05/1998,FW,7,Brazil,Manchester City,Premier League,187,77,Left
+Brazil,2026,Player BRA-8,18/05/1998,FW,8,Brazil,Bayern Munich,Bundesliga,188,78,Right
+Brazil,2026,Player BRA-9,19/05/1998,FW,9,Brazil,PSG,Ligue 1,189,79,Right
+Brazil,2026,Player BRA-10,20/05/1998,GK,10,Brazil,Inter Milan,Serie A,192,86,Right
+Brazil,2026,Player BRA-11,21/05/1998,DF,11,Brazil,Al-Hilal,Saudi Pro League,191,81,Left
+Brazil,2026,Player BRA-12,22/05/1998,DF,12,Brazil,Real Madrid,LaLiga,192,82,Right
+Brazil,2026,Player BRA-13,23/05/1998,DF,13,Brazil,Manchester City,Premier League,193,83,Right
+Brazil,2026,Player BRA-14,24/05/1998,MF,14,Brazil,Bayern Munich,Bundesliga,194,84,Right
+Brazil,2026,Player BRA-15,25/05/1998,MF,15,Brazil,PSG,Ligue 1,180,85,Right
+Brazil,2026,Player BRA-16,26/05/1998,MF,16,Brazil,Inter Milan,Serie A,181,86,Right
+Brazil,2026,Player BRA-17,27/05/1998,FW,17,Brazil,Al-Hilal,Saudi Pro League,182,87,Right
+Brazil,2026,Player BRA-18,10/05/1998,FW,18,Brazil,Real Madrid,LaLiga,183,70,Right
+Brazil,2026,Player BRA-19,11/05/1998,FW,19,Brazil,Manchester City,Premier League,184,71,Right
+Brazil,2026,Player BRA-20,12/05/1998,GK,20,Brazil,Bayern Munich,Bundesliga,192,86,Right
+Brazil,2026,Player BRA-21,13/05/1998,DF,21,Brazil,PSG,Ligue 1,186,73,Left
+Brazil,2026,Player BRA-22,14/05/1998,DF,22,Brazil,Inter Milan,Serie A,187,74,Right
+Brazil,2026,Player BRA-23,15/05/1998,DF,23,Brazil,Al-Hilal,Saudi Pro League,188,75,Right
+Brazil,2026,Player BRA-24,16/05/1998,MF,24,Brazil,Real Madrid,LaLiga,189,76,Right
+Brazil,2026,Player BRA-25,17/05/1998,MF,25,Brazil,Manchester City,Premier League,190,77,Right
+Brazil,2026,Player BRA-26,18/05/1998,MF,26,Brazil,Bayern Munich,Bundesliga,191,78,Right
+France,2026,Player FRA-1,11/05/1998,DF,1,France,Manchester City,Premier League,181,71,Right
+France,2026,Player FRA-2,12/05/1998,DF,2,France,Bayern Munich,Bundesliga,182,72,Right
+France,2026,Player FRA-3,13/05/1998,DF,3,France,PSG,Ligue 1,183,73,Left
+France,2026,Player FRA-4,14/05/1998,MF,4,France,Inter Milan,Serie A,184,74,Right
+France,2026,Player FRA-5,15/05/1998,MF,5,France,Al-Hilal,Saudi Pro League,185,75,Right
+France,2026,Player FRA-6,16/05/1998,MF,6,France,Real Madrid,LaLiga,186,76,Right
+France,2026,Player FRA-7,17/05/1998,FW,7,France,Manchester City,Premier League,187,77,Left
+France,2026,Player FRA-8,18/05/1998,FW,8,France,Bayern Munich,Bundesliga,188,78,Right
+France,2026,Player FRA-9,19/05/1998,FW,9,France,PSG,Ligue 1,189,79,Right
+France,2026,Player FRA-10,20/05/1998,GK,10,France,Inter Milan,Serie A,192,86,Right
+France,2026,Player FRA-11,21/05/1998,DF,11,France,Al-Hilal,Saudi Pro League,191,81,Left
+France,2026,Player FRA-12,22/05/1998,DF,12,France,Real Madrid,LaLiga,192,82,Right
+France,2026,Player FRA-13,23/05/1998,DF,13,France,Manchester City,Premier League,193,83,Right
+France,2026,Player FRA-14,24/05/1998,MF,14,France,Bayern Munich,Bundesliga,194,84,Right
+France,2026,Player FRA-15,25/05/1998,MF,15,France,PSG,Ligue 1,180,85,Right
+France,2026,Player FRA-16,26/05/1998,MF,16,France,Inter Milan,Serie A,181,86,Right
+France,2026,Player FRA-17,27/05/1998,FW,17,France,Al-Hilal,Saudi Pro League,182,87,Right
+France,2026,Player FRA-18,10/05/1998,FW,18,France,Real Madrid,LaLiga,183,70,Right
+France,2026,Player FRA-19,11/05/1998,FW,19,France,Manchester City,Premier League,184,71,Right
+France,2026,Player FRA-20,12/05/1998,GK,20,France,Bayern Munich,Bundesliga,192,86,Right
+France,2026,Player FRA-21,13/05/1998,DF,21,France,PSG,Ligue 1,186,73,Left
+France,2026,Player FRA-22,14/05/1998,DF,22,France,Inter Milan,Serie A,187,74,Right
+France,2026,Player FRA-23,15/05/1998,DF,23,France,Al-Hilal,Saudi Pro League,188,75,Right
+France,2026,Player FRA-24,16/05/1998,MF,24,France,Real Madrid,LaLiga,189,76,Right
+France,2026,Player FRA-25,17/05/1998,MF,25,France,Manchester City,Premier League,190,77,Right
+France,2026,Player FRA-26,18/05/1998,MF,26,France,Bayern Munich,Bundesliga,191,78,Right
+England,2026,Player ENG-1,11/05/1998,DF,1,England,Manchester City,Premier League,181,71,Right
+England,2026,Player ENG-2,12/05/1998,DF,2,England,Bayern Munich,Bundesliga,182,72,Right
+England,2026,Player ENG-3,13/05/1998,DF,3,England,PSG,Ligue 1,183,73,Left
+England,2026,Player ENG-4,14/05/1998,MF,4,England,Inter Milan,Serie A,184,74,Right
+England,2026,Player ENG-5,15/05/1998,MF,5,England,Al-Hilal,Saudi Pro League,185,75,Right
+England,2026,Player ENG-6,16/05/1998,MF,6,England,Real Madrid,LaLiga,186,76,Right
+England,2026,Player ENG-7,17/05/1998,FW,7,England,Manchester City,Premier League,187,77,Left
+England,2026,Player ENG-8,18/05/1998,FW,8,England,Bayern Munich,Bundesliga,188,78,Right
+England,2026,Player ENG-9,19/05/1998,FW,9,England,PSG,Ligue 1,189,79,Right
+England,2026,Player ENG-10,20/05/1998,GK,10,England,Inter Milan,Serie A,192,86,Right
+England,2026,Player ENG-11,21/05/1998,DF,11,England,Al-Hilal,Saudi Pro League,191,81,Left
+England,2026,Player ENG-12,22/05/1998,DF,12,England,Real Madrid,LaLiga,192,82,Right
+England,2026,Player ENG-13,23/05/1998,DF,13,England,Manchester City,Premier League,193,83,Right
+England,2026,Player ENG-14,24/05/1998,MF,14,England,Bayern Munich,Bundesliga,194,84,Right
+England,2026,Player ENG-15,25/05/1998,MF,15,England,PSG,Ligue 1,180,85,Right
+England,2026,Player ENG-16,26/05/1998,MF,16,England,Inter Milan,Serie A,181,86,Right
+England,2026,Player ENG-17,27/05/1998,FW,17,England,Al-Hilal,Saudi Pro League,182,87,Right
+England,2026,Player ENG-18,10/05/1998,FW,18,England,Real Madrid,LaLiga,183,70,Right
+England,2026,Player ENG-19,11/05/1998,FW,19,England,Manchester City,Premier League,184,71,Right
+England,2026,Player ENG-20,12/05/1998,GK,20,England,Bayern Munich,Bundesliga,192,86,Right
+England,2026,Player ENG-21,13/05/1998,DF,21,England,PSG,Ligue 1,186,73,Left
+England,2026,Player ENG-22,14/05/1998,DF,22,England,Inter Milan,Serie A,187,74,Right
+England,2026,Player ENG-23,15/05/1998,DF,23,England,Al-Hilal,Saudi Pro League,188,75,Right
+England,2026,Player ENG-24,16/05/1998,MF,24,England,Real Madrid,LaLiga,189,76,Right
+England,2026,Player ENG-25,17/05/1998,MF,25,England,Manchester City,Premier League,190,77,Right
+England,2026,Player ENG-26,18/05/1998,MF,26,England,Bayern Munich,Bundesliga,191,78,Right
+Spain,2026,Player SPA-1,11/05/1998,DF,1,Spain,Manchester City,Premier League,181,71,Right
+Spain,2026,Player SPA-2,12/05/1998,DF,2,Spain,Bayern Munich,Bundesliga,182,72,Right
+Spain,2026,Player SPA-3,13/05/1998,DF,3,Spain,PSG,Ligue 1,183,73,Left
+Spain,2026,Player SPA-4,14/05/1998,MF,4,Spain,Inter Milan,Serie A,184,74,Right
+Spain,2026,Player SPA-5,15/05/1998,MF,5,Spain,Al-Hilal,Saudi Pro League,185,75,Right
+Spain,2026,Player SPA-6,16/05/1998,MF,6,Spain,Real Madrid,LaLiga,186,76,Right
+Spain,2026,Player SPA-7,17/05/1998,FW,7,Spain,Manchester City,Premier League,187,77,Left
+Spain,2026,Player SPA-8,18/05/1998,FW,8,Spain,Bayern Munich,Bundesliga,188,78,Right
+Spain,2026,Player SPA-9,19/05/1998,FW,9,Spain,PSG,Ligue 1,189,79,Right
+Spain,2026,Player SPA-10,20/05/1998,GK,10,Spain,Inter Milan,Serie A,192,86,Right
+Spain,2026,Player SPA-11,21/05/1998,DF,11,Spain,Al-Hilal,Saudi Pro League,191,81,Left
+Spain,2026,Player SPA-12,22/05/1998,DF,12,Spain,Real Madrid,LaLiga,192,82,Right
+Spain,2026,Player SPA-13,23/05/1998,DF,13,Spain,Manchester City,Premier League,193,83,Right
+Spain,2026,Player SPA-14,24/05/1998,MF,14,Spain,Bayern Munich,Bundesliga,194,84,Right
+Spain,2026,Player SPA-15,25/05/1998,MF,15,Spain,PSG,Ligue 1,180,85,Right
+Spain,2026,Player SPA-16,26/05/1998,MF,16,Spain,Inter Milan,Serie A,181,86,Right
+Spain,2026,Player SPA-17,27/05/1998,FW,17,Spain,Al-Hilal,Saudi Pro League,182,87,Right
+Spain,2026,Player SPA-18,10/05/1998,FW,18,Spain,Real Madrid,LaLiga,183,70,Right
+Spain,2026,Player SPA-19,11/05/1998,FW,19,Spain,Manchester City,Premier League,184,71,Right
+Spain,2026,Player SPA-20,12/05/1998,GK,20,Spain,Bayern Munich,Bundesliga,192,86,Right
+Spain,2026,Player SPA-21,13/05/1998,DF,21,Spain,PSG,Ligue 1,186,73,Left
+Spain,2026,Player SPA-22,14/05/1998,DF,22,Spain,Inter Milan,Serie A,187,74,Right
+Spain,2026,Player SPA-23,15/05/1998,DF,23,Spain,Al-Hilal,Saudi Pro League,188,75,Right
+Spain,2026,Player SPA-24,16/05/1998,MF,24,Spain,Real Madrid,LaLiga,189,76,Right
+Spain,2026,Player SPA-25,17/05/1998,MF,25,Spain,Manchester City,Premier League,190,77,Right
+Spain,2026,Player SPA-26,18/05/1998,MF,26,Spain,Bayern Munich,Bundesliga,191,78,Right
+Germany,2026,Player GER-1,11/05/1998,DF,1,Germany,Manchester City,Premier League,181,71,Right
+Germany,2026,Player GER-2,12/05/1998,DF,2,Germany,Bayern Munich,Bundesliga,182,72,Right
+Germany,2026,Player GER-3,13/05/1998,DF,3,Germany,PSG,Ligue 1,183,73,Left
+Germany,2026,Player GER-4,14/05/1998,MF,4,Germany,Inter Milan,Serie A,184,74,Right
+Germany,2026,Player GER-5,15/05/1998,MF,5,Germany,Al-Hilal,Saudi Pro League,185,75,Right
+Germany,2026,Player GER-6,16/05/1998,MF,6,Germany,Real Madrid,LaLiga,186,76,Right
+Germany,2026,Player GER-7,17/05/1998,FW,7,Germany,Manchester City,Premier League,187,77,Left
+Germany,2026,Player GER-8,18/05/1998,FW,8,Germany,Bayern Munich,Bundesliga,188,78,Right
+Germany,2026,Player GER-9,19/05/1998,FW,9,Germany,PSG,Ligue 1,189,79,Right
+Germany,2026,Player GER-10,20/05/1998,GK,10,Germany,Inter Milan,Serie A,192,86,Right
+Germany,2026,Player GER-11,21/05/1998,DF,11,Germany,Al-Hilal,Saudi Pro League,191,81,Left
+Germany,2026,Player GER-12,22/05/1998,DF,12,Germany,Real Madrid,LaLiga,192,82,Right
+Germany,2026,Player GER-13,23/05/1998,DF,13,Germany,Manchester City,Premier League,193,83,Right
+Germany,2026,Player GER-14,24/05/1998,MF,14,Germany,Bayern Munich,Bundesliga,194,84,Right
+Germany,2026,Player GER-15,25/05/1998,MF,15,Germany,PSG,Ligue 1,180,85,Right
+Germany,2026,Player GER-16,26/05/1998,MF,16,Germany,Inter Milan,Serie A,181,86,Right
+Germany,2026,Player GER-17,27/05/1998,FW,17,Germany,Al-Hilal,Saudi Pro League,182,87,Right
+Germany,2026,Player GER-18,10/05/1998,FW,18,Germany,Real Madrid,LaLiga,183,70,Right
+Germany,2026,Player GER-19,11/05/1998,FW,19,Germany,Manchester City,Premier League,184,71,Right
+Germany,2026,Player GER-20,12/05/1998,GK,20,Germany,Bayern Munich,Bundesliga,192,86,Right
+Germany,2026,Player GER-21,13/05/1998,DF,21,Germany,PSG,Ligue 1,186,73,Left
+Germany,2026,Player GER-22,14/05/1998,DF,22,Germany,Inter Milan,Serie A,187,74,Right
+Germany,2026,Player GER-23,15/05/1998,DF,23,Germany,Al-Hilal,Saudi Pro League,188,75,Right
+Germany,2026,Player GER-24,16/05/1998,MF,24,Germany,Real Madrid,LaLiga,189,76,Right
+Germany,2026,Player GER-25,17/05/1998,MF,25,Germany,Manchester City,Premier League,190,77,Right
+Germany,2026,Player GER-26,18/05/1998,MF,26,Germany,Bayern Munich,Bundesliga,191,78,Right
+Italy,2026,Player ITA-1,11/05/1998,DF,1,Italy,Manchester City,Premier League,181,71,Right
+Italy,2026,Player ITA-2,12/05/1998,DF,2,Italy,Bayern Munich,Bundesliga,182,72,Right
+Italy,2026,Player ITA-3,13/05/1998,DF,3,Italy,PSG,Ligue 1,183,73,Left
+Italy,2026,Player ITA-4,14/05/1998,MF,4,Italy,Inter Milan,Serie A,184,74,Right
+Italy,2026,Player ITA-5,15/05/1998,MF,5,Italy,Al-Hilal,Saudi Pro League,185,75,Right
+Italy,2026,Player ITA-6,16/05/1998,MF,6,Italy,Real Madrid,LaLiga,186,76,Right
+Italy,2026,Player ITA-7,17/05/1998,FW,7,Italy,Manchester City,Premier League,187,77,Left
+Italy,2026,Player ITA-8,18/05/1998,FW,8,Italy,Bayern Munich,Bundesliga,188,78,Right
+Italy,2026,Player ITA-9,19/05/1998,FW,9,Italy,PSG,Ligue 1,189,79,Right
+Italy,2026,Player ITA-10,20/05/1998,GK,10,Italy,Inter Milan,Serie A,192,86,Right
+Italy,2026,Player ITA-11,21/05/1998,DF,11,Italy,Al-Hilal,Saudi Pro League,191,81,Left
+Italy,2026,Player ITA-12,22/05/1998,DF,12,Italy,Real Madrid,LaLiga,192,82,Right
+Italy,2026,Player ITA-13,23/05/1998,DF,13,Italy,Manchester City,Premier League,193,83,Right
+Italy,2026,Player ITA-14,24/05/1998,MF,14,Italy,Bayern Munich,Bundesliga,194,84,Right
+Italy,2026,Player ITA-15,25/05/1998,MF,15,Italy,PSG,Ligue 1,180,85,Right
+Italy,2026,Player ITA-16,26/05/1998,MF,16,Italy,Inter Milan,Serie A,181,86,Right
+Italy,2026,Player ITA-17,27/05/1998,FW,17,Italy,Al-Hilal,Saudi Pro League,182,87,Right
+Italy,2026,Player ITA-18,10/05/1998,FW,18,Italy,Real Madrid,LaLiga,183,70,Right
+Italy,2026,Player ITA-19,11/05/1998,FW,19,Italy,Manchester City,Premier League,184,71,Right
+Italy,2026,Player ITA-20,12/05/1998,GK,20,Italy,Bayern Munich,Bundesliga,192,86,Right
+Italy,2026,Player ITA-21,13/05/1998,DF,21,Italy,PSG,Ligue 1,186,73,Left
+Italy,2026,Player ITA-22,14/05/1998,DF,22,Italy,Inter Milan,Serie A,187,74,Right
+Italy,2026,Player ITA-23,15/05/1998,DF,23,Italy,Al-Hilal,Saudi Pro League,188,75,Right
+Italy,2026,Player ITA-24,16/05/1998,MF,24,Italy,Real Madrid,LaLiga,189,76,Right
+Italy,2026,Player ITA-25,17/05/1998,MF,25,Italy,Manchester City,Premier League,190,77,Right
+Italy,2026,Player ITA-26,18/05/1998,MF,26,Italy,Bayern Munich,Bundesliga,191,78,Right
+Belgium,2026,Player BEL-1,11/05/1998,DF,1,Belgium,Manchester City,Premier League,181,71,Right
+Belgium,2026,Player BEL-2,12/05/1998,DF,2,Belgium,Bayern Munich,Bundesliga,182,72,Right
+Belgium,2026,Player BEL-3,13/05/1998,DF,3,Belgium,PSG,Ligue 1,183,73,Left
+Belgium,2026,Player BEL-4,14/05/1998,MF,4,Belgium,Inter Milan,Serie A,184,74,Right
+Belgium,2026,Player BEL-5,15/05/1998,MF,5,Belgium,Al-Hilal,Saudi Pro League,185,75,Right
+Belgium,2026,Player BEL-6,16/05/1998,MF,6,Belgium,Real Madrid,LaLiga,186,76,Right
+Belgium,2026,Player BEL-7,17/05/1998,FW,7,Belgium,Manchester City,Premier League,187,77,Left
+Belgium,2026,Player BEL-8,18/05/1998,FW,8,Belgium,Bayern Munich,Bundesliga,188,78,Right
+Belgium,2026,Player BEL-9,19/05/1998,FW,9,Belgium,PSG,Ligue 1,189,79,Right
+Belgium,2026,Player BEL-10,20/05/1998,GK,10,Belgium,Inter Milan,Serie A,192,86,Right
+Belgium,2026,Player BEL-11,21/05/1998,DF,11,Belgium,Al-Hilal,Saudi Pro League,191,81,Left
+Belgium,2026,Player BEL-12,22/05/1998,DF,12,Belgium,Real Madrid,LaLiga,192,82,Right
+Belgium,2026,Player BEL-13,23/05/1998,DF,13,Belgium,Manchester City,Premier League,193,83,Right
+Belgium,2026,Player BEL-14,24/05/1998,MF,14,Belgium,Bayern Munich,Bundesliga,194,84,Right
+Belgium,2026,Player BEL-15,25/05/1998,MF,15,Belgium,PSG,Ligue 1,180,85,Right
+Belgium,2026,Player BEL-16,26/05/1998,MF,16,Belgium,Inter Milan,Serie A,181,86,Right
+Belgium,2026,Player BEL-17,27/05/1998,FW,17,Belgium,Al-Hilal,Saudi Pro League,182,87,Right
+Belgium,2026,Player BEL-18,10/05/1998,FW,18,Belgium,Real Madrid,LaLiga,183,70,Right
+Belgium,2026,Player BEL-19,11/05/1998,FW,19,Belgium,Manchester City,Premier League,184,71,Right
+Belgium,2026,Player BEL-20,12/05/1998,GK,20,Belgium,Bayern Munich,Bundesliga,192,86,Right
+Belgium,2026,Player BEL-21,13/05/1998,DF,21,Belgium,PSG,Ligue 1,186,73,Left
+Belgium,2026,Player BEL-22,14/05/1998,DF,22,Belgium,Inter Milan,Serie A,187,74,Right
+Belgium,2026,Player BEL-23,15/05/1998,DF,23,Belgium,Al-Hilal,Saudi Pro League,188,75,Right
+Belgium,2026,Player BEL-24,16/05/1998,MF,24,Belgium,Real Madrid,LaLiga,189,76,Right
+Belgium,2026,Player BEL-25,17/05/1998,MF,25,Belgium,Manchester City,Premier League,190,77,Right
+Belgium,2026,Player BEL-26,18/05/1998,MF,26,Belgium,Bayern Munich,Bundesliga,191,78,Right
+Portugal,2026,Player POR-1,11/05/1998,DF,1,Portugal,Manchester City,Premier League,181,71,Right
+Portugal,2026,Player POR-2,12/05/1998,DF,2,Portugal,Bayern Munich,Bundesliga,182,72,Right
+Portugal,2026,Player POR-3,13/05/1998,DF,3,Portugal,PSG,Ligue 1,183,73,Left
+Portugal,2026,Player POR-4,14/05/1998,MF,4,Portugal,Inter Milan,Serie A,184,74,Right
+Portugal,2026,Player POR-5,15/05/1998,MF,5,Portugal,Al-Hilal,Saudi Pro League,185,75,Right
+Portugal,2026,Player POR-6,16/05/1998,MF,6,Portugal,Real Madrid,LaLiga,186,76,Right
+Portugal,2026,Player POR-7,17/05/1998,FW,7,Portugal,Manchester City,Premier League,187,77,Left
+Portugal,2026,Player POR-8,18/05/1998,FW,8,Portugal,Bayern Munich,Bundesliga,188,78,Right
+Portugal,2026,Player POR-9,19/05/1998,FW,9,Portugal,PSG,Ligue 1,189,79,Right
+Portugal,2026,Player POR-10,20/05/1998,GK,10,Portugal,Inter Milan,Serie A,192,86,Right
+Portugal,2026,Player POR-11,21/05/1998,DF,11,Portugal,Al-Hilal,Saudi Pro League,191,81,Left
+Portugal,2026,Player POR-12,22/05/1998,DF,12,Portugal,Real Madrid,LaLiga,192,82,Right
+Portugal,2026,Player POR-13,23/05/1998,DF,13,Portugal,Manchester City,Premier League,193,83,Right
+Portugal,2026,Player POR-14,24/05/1998,MF,14,Portugal,Bayern Munich,Bundesliga,194,84,Right
+Portugal,2026,Player POR-15,25/05/1998,MF,15,Portugal,PSG,Ligue 1,180,85,Right
+Portugal,2026,Player POR-16,26/05/1998,MF,16,Portugal,Inter Milan,Serie A,181,86,Right
+Portugal,2026,Player POR-17,27/05/1998,FW,17,Portugal,Al-Hilal,Saudi Pro League,182,87,Right
+Portugal,2026,Player POR-18,10/05/1998,FW,18,Portugal,Real Madrid,LaLiga,183,70,Right
+Portugal,2026,Player POR-19,11/05/1998,FW,19,Portugal,Manchester City,Premier League,184,71,Right
+Portugal,2026,Player POR-20,12/05/1998,GK,20,Portugal,Bayern Munich,Bundesliga,192,86,Right
+Portugal,2026,Player POR-21,13/05/1998,DF,21,Portugal,PSG,Ligue 1,186,73,Left
+Portugal,2026,Player POR-22,14/05/1998,DF,22,Portugal,Inter Milan,Serie A,187,74,Right
+Portugal,2026,Player POR-23,15/05/1998,DF,23,Portugal,Al-Hilal,Saudi Pro League,188,75,Right
+Portugal,2026,Player POR-24,16/05/1998,MF,24,Portugal,Real Madrid,LaLiga,189,76,Right
+Portugal,2026,Player POR-25,17/05/1998,MF,25,Portugal,Manchester City,Premier League,190,77,Right
+Portugal,2026,Player POR-26,18/05/1998,MF,26,Portugal,Bayern Munich,Bundesliga,191,78,Right
+Netherlands,2026,Player NET-1,11/05/1998,DF,1,Netherlands,Manchester City,Premier League,181,71,Right
+Netherlands,2026,Player NET-2,12/05/1998,DF,2,Netherlands,Bayern Munich,Bundesliga,182,72,Right
+Netherlands,2026,Player NET-3,13/05/1998,DF,3,Netherlands,PSG,Ligue 1,183,73,Left
+Netherlands,2026,Player NET-4,14/05/1998,MF,4,Netherlands,Inter Milan,Serie A,184,74,Right
+Netherlands,2026,Player NET-5,15/05/1998,MF,5,Netherlands,Al-Hilal,Saudi Pro League,185,75,Right
+Netherlands,2026,Player NET-6,16/05/1998,MF,6,Netherlands,Real Madrid,LaLiga,186,76,Right
+Netherlands,2026,Player NET-7,17/05/1998,FW,7,Netherlands,Manchester City,Premier League,187,77,Left
+Netherlands,2026,Player NET-8,18/05/1998,FW,8,Netherlands,Bayern Munich,Bundesliga,188,78,Right
+Netherlands,2026,Player NET-9,19/05/1998,FW,9,Netherlands,PSG,Ligue 1,189,79,Right
+Netherlands,2026,Player NET-10,20/05/1998,GK,10,Netherlands,Inter Milan,Serie A,192,86,Right
+Netherlands,2026,Player NET-11,21/05/1998,DF,11,Netherlands,Al-Hilal,Saudi Pro League,191,81,Left
+Netherlands,2026,Player NET-12,22/05/1998,DF,12,Netherlands,Real Madrid,LaLiga,192,82,Right
+Netherlands,2026,Player NET-13,23/05/1998,DF,13,Netherlands,Manchester City,Premier League,193,83,Right
+Netherlands,2026,Player NET-14,24/05/1998,MF,14,Netherlands,Bayern Munich,Bundesliga,194,84,Right
+Netherlands,2026,Player NET-15,25/05/1998,MF,15,Netherlands,PSG,Ligue 1,180,85,Right
+Netherlands,2026,Player NET-16,26/05/1998,MF,16,Netherlands,Inter Milan,Serie A,181,86,Right
+Netherlands,2026,Player NET-17,27/05/1998,FW,17,Netherlands,Al-Hilal,Saudi Pro League,182,87,Right
+Netherlands,2026,Player NET-18,10/05/1998,FW,18,Netherlands,Real Madrid,LaLiga,183,70,Right
+Netherlands,2026,Player NET-19,11/05/1998,FW,19,Netherlands,Manchester City,Premier League,184,71,Right
+Netherlands,2026,Player NET-20,12/05/1998,GK,20,Netherlands,Bayern Munich,Bundesliga,192,86,Right
+Netherlands,2026,Player NET-21,13/05/1998,DF,21,Netherlands,PSG,Ligue 1,186,73,Left
+Netherlands,2026,Player NET-22,14/05/1998,DF,22,Netherlands,Inter Milan,Serie A,187,74,Right
+Netherlands,2026,Player NET-23,15/05/1998,DF,23,Netherlands,Al-Hilal,Saudi Pro League,188,75,Right
+Netherlands,2026,Player NET-24,16/05/1998,MF,24,Netherlands,Real Madrid,LaLiga,189,76,Right
+Netherlands,2026,Player NET-25,17/05/1998,MF,25,Netherlands,Manchester City,Premier League,190,77,Right
+Netherlands,2026,Player NET-26,18/05/1998,MF,26,Netherlands,Bayern Munich,Bundesliga,191,78,Right
+Croatia,2026,Player CRO-1,11/05/1998,DF,1,Croatia,Manchester City,Premier League,181,71,Right
+Croatia,2026,Player CRO-2,12/05/1998,DF,2,Croatia,Bayern Munich,Bundesliga,182,72,Right
+Croatia,2026,Player CRO-3,13/05/1998,DF,3,Croatia,PSG,Ligue 1,183,73,Left
+Croatia,2026,Player CRO-4,14/05/1998,MF,4,Croatia,Inter Milan,Serie A,184,74,Right
+Croatia,2026,Player CRO-5,15/05/1998,MF,5,Croatia,Al-Hilal,Saudi Pro League,185,75,Right
+Croatia,2026,Player CRO-6,16/05/1998,MF,6,Croatia,Real Madrid,LaLiga,186,76,Right
+Croatia,2026,Player CRO-7,17/05/1998,FW,7,Croatia,Manchester City,Premier League,187,77,Left
+Croatia,2026,Player CRO-8,18/05/1998,FW,8,Croatia,Bayern Munich,Bundesliga,188,78,Right
+Croatia,2026,Player CRO-9,19/05/1998,FW,9,Croatia,PSG,Ligue 1,189,79,Right
+Croatia,2026,Player CRO-10,20/05/1998,GK,10,Croatia,Inter Milan,Serie A,192,86,Right
+Croatia,2026,Player CRO-11,21/05/1998,DF,11,Croatia,Al-Hilal,Saudi Pro League,191,81,Left
+Croatia,2026,Player CRO-12,22/05/1998,DF,12,Croatia,Real Madrid,LaLiga,192,82,Right
+Croatia,2026,Player CRO-13,23/05/1998,DF,13,Croatia,Manchester City,Premier League,193,83,Right
+Croatia,2026,Player CRO-14,24/05/1998,MF,14,Croatia,Bayern Munich,Bundesliga,194,84,Right
+Croatia,2026,Player CRO-15,25/05/1998,MF,15,Croatia,PSG,Ligue 1,180,85,Right
+Croatia,2026,Player CRO-16,26/05/1998,MF,16,Croatia,Inter Milan,Serie A,181,86,Right
+Croatia,2026,Player CRO-17,27/05/1998,FW,17,Croatia,Al-Hilal,Saudi Pro League,182,87,Right
+Croatia,2026,Player CRO-18,10/05/1998,FW,18,Croatia,Real Madrid,LaLiga,183,70,Right
+Croatia,2026,Player CRO-19,11/05/1998,FW,19,Croatia,Manchester City,Premier League,184,71,Right
+Croatia,2026,Player CRO-20,12/05/1998,GK,20,Croatia,Bayern Munich,Bundesliga,192,86,Right
+Croatia,2026,Player CRO-21,13/05/1998,DF,21,Croatia,PSG,Ligue 1,186,73,Left
+Croatia,2026,Player CRO-22,14/05/1998,DF,22,Croatia,Inter Milan,Serie A,187,74,Right
+Croatia,2026,Player CRO-23,15/05/1998,DF,23,Croatia,Al-Hilal,Saudi Pro League,188,75,Right
+Croatia,2026,Player CRO-24,16/05/1998,MF,24,Croatia,Real Madrid,LaLiga,189,76,Right
+Croatia,2026,Player CRO-25,17/05/1998,MF,25,Croatia,Manchester City,Premier League,190,77,Right
+Croatia,2026,Player CRO-26,18/05/1998,MF,26,Croatia,Bayern Munich,Bundesliga,191,78,Right
+Morocco,2026,Player MOR-1,11/05/1998,DF,1,Morocco,Manchester City,Premier League,181,71,Right
+Morocco,2026,Player MOR-2,12/05/1998,DF,2,Morocco,Bayern Munich,Bundesliga,182,72,Right
+Morocco,2026,Player MOR-3,13/05/1998,DF,3,Morocco,PSG,Ligue 1,183,73,Left
+Morocco,2026,Player MOR-4,14/05/1998,MF,4,Morocco,Inter Milan,Serie A,184,74,Right
+Morocco,2026,Player MOR-5,15/05/1998,MF,5,Morocco,Al-Hilal,Saudi Pro League,185,75,Right
+Morocco,2026,Player MOR-6,16/05/1998,MF,6,Morocco,Real Madrid,LaLiga,186,76,Right
+Morocco,2026,Player MOR-7,17/05/1998,FW,7,Morocco,Manchester City,Premier League,187,77,Left
+Morocco,2026,Player MOR-8,18/05/1998,FW,8,Morocco,Bayern Munich,Bundesliga,188,78,Right
+Morocco,2026,Player MOR-9,19/05/1998,FW,9,Morocco,PSG,Ligue 1,189,79,Right
+Morocco,2026,Player MOR-10,20/05/1998,GK,10,Morocco,Inter Milan,Serie A,192,86,Right
+Morocco,2026,Player MOR-11,21/05/1998,DF,11,Morocco,Al-Hilal,Saudi Pro League,191,81,Left
+Morocco,2026,Player MOR-12,22/05/1998,DF,12,Morocco,Real Madrid,LaLiga,192,82,Right
+Morocco,2026,Player MOR-13,23/05/1998,DF,13,Morocco,Manchester City,Premier League,193,83,Right
+Morocco,2026,Player MOR-14,24/05/1998,MF,14,Morocco,Bayern Munich,Bundesliga,194,84,Right
+Morocco,2026,Player MOR-15,25/05/1998,MF,15,Morocco,PSG,Ligue 1,180,85,Right
+Morocco,2026,Player MOR-16,26/05/1998,MF,16,Morocco,Inter Milan,Serie A,181,86,Right
+Morocco,2026,Player MOR-17,27/05/1998,FW,17,Morocco,Al-Hilal,Saudi Pro League,182,87,Right
+Morocco,2026,Player MOR-18,10/05/1998,FW,18,Morocco,Real Madrid,LaLiga,183,70,Right
+Morocco,2026,Player MOR-19,11/05/1998,FW,19,Morocco,Manchester City,Premier League,184,71,Right
+Morocco,2026,Player MOR-20,12/05/1998,GK,20,Morocco,Bayern Munich,Bundesliga,192,86,Right
+Morocco,2026,Player MOR-21,13/05/1998,DF,21,Morocco,PSG,Ligue 1,186,73,Left
+Morocco,2026,Player MOR-22,14/05/1998,DF,22,Morocco,Inter Milan,Serie A,187,74,Right
+Morocco,2026,Player MOR-23,15/05/1998,DF,23,Morocco,Al-Hilal,Saudi Pro League,188,75,Right
+Morocco,2026,Player MOR-24,16/05/1998,MF,24,Morocco,Real Madrid,LaLiga,189,76,Right
+Morocco,2026,Player MOR-25,17/05/1998,MF,25,Morocco,Manchester City,Premier League,190,77,Right
+Morocco,2026,Player MOR-26,18/05/1998,MF,26,Morocco,Bayern Munich,Bundesliga,191,78,Right
+Senegal,2026,Player SEN-1,11/05/1998,DF,1,Senegal,Manchester City,Premier League,181,71,Right
+Senegal,2026,Player SEN-2,12/05/1998,DF,2,Senegal,Bayern Munich,Bundesliga,182,72,Right
+Senegal,2026,Player SEN-3,13/05/1998,DF,3,Senegal,PSG,Ligue 1,183,73,Left
+Senegal,2026,Player SEN-4,14/05/1998,MF,4,Senegal,Inter Milan,Serie A,184,74,Right
+Senegal,2026,Player SEN-5,15/05/1998,MF,5,Senegal,Al-Hilal,Saudi Pro League,185,75,Right
+Senegal,2026,Player SEN-6,16/05/1998,MF,6,Senegal,Real Madrid,LaLiga,186,76,Right
+Senegal,2026,Player SEN-7,17/05/1998,FW,7,Senegal,Manchester City,Premier League,187,77,Left
+Senegal,2026,Player SEN-8,18/05/1998,FW,8,Senegal,Bayern Munich,Bundesliga,188,78,Right
+Senegal,2026,Player SEN-9,19/05/1998,FW,9,Senegal,PSG,Ligue 1,189,79,Right
+Senegal,2026,Player SEN-10,20/05/1998,GK,10,Senegal,Inter Milan,Serie A,192,86,Right
+Senegal,2026,Player SEN-11,21/05/1998,DF,11,Senegal,Al-Hilal,Saudi Pro League,191,81,Left
+Senegal,2026,Player SEN-12,22/05/1998,DF,12,Senegal,Real Madrid,LaLiga,192,82,Right
+Senegal,2026,Player SEN-13,23/05/1998,DF,13,Senegal,Manchester City,Premier League,193,83,Right
+Senegal,2026,Player SEN-14,24/05/1998,MF,14,Senegal,Bayern Munich,Bundesliga,194,84,Right
+Senegal,2026,Player SEN-15,25/05/1998,MF,15,Senegal,PSG,Ligue 1,180,85,Right
+Senegal,2026,Player SEN-16,26/05/1998,MF,16,Senegal,Inter Milan,Serie A,181,86,Right
+Senegal,2026,Player SEN-17,27/05/1998,FW,17,Senegal,Al-Hilal,Saudi Pro League,182,87,Right
+Senegal,2026,Player SEN-18,10/05/1998,FW,18,Senegal,Real Madrid,LaLiga,183,70,Right
+Senegal,2026,Player SEN-19,11/05/1998,FW,19,Senegal,Manchester City,Premier League,184,71,Right
+Senegal,2026,Player SEN-20,12/05/1998,GK,20,Senegal,Bayern Munich,Bundesliga,192,86,Right
+Senegal,2026,Player SEN-21,13/05/1998,DF,21,Senegal,PSG,Ligue 1,186,73,Left
+Senegal,2026,Player SEN-22,14/05/1998,DF,22,Senegal,Inter Milan,Serie A,187,74,Right
+Senegal,2026,Player SEN-23,15/05/1998,DF,23,Senegal,Al-Hilal,Saudi Pro League,188,75,Right
+Senegal,2026,Player SEN-24,16/05/1998,MF,24,Senegal,Real Madrid,LaLiga,189,76,Right
+Senegal,2026,Player SEN-25,17/05/1998,MF,25,Senegal,Manchester City,Premier League,190,77,Right
+Senegal,2026,Player SEN-26,18/05/1998,MF,26,Senegal,Bayern Munich,Bundesliga,191,78,Right
+USA,2026,Player USA-1,11/05/1998,DF,1,USA,Manchester City,Premier League,181,71,Right
+USA,2026,Player USA-2,12/05/1998,DF,2,USA,Bayern Munich,Bundesliga,182,72,Right
+USA,2026,Player USA-3,13/05/1998,DF,3,USA,PSG,Ligue 1,183,73,Left
+USA,2026,Player USA-4,14/05/1998,MF,4,USA,Inter Milan,Serie A,184,74,Right
+USA,2026,Player USA-5,15/05/1998,MF,5,USA,Al-Hilal,Saudi Pro League,185,75,Right
+USA,2026,Player USA-6,16/05/1998,MF,6,USA,Real Madrid,LaLiga,186,76,Right
+USA,2026,Player USA-7,17/05/1998,FW,7,USA,Manchester City,Premier League,187,77,Left
+USA,2026,Player USA-8,18/05/1998,FW,8,USA,Bayern Munich,Bundesliga,188,78,Right
+USA,2026,Player USA-9,19/05/1998,FW,9,USA,PSG,Ligue 1,189,79,Right
+USA,2026,Player USA-10,20/05/1998,GK,10,USA,Inter Milan,Serie A,192,86,Right
+USA,2026,Player USA-11,21/05/1998,DF,11,USA,Al-Hilal,Saudi Pro League,191,81,Left
+USA,2026,Player USA-12,22/05/1998,DF,12,USA,Real Madrid,LaLiga,192,82,Right
+USA,2026,Player USA-13,23/05/1998,DF,13,USA,Manchester City,Premier League,193,83,Right
+USA,2026,Player USA-14,24/05/1998,MF,14,USA,Bayern Munich,Bundesliga,194,84,Right
+USA,2026,Player USA-15,25/05/1998,MF,15,USA,PSG,Ligue 1,180,85,Right
+USA,2026,Player USA-16,26/05/1998,MF,16,USA,Inter Milan,Serie A,181,86,Right
+USA,2026,Player USA-17,27/05/1998,FW,17,USA,Al-Hilal,Saudi Pro League,182,87,Right
+USA,2026,Player USA-18,10/05/1998,FW,18,USA,Real Madrid,LaLiga,183,70,Right
+USA,2026,Player USA-19,11/05/1998,FW,19,USA,Manchester City,Premier League,184,71,Right
+USA,2026,Player USA-20,12/05/1998,GK,20,USA,Bayern Munich,Bundesliga,192,86,Right
+USA,2026,Player USA-21,13/05/1998,DF,21,USA,PSG,Ligue 1,186,73,Left
+USA,2026,Player USA-22,14/05/1998,DF,22,USA,Inter Milan,Serie A,187,74,Right
+USA,2026,Player USA-23,15/05/1998,DF,23,USA,Al-Hilal,Saudi Pro League,188,75,Right
+USA,2026,Player USA-24,16/05/1998,MF,24,USA,Real Madrid,LaLiga,189,76,Right
+USA,2026,Player USA-25,17/05/1998,MF,25,USA,Manchester City,Premier League,190,77,Right
+USA,2026,Player USA-26,18/05/1998,MF,26,USA,Bayern Munich,Bundesliga,191,78,Right
+Mexico,2026,Player MEX-1,11/05/1998,DF,1,Mexico,Manchester City,Premier League,181,71,Right
+Mexico,2026,Player MEX-2,12/05/1998,DF,2,Mexico,Bayern Munich,Bundesliga,182,72,Right
+Mexico,2026,Player MEX-3,13/05/1998,DF,3,Mexico,PSG,Ligue 1,183,73,Left
+Mexico,2026,Player MEX-4,14/05/1998,MF,4,Mexico,Inter Milan,Serie A,184,74,Right
+Mexico,2026,Player MEX-5,15/05/1998,MF,5,Mexico,Al-Hilal,Saudi Pro League,185,75,Right
+Mexico,2026,Player MEX-6,16/05/1998,MF,6,Mexico,Real Madrid,LaLiga,186,76,Right
+Mexico,2026,Player MEX-7,17/05/1998,FW,7,Mexico,Manchester City,Premier League,187,77,Left
+Mexico,2026,Player MEX-8,18/05/1998,FW,8,Mexico,Bayern Munich,Bundesliga,188,78,Right
+Mexico,2026,Player MEX-9,19/05/1998,FW,9,Mexico,PSG,Ligue 1,189,79,Right
+Mexico,2026,Player MEX-10,20/05/1998,GK,10,Mexico,Inter Milan,Serie A,192,86,Right
+Mexico,2026,Player MEX-11,21/05/1998,DF,11,Mexico,Al-Hilal,Saudi Pro League,191,81,Left
+Mexico,2026,Player MEX-12,22/05/1998,DF,12,Mexico,Real Madrid,LaLiga,192,82,Right
+Mexico,2026,Player MEX-13,23/05/1998,DF,13,Mexico,Manchester City,Premier League,193,83,Right
+Mexico,2026,Player MEX-14,24/05/1998,MF,14,Mexico,Bayern Munich,Bundesliga,194,84,Right
+Mexico,2026,Player MEX-15,25/05/1998,MF,15,Mexico,PSG,Ligue 1,180,85,Right
+Mexico,2026,Player MEX-16,26/05/1998,MF,16,Mexico,Inter Milan,Serie A,181,86,Right
+Mexico,2026,Player MEX-17,27/05/1998,FW,17,Mexico,Al-Hilal,Saudi Pro League,182,87,Right
+Mexico,2026,Player MEX-18,10/05/1998,FW,18,Mexico,Real Madrid,LaLiga,183,70,Right
+Mexico,2026,Player MEX-19,11/05/1998,FW,19,Mexico,Manchester City,Premier League,184,71,Right
+Mexico,2026,Player MEX-20,12/05/1998,GK,20,Mexico,Bayern Munich,Bundesliga,192,86,Right
+Mexico,2026,Player MEX-21,13/05/1998,DF,21,Mexico,PSG,Ligue 1,186,73,Left
+Mexico,2026,Player MEX-22,14/05/1998,DF,22,Mexico,Inter Milan,Serie A,187,74,Right
+Mexico,2026,Player MEX-23,15/05/1998,DF,23,Mexico,Al-Hilal,Saudi Pro League,188,75,Right
+Mexico,2026,Player MEX-24,16/05/1998,MF,24,Mexico,Real Madrid,LaLiga,189,76,Right
+Mexico,2026,Player MEX-25,17/05/1998,MF,25,Mexico,Manchester City,Premier League,190,77,Right
+Mexico,2026,Player MEX-26,18/05/1998,MF,26,Mexico,Bayern Munich,Bundesliga,191,78,Right
+Canada,2026,Player CAN-1,11/05/1998,DF,1,Canada,Manchester City,Premier League,181,71,Right
+Canada,2026,Player CAN-2,12/05/1998,DF,2,Canada,Bayern Munich,Bundesliga,182,72,Right
+Canada,2026,Player CAN-3,13/05/1998,DF,3,Canada,PSG,Ligue 1,183,73,Left
+Canada,2026,Player CAN-4,14/05/1998,MF,4,Canada,Inter Milan,Serie A,184,74,Right
+Canada,2026,Player CAN-5,15/05/1998,MF,5,Canada,Al-Hilal,Saudi Pro League,185,75,Right
+Canada,2026,Player CAN-6,16/05/1998,MF,6,Canada,Real Madrid,LaLiga,186,76,Right
+Canada,2026,Player CAN-7,17/05/1998,FW,7,Canada,Manchester City,Premier League,187,77,Left
+Canada,2026,Player CAN-8,18/05/1998,FW,8,Canada,Bayern Munich,Bundesliga,188,78,Right
+Canada,2026,Player CAN-9,19/05/1998,FW,9,Canada,PSG,Ligue 1,189,79,Right
+Canada,2026,Player CAN-10,20/05/1998,GK,10,Canada,Inter Milan,Serie A,192,86,Right
+Canada,2026,Player CAN-11,21/05/1998,DF,11,Canada,Al-Hilal,Saudi Pro League,191,81,Left
+Canada,2026,Player CAN-12,22/05/1998,DF,12,Canada,Real Madrid,LaLiga,192,82,Right
+Canada,2026,Player CAN-13,23/05/1998,DF,13,Canada,Manchester City,Premier League,193,83,Right
+Canada,2026,Player CAN-14,24/05/1998,MF,14,Canada,Bayern Munich,Bundesliga,194,84,Right
+Canada,2026,Player CAN-15,25/05/1998,MF,15,Canada,PSG,Ligue 1,180,85,Right
+Canada,2026,Player CAN-16,26/05/1998,MF,16,Canada,Inter Milan,Serie A,181,86,Right
+Canada,2026,Player CAN-17,27/05/1998,FW,17,Canada,Al-Hilal,Saudi Pro League,182,87,Right
+Canada,2026,Player CAN-18,10/05/1998,FW,18,Canada,Real Madrid,LaLiga,183,70,Right
+Canada,2026,Player CAN-19,11/05/1998,FW,19,Canada,Manchester City,Premier League,184,71,Right
+Canada,2026,Player CAN-20,12/05/1998,GK,20,Canada,Bayern Munich,Bundesliga,192,86,Right
+Canada,2026,Player CAN-21,13/05/1998,DF,21,Canada,PSG,Ligue 1,186,73,Left
+Canada,2026,Player CAN-22,14/05/1998,DF,22,Canada,Inter Milan,Serie A,187,74,Right
+Canada,2026,Player CAN-23,15/05/1998,DF,23,Canada,Al-Hilal,Saudi Pro League,188,75,Right
+Canada,2026,Player CAN-24,16/05/1998,MF,24,Canada,Real Madrid,LaLiga,189,76,Right
+Canada,2026,Player CAN-25,17/05/1998,MF,25,Canada,Manchester City,Premier League,190,77,Right
+Canada,2026,Player CAN-26,18/05/1998,MF,26,Canada,Bayern Munich,Bundesliga,191,78,Right
+Japan,2026,Player JAP-1,11/05/1998,DF,1,Japan,Manchester City,Premier League,181,71,Right
+Japan,2026,Player JAP-2,12/05/1998,DF,2,Japan,Bayern Munich,Bundesliga,182,72,Right
+Japan,2026,Player JAP-3,13/05/1998,DF,3,Japan,PSG,Ligue 1,183,73,Left
+Japan,2026,Player JAP-4,14/05/1998,MF,4,Japan,Inter Milan,Serie A,184,74,Right
+Japan,2026,Player JAP-5,15/05/1998,MF,5,Japan,Al-Hilal,Saudi Pro League,185,75,Right
+Japan,2026,Player JAP-6,16/05/1998,MF,6,Japan,Real Madrid,LaLiga,186,76,Right
+Japan,2026,Player JAP-7,17/05/1998,FW,7,Japan,Manchester City,Premier League,187,77,Left
+Japan,2026,Player JAP-8,18/05/1998,FW,8,Japan,Bayern Munich,Bundesliga,188,78,Right
+Japan,2026,Player JAP-9,19/05/1998,FW,9,Japan,PSG,Ligue 1,189,79,Right
+Japan,2026,Player JAP-10,20/05/1998,GK,10,Japan,Inter Milan,Serie A,192,86,Right
+Japan,2026,Player JAP-11,21/05/1998,DF,11,Japan,Al-Hilal,Saudi Pro League,191,81,Left
+Japan,2026,Player JAP-12,22/05/1998,DF,12,Japan,Real Madrid,LaLiga,192,82,Right
+Japan,2026,Player JAP-13,23/05/1998,DF,13,Japan,Manchester City,Premier League,193,83,Right
+Japan,2026,Player JAP-14,24/05/1998,MF,14,Japan,Bayern Munich,Bundesliga,194,84,Right
+Japan,2026,Player JAP-15,25/05/1998,MF,15,Japan,PSG,Ligue 1,180,85,Right
+Japan,2026,Player JAP-16,26/05/1998,MF,16,Japan,Inter Milan,Serie A,181,86,Right
+Japan,2026,Player JAP-17,27/05/1998,FW,17,Japan,Al-Hilal,Saudi Pro League,182,87,Right
+Japan,2026,Player JAP-18,10/05/1998,FW,18,Japan,Real Madrid,LaLiga,183,70,Right
+Japan,2026,Player JAP-19,11/05/1998,FW,19,Japan,Manchester City,Premier League,184,71,Right
+Japan,2026,Player JAP-20,12/05/1998,GK,20,Japan,Bayern Munich,Bundesliga,192,86,Right
+Japan,2026,Player JAP-21,13/05/1998,DF,21,Japan,PSG,Ligue 1,186,73,Left
+Japan,2026,Player JAP-22,14/05/1998,DF,22,Japan,Inter Milan,Serie A,187,74,Right
+Japan,2026,Player JAP-23,15/05/1998,DF,23,Japan,Al-Hilal,Saudi Pro League,188,75,Right
+Japan,2026,Player JAP-24,16/05/1998,MF,24,Japan,Real Madrid,LaLiga,189,76,Right
+Japan,2026,Player JAP-25,17/05/1998,MF,25,Japan,Manchester City,Premier League,190,77,Right
+Japan,2026,Player JAP-26,18/05/1998,MF,26,Japan,Bayern Munich,Bundesliga,191,78,Right
+South Korea,2026,Player SOU-1,11/05/1998,DF,1,South Korea,Manchester City,Premier League,181,71,Right
+South Korea,2026,Player SOU-2,12/05/1998,DF,2,South Korea,Bayern Munich,Bundesliga,182,72,Right
+South Korea,2026,Player SOU-3,13/05/1998,DF,3,South Korea,PSG,Ligue 1,183,73,Left
+South Korea,2026,Player SOU-4,14/05/1998,MF,4,South Korea,Inter Milan,Serie A,184,74,Right
+South Korea,2026,Player SOU-5,15/05/1998,MF,5,South Korea,Al-Hilal,Saudi Pro League,185,75,Right
+South Korea,2026,Player SOU-6,16/05/1998,MF,6,South Korea,Real Madrid,LaLiga,186,76,Right
+South Korea,2026,Player SOU-7,17/05/1998,FW,7,South Korea,Manchester City,Premier League,187,77,Left
+South Korea,2026,Player SOU-8,18/05/1998,FW,8,South Korea,Bayern Munich,Bundesliga,188,78,Right
+South Korea,2026,Player SOU-9,19/05/1998,FW,9,South Korea,PSG,Ligue 1,189,79,Right
+South Korea,2026,Player SOU-10,20/05/1998,GK,10,South Korea,Inter Milan,Serie A,192,86,Right
+South Korea,2026,Player SOU-11,21/05/1998,DF,11,South Korea,Al-Hilal,Saudi Pro League,191,81,Left
+South Korea,2026,Player SOU-12,22/05/1998,DF,12,South Korea,Real Madrid,LaLiga,192,82,Right
+South Korea,2026,Player SOU-13,23/05/1998,DF,13,South Korea,Manchester City,Premier League,193,83,Right
+South Korea,2026,Player SOU-14,24/05/1998,MF,14,South Korea,Bayern Munich,Bundesliga,194,84,Right
+South Korea,2026,Player SOU-15,25/05/1998,MF,15,South Korea,PSG,Ligue 1,180,85,Right
+South Korea,2026,Player SOU-16,26/05/1998,MF,16,South Korea,Inter Milan,Serie A,181,86,Right
+South Korea,2026,Player SOU-17,27/05/1998,FW,17,South Korea,Al-Hilal,Saudi Pro League,182,87,Right
+South Korea,2026,Player SOU-18,10/05/1998,FW,18,South Korea,Real Madrid,LaLiga,183,70,Right
+South Korea,2026,Player SOU-19,11/05/1998,FW,19,South Korea,Manchester City,Premier League,184,71,Right
+South Korea,2026,Player SOU-20,12/05/1998,GK,20,South Korea,Bayern Munich,Bundesliga,192,86,Right
+South Korea,2026,Player SOU-21,13/05/1998,DF,21,South Korea,PSG,Ligue 1,186,73,Left
+South Korea,2026,Player SOU-22,14/05/1998,DF,22,South Korea,Inter Milan,Serie A,187,74,Right
+South Korea,2026,Player SOU-23,15/05/1998,DF,23,South Korea,Al-Hilal,Saudi Pro League,188,75,Right
+South Korea,2026,Player SOU-24,16/05/1998,MF,24,South Korea,Real Madrid,LaLiga,189,76,Right
+South Korea,2026,Player SOU-25,17/05/1998,MF,25,South Korea,Manchester City,Premier League,190,77,Right
+South Korea,2026,Player SOU-26,18/05/1998,MF,26,South Korea,Bayern Munich,Bundesliga,191,78,Right
+Australia,2026,Player AUS-1,11/05/1998,DF,1,Australia,Manchester City,Premier League,181,71,Right
+Australia,2026,Player AUS-2,12/05/1998,DF,2,Australia,Bayern Munich,Bundesliga,182,72,Right
+Australia,2026,Player AUS-3,13/05/1998,DF,3,Australia,PSG,Ligue 1,183,73,Left
+Australia,2026,Player AUS-4,14/05/1998,MF,4,Australia,Inter Milan,Serie A,184,74,Right
+Australia,2026,Player AUS-5,15/05/1998,MF,5,Australia,Al-Hilal,Saudi Pro League,185,75,Right
+Australia,2026,Player AUS-6,16/05/1998,MF,6,Australia,Real Madrid,LaLiga,186,76,Right
+Australia,2026,Player AUS-7,17/05/1998,FW,7,Australia,Manchester City,Premier League,187,77,Left
+Australia,2026,Player AUS-8,18/05/1998,FW,8,Australia,Bayern Munich,Bundesliga,188,78,Right
+Australia,2026,Player AUS-9,19/05/1998,FW,9,Australia,PSG,Ligue 1,189,79,Right
+Australia,2026,Player AUS-10,20/05/1998,GK,10,Australia,Inter Milan,Serie A,192,86,Right
+Australia,2026,Player AUS-11,21/05/1998,DF,11,Australia,Al-Hilal,Saudi Pro League,191,81,Left
+Australia,2026,Player AUS-12,22/05/1998,DF,12,Australia,Real Madrid,LaLiga,192,82,Right
+Australia,2026,Player AUS-13,23/05/1998,DF,13,Australia,Manchester City,Premier League,193,83,Right
+Australia,2026,Player AUS-14,24/05/1998,MF,14,Australia,Bayern Munich,Bundesliga,194,84,Right
+Australia,2026,Player AUS-15,25/05/1998,MF,15,Australia,PSG,Ligue 1,180,85,Right
+Australia,2026,Player AUS-16,26/05/1998,MF,16,Australia,Inter Milan,Serie A,181,86,Right
+Australia,2026,Player AUS-17,27/05/1998,FW,17,Australia,Al-Hilal,Saudi Pro League,182,87,Right
+Australia,2026,Player AUS-18,10/05/1998,FW,18,Australia,Real Madrid,LaLiga,183,70,Right
+Australia,2026,Player AUS-19,11/05/1998,FW,19,Australia,Manchester City,Premier League,184,71,Right
+Australia,2026,Player AUS-20,12/05/1998,GK,20,Australia,Bayern Munich,Bundesliga,192,86,Right
+Australia,2026,Player AUS-21,13/05/1998,DF,21,Australia,PSG,Ligue 1,186,73,Left
+Australia,2026,Player AUS-22,14/05/1998,DF,22,Australia,Inter Milan,Serie A,187,74,Right
+Australia,2026,Player AUS-23,15/05/1998,DF,23,Australia,Al-Hilal,Saudi Pro League,188,75,Right
+Australia,2026,Player AUS-24,16/05/1998,MF,24,Australia,Real Madrid,LaLiga,189,76,Right
+Australia,2026,Player AUS-25,17/05/1998,MF,25,Australia,Manchester City,Premier League,190,77,Right
+Australia,2026,Player AUS-26,18/05/1998,MF,26,Australia,Bayern Munich,Bundesliga,191,78,Right
+Iran,2026,Player IRA-1,11/05/1998,DF,1,Iran,Manchester City,Premier League,181,71,Right
+Iran,2026,Player IRA-2,12/05/1998,DF,2,Iran,Bayern Munich,Bundesliga,182,72,Right
+Iran,2026,Player IRA-3,13/05/1998,DF,3,Iran,PSG,Ligue 1,183,73,Left
+Iran,2026,Player IRA-4,14/05/1998,MF,4,Iran,Inter Milan,Serie A,184,74,Right
+Iran,2026,Player IRA-5,15/05/1998,MF,5,Iran,Al-Hilal,Saudi Pro League,185,75,Right
+Iran,2026,Player IRA-6,16/05/1998,MF,6,Iran,Real Madrid,LaLiga,186,76,Right
+Iran,2026,Player IRA-7,17/05/1998,FW,7,Iran,Manchester City,Premier League,187,77,Left
+Iran,2026,Player IRA-8,18/05/1998,FW,8,Iran,Bayern Munich,Bundesliga,188,78,Right
+Iran,2026,Player IRA-9,19/05/1998,FW,9,Iran,PSG,Ligue 1,189,79,Right
+Iran,2026,Player IRA-10,20/05/1998,GK,10,Iran,Inter Milan,Serie A,192,86,Right
+Iran,2026,Player IRA-11,21/05/1998,DF,11,Iran,Al-Hilal,Saudi Pro League,191,81,Left
+Iran,2026,Player IRA-12,22/05/1998,DF,12,Iran,Real Madrid,LaLiga,192,82,Right
+Iran,2026,Player IRA-13,23/05/1998,DF,13,Iran,Manchester City,Premier League,193,83,Right
+Iran,2026,Player IRA-14,24/05/1998,MF,14,Iran,Bayern Munich,Bundesliga,194,84,Right
+Iran,2026,Player IRA-15,25/05/1998,MF,15,Iran,PSG,Ligue 1,180,85,Right
+Iran,2026,Player IRA-16,26/05/1998,MF,16,Iran,Inter Milan,Serie A,181,86,Right
+Iran,2026,Player IRA-17,27/05/1998,FW,17,Iran,Al-Hilal,Saudi Pro League,182,87,Right
+Iran,2026,Player IRA-18,10/05/1998,FW,18,Iran,Real Madrid,LaLiga,183,70,Right
+Iran,2026,Player IRA-19,11/05/1998,FW,19,Iran,Manchester City,Premier League,184,71,Right
+Iran,2026,Player IRA-20,12/05/1998,GK,20,Iran,Bayern Munich,Bundesliga,192,86,Right
+Iran,2026,Player IRA-21,13/05/1998,DF,21,Iran,PSG,Ligue 1,186,73,Left
+Iran,2026,Player IRA-22,14/05/1998,DF,22,Iran,Inter Milan,Serie A,187,74,Right
+Iran,2026,Player IRA-23,15/05/1998,DF,23,Iran,Al-Hilal,Saudi Pro League,188,75,Right
+Iran,2026,Player IRA-24,16/05/1998,MF,24,Iran,Real Madrid,LaLiga,189,76,Right
+Iran,2026,Player IRA-25,17/05/1998,MF,25,Iran,Manchester City,Premier League,190,77,Right
+Iran,2026,Player IRA-26,18/05/1998,MF,26,Iran,Bayern Munich,Bundesliga,191,78,Right
+Saudi Arabia,2026,Player SAU-1,11/05/1998,DF,1,Saudi Arabia,Manchester City,Premier League,181,71,Right
+Saudi Arabia,2026,Player SAU-2,12/05/1998,DF,2,Saudi Arabia,Bayern Munich,Bundesliga,182,72,Right
+Saudi Arabia,2026,Player SAU-3,13/05/1998,DF,3,Saudi Arabia,PSG,Ligue 1,183,73,Left
+Saudi Arabia,2026,Player SAU-4,14/05/1998,MF,4,Saudi Arabia,Inter Milan,Serie A,184,74,Right
+Saudi Arabia,2026,Player SAU-5,15/05/1998,MF,5,Saudi Arabia,Al-Hilal,Saudi Pro League,185,75,Right
+Saudi Arabia,2026,Player SAU-6,16/05/1998,MF,6,Saudi Arabia,Real Madrid,LaLiga,186,76,Right
+Saudi Arabia,2026,Player SAU-7,17/05/1998,FW,7,Saudi Arabia,Manchester City,Premier League,187,77,Left
+Saudi Arabia,2026,Player SAU-8,18/05/1998,FW,8,Saudi Arabia,Bayern Munich,Bundesliga,188,78,Right
+Saudi Arabia,2026,Player SAU-9,19/05/1998,FW,9,Saudi Arabia,PSG,Ligue 1,189,79,Right
+Saudi Arabia,2026,Player SAU-10,20/05/1998,GK,10,Saudi Arabia,Inter Milan,Serie A,192,86,Right
+Saudi Arabia,2026,Player SAU-11,21/05/1998,DF,11,Saudi Arabia,Al-Hilal,Saudi Pro League,191,81,Left
+Saudi Arabia,2026,Player SAU-12,22/05/1998,DF,12,Saudi Arabia,Real Madrid,LaLiga,192,82,Right
+Saudi Arabia,2026,Player SAU-13,23/05/1998,DF,13,Saudi Arabia,Manchester City,Premier League,193,83,Right
+Saudi Arabia,2026,Player SAU-14,24/05/1998,MF,14,Saudi Arabia,Bayern Munich,Bundesliga,194,84,Right
+Saudi Arabia,2026,Player SAU-15,25/05/1998,MF,15,Saudi Arabia,PSG,Ligue 1,180,85,Right
+Saudi Arabia,2026,Player SAU-16,26/05/1998,MF,16,Saudi Arabia,Inter Milan,Serie A,181,86,Right
+Saudi Arabia,2026,Player SAU-17,27/05/1998,FW,17,Saudi Arabia,Al-Hilal,Saudi Pro League,182,87,Right
+Saudi Arabia,2026,Player SAU-18,10/05/1998,FW,18,Saudi Arabia,Real Madrid,LaLiga,183,70,Right
+Saudi Arabia,2026,Player SAU-19,11/05/1998,FW,19,Saudi Arabia,Manchester City,Premier League,184,71,Right
+Saudi Arabia,2026,Player SAU-20,12/05/1998,GK,20,Saudi Arabia,Bayern Munich,Bundesliga,192,86,Right
+Saudi Arabia,2026,Player SAU-21,13/05/1998,DF,21,Saudi Arabia,PSG,Ligue 1,186,73,Left
+Saudi Arabia,2026,Player SAU-22,14/05/1998,DF,22,Saudi Arabia,Inter Milan,Serie A,187,74,Right
+Saudi Arabia,2026,Player SAU-23,15/05/1998,DF,23,Saudi Arabia,Al-Hilal,Saudi Pro League,188,75,Right
+Saudi Arabia,2026,Player SAU-24,16/05/1998,MF,24,Saudi Arabia,Real Madrid,LaLiga,189,76,Right
+Saudi Arabia,2026,Player SAU-25,17/05/1998,MF,25,Saudi Arabia,Manchester City,Premier League,190,77,Right
+Saudi Arabia,2026,Player SAU-26,18/05/1998,MF,26,Saudi Arabia,Bayern Munich,Bundesliga,191,78,Right
+Uruguay,2026,Player URU-1,11/05/1998,DF,1,Uruguay,Manchester City,Premier League,181,71,Right
+Uruguay,2026,Player URU-2,12/05/1998,DF,2,Uruguay,Bayern Munich,Bundesliga,182,72,Right
+Uruguay,2026,Player URU-3,13/05/1998,DF,3,Uruguay,PSG,Ligue 1,183,73,Left
+Uruguay,2026,Player URU-4,14/05/1998,MF,4,Uruguay,Inter Milan,Serie A,184,74,Right
+Uruguay,2026,Player URU-5,15/05/1998,MF,5,Uruguay,Al-Hilal,Saudi Pro League,185,75,Right
+Uruguay,2026,Player URU-6,16/05/1998,MF,6,Uruguay,Real Madrid,LaLiga,186,76,Right
+Uruguay,2026,Player URU-7,17/05/1998,FW,7,Uruguay,Manchester City,Premier League,187,77,Left
+Uruguay,2026,Player URU-8,18/05/1998,FW,8,Uruguay,Bayern Munich,Bundesliga,188,78,Right
+Uruguay,2026,Player URU-9,19/05/1998,FW,9,Uruguay,PSG,Ligue 1,189,79,Right
+Uruguay,2026,Player URU-10,20/05/1998,GK,10,Uruguay,Inter Milan,Serie A,192,86,Right
+Uruguay,2026,Player URU-11,21/05/1998,DF,11,Uruguay,Al-Hilal,Saudi Pro League,191,81,Left
+Uruguay,2026,Player URU-12,22/05/1998,DF,12,Uruguay,Real Madrid,LaLiga,192,82,Right
+Uruguay,2026,Player URU-13,23/05/1998,DF,13,Uruguay,Manchester City,Premier League,193,83,Right
+Uruguay,2026,Player URU-14,24/05/1998,MF,14,Uruguay,Bayern Munich,Bundesliga,194,84,Right
+Uruguay,2026,Player URU-15,25/05/1998,MF,15,Uruguay,PSG,Ligue 1,180,85,Right
+Uruguay,2026,Player URU-16,26/05/1998,MF,16,Uruguay,Inter Milan,Serie A,181,86,Right
+Uruguay,2026,Player URU-17,27/05/1998,FW,17,Uruguay,Al-Hilal,Saudi Pro League,182,87,Right
+Uruguay,2026,Player URU-18,10/05/1998,FW,18,Uruguay,Real Madrid,LaLiga,183,70,Right
+Uruguay,2026,Player URU-19,11/05/1998,FW,19,Uruguay,Manchester City,Premier League,184,71,Right
+Uruguay,2026,Player URU-20,12/05/1998,GK,20,Uruguay,Bayern Munich,Bundesliga,192,86,Right
+Uruguay,2026,Player URU-21,13/05/1998,DF,21,Uruguay,PSG,Ligue 1,186,73,Left
+Uruguay,2026,Player URU-22,14/05/1998,DF,22,Uruguay,Inter Milan,Serie A,187,74,Right
+Uruguay,2026,Player URU-23,15/05/1998,DF,23,Uruguay,Al-Hilal,Saudi Pro League,188,75,Right
+Uruguay,2026,Player URU-24,16/05/1998,MF,24,Uruguay,Real Madrid,LaLiga,189,76,Right
+Uruguay,2026,Player URU-25,17/05/1998,MF,25,Uruguay,Manchester City,Premier League,190,77,Right
+Uruguay,2026,Player URU-26,18/05/1998,MF,26,Uruguay,Bayern Munich,Bundesliga,191,78,Right
+Colombia,2026,Player COL-1,11/05/1998,DF,1,Colombia,Manchester City,Premier League,181,71,Right
+Colombia,2026,Player COL-2,12/05/1998,DF,2,Colombia,Bayern Munich,Bundesliga,182,72,Right
+Colombia,2026,Player COL-3,13/05/1998,DF,3,Colombia,PSG,Ligue 1,183,73,Left
+Colombia,2026,Player COL-4,14/05/1998,MF,4,Colombia,Inter Milan,Serie A,184,74,Right
+Colombia,2026,Player COL-5,15/05/1998,MF,5,Colombia,Al-Hilal,Saudi Pro League,185,75,Right
+Colombia,2026,Player COL-6,16/05/1998,MF,6,Colombia,Real Madrid,LaLiga,186,76,Right
+Colombia,2026,Player COL-7,17/05/1998,FW,7,Colombia,Manchester City,Premier League,187,77,Left
+Colombia,2026,Player COL-8,18/05/1998,FW,8,Colombia,Bayern Munich,Bundesliga,188,78,Right
+Colombia,2026,Player COL-9,19/05/1998,FW,9,Colombia,PSG,Ligue 1,189,79,Right
+Colombia,2026,Player COL-10,20/05/1998,GK,10,Colombia,Inter Milan,Serie A,192,86,Right
+Colombia,2026,Player COL-11,21/05/1998,DF,11,Colombia,Al-Hilal,Saudi Pro League,191,81,Left
+Colombia,2026,Player COL-12,22/05/1998,DF,12,Colombia,Real Madrid,LaLiga,192,82,Right
+Colombia,2026,Player COL-13,23/05/1998,DF,13,Colombia,Manchester City,Premier League,193,83,Right
+Colombia,2026,Player COL-14,24/05/1998,MF,14,Colombia,Bayern Munich,Bundesliga,194,84,Right
+Colombia,2026,Player COL-15,25/05/1998,MF,15,Colombia,PSG,Ligue 1,180,85,Right
+Colombia,2026,Player COL-16,26/05/1998,MF,16,Colombia,Inter Milan,Serie A,181,86,Right
+Colombia,2026,Player COL-17,27/05/1998,FW,17,Colombia,Al-Hilal,Saudi Pro League,182,87,Right
+Colombia,2026,Player COL-18,10/05/1998,FW,18,Colombia,Real Madrid,LaLiga,183,70,Right
+Colombia,2026,Player COL-19,11/05/1998,FW,19,Colombia,Manchester City,Premier League,184,71,Right
+Colombia,2026,Player COL-20,12/05/1998,GK,20,Colombia,Bayern Munich,Bundesliga,192,86,Right
+Colombia,2026,Player COL-21,13/05/1998,DF,21,Colombia,PSG,Ligue 1,186,73,Left
+Colombia,2026,Player COL-22,14/05/1998,DF,22,Colombia,Inter Milan,Serie A,187,74,Right
+Colombia,2026,Player COL-23,15/05/1998,DF,23,Colombia,Al-Hilal,Saudi Pro League,188,75,Right
+Colombia,2026,Player COL-24,16/05/1998,MF,24,Colombia,Real Madrid,LaLiga,189,76,Right
+Colombia,2026,Player COL-25,17/05/1998,MF,25,Colombia,Manchester City,Premier League,190,77,Right
+Colombia,2026,Player COL-26,18/05/1998,MF,26,Colombia,Bayern Munich,Bundesliga,191,78,Right
+Ecuador,2026,Player ECU-1,11/05/1998,DF,1,Ecuador,Manchester City,Premier League,181,71,Right
+Ecuador,2026,Player ECU-2,12/05/1998,DF,2,Ecuador,Bayern Munich,Bundesliga,182,72,Right
+Ecuador,2026,Player ECU-3,13/05/1998,DF,3,Ecuador,PSG,Ligue 1,183,73,Left
+Ecuador,2026,Player ECU-4,14/05/1998,MF,4,Ecuador,Inter Milan,Serie A,184,74,Right
+Ecuador,2026,Player ECU-5,15/05/1998,MF,5,Ecuador,Al-Hilal,Saudi Pro League,185,75,Right
+Ecuador,2026,Player ECU-6,16/05/1998,MF,6,Ecuador,Real Madrid,LaLiga,186,76,Right
+Ecuador,2026,Player ECU-7,17/05/1998,FW,7,Ecuador,Manchester City,Premier League,187,77,Left
+Ecuador,2026,Player ECU-8,18/05/1998,FW,8,Ecuador,Bayern Munich,Bundesliga,188,78,Right
+Ecuador,2026,Player ECU-9,19/05/1998,FW,9,Ecuador,PSG,Ligue 1,189,79,Right
+Ecuador,2026,Player ECU-10,20/05/1998,GK,10,Ecuador,Inter Milan,Serie A,192,86,Right
+Ecuador,2026,Player ECU-11,21/05/1998,DF,11,Ecuador,Al-Hilal,Saudi Pro League,191,81,Left
+Ecuador,2026,Player ECU-12,22/05/1998,DF,12,Ecuador,Real Madrid,LaLiga,192,82,Right
+Ecuador,2026,Player ECU-13,23/05/1998,DF,13,Ecuador,Manchester City,Premier League,193,83,Right
+Ecuador,2026,Player ECU-14,24/05/1998,MF,14,Ecuador,Bayern Munich,Bundesliga,194,84,Right
+Ecuador,2026,Player ECU-15,25/05/1998,MF,15,Ecuador,PSG,Ligue 1,180,85,Right
+Ecuador,2026,Player ECU-16,26/05/1998,MF,16,Ecuador,Inter Milan,Serie A,181,86,Right
+Ecuador,2026,Player ECU-17,27/05/1998,FW,17,Ecuador,Al-Hilal,Saudi Pro League,182,87,Right
+Ecuador,2026,Player ECU-18,10/05/1998,FW,18,Ecuador,Real Madrid,LaLiga,183,70,Right
+Ecuador,2026,Player ECU-19,11/05/1998,FW,19,Ecuador,Manchester City,Premier League,184,71,Right
+Ecuador,2026,Player ECU-20,12/05/1998,GK,20,Ecuador,Bayern Munich,Bundesliga,192,86,Right
+Ecuador,2026,Player ECU-21,13/05/1998,DF,21,Ecuador,PSG,Ligue 1,186,73,Left
+Ecuador,2026,Player ECU-22,14/05/1998,DF,22,Ecuador,Inter Milan,Serie A,187,74,Right
+Ecuador,2026,Player ECU-23,15/05/1998,DF,23,Ecuador,Al-Hilal,Saudi Pro League,188,75,Right
+Ecuador,2026,Player ECU-24,16/05/1998,MF,24,Ecuador,Real Madrid,LaLiga,189,76,Right
+Ecuador,2026,Player ECU-25,17/05/1998,MF,25,Ecuador,Manchester City,Premier League,190,77,Right
+Ecuador,2026,Player ECU-26,18/05/1998,MF,26,Ecuador,Bayern Munich,Bundesliga,191,78,Right
+Peru,2026,Player PER-1,11/05/1998,DF,1,Peru,Manchester City,Premier League,181,71,Right
+Peru,2026,Player PER-2,12/05/1998,DF,2,Peru,Bayern Munich,Bundesliga,182,72,Right
+Peru,2026,Player PER-3,13/05/1998,DF,3,Peru,PSG,Ligue 1,183,73,Left
+Peru,2026,Player PER-4,14/05/1998,MF,4,Peru,Inter Milan,Serie A,184,74,Right
+Peru,2026,Player PER-5,15/05/1998,MF,5,Peru,Al-Hilal,Saudi Pro League,185,75,Right
+Peru,2026,Player PER-6,16/05/1998,MF,6,Peru,Real Madrid,LaLiga,186,76,Right
+Peru,2026,Player PER-7,17/05/1998,FW,7,Peru,Manchester City,Premier League,187,77,Left
+Peru,2026,Player PER-8,18/05/1998,FW,8,Peru,Bayern Munich,Bundesliga,188,78,Right
+Peru,2026,Player PER-9,19/05/1998,FW,9,Peru,PSG,Ligue 1,189,79,Right
+Peru,2026,Player PER-10,20/05/1998,GK,10,Peru,Inter Milan,Serie A,192,86,Right
+Peru,2026,Player PER-11,21/05/1998,DF,11,Peru,Al-Hilal,Saudi Pro League,191,81,Left
+Peru,2026,Player PER-12,22/05/1998,DF,12,Peru,Real Madrid,LaLiga,192,82,Right
+Peru,2026,Player PER-13,23/05/1998,DF,13,Peru,Manchester City,Premier League,193,83,Right
+Peru,2026,Player PER-14,24/05/1998,MF,14,Peru,Bayern Munich,Bundesliga,194,84,Right
+Peru,2026,Player PER-15,25/05/1998,MF,15,Peru,PSG,Ligue 1,180,85,Right
+Peru,2026,Player PER-16,26/05/1998,MF,16,Peru,Inter Milan,Serie A,181,86,Right
+Peru,2026,Player PER-17,27/05/1998,FW,17,Peru,Al-Hilal,Saudi Pro League,182,87,Right
+Peru,2026,Player PER-18,10/05/1998,FW,18,Peru,Real Madrid,LaLiga,183,70,Right
+Peru,2026,Player PER-19,11/05/1998,FW,19,Peru,Manchester City,Premier League,184,71,Right
+Peru,2026,Player PER-20,12/05/1998,GK,20,Peru,Bayern Munich,Bundesliga,192,86,Right
+Peru,2026,Player PER-21,13/05/1998,DF,21,Peru,PSG,Ligue 1,186,73,Left
+Peru,2026,Player PER-22,14/05/1998,DF,22,Peru,Inter Milan,Serie A,187,74,Right
+Peru,2026,Player PER-23,15/05/1998,DF,23,Peru,Al-Hilal,Saudi Pro League,188,75,Right
+Peru,2026,Player PER-24,16/05/1998,MF,24,Peru,Real Madrid,LaLiga,189,76,Right
+Peru,2026,Player PER-25,17/05/1998,MF,25,Peru,Manchester City,Premier League,190,77,Right
+Peru,2026,Player PER-26,18/05/1998,MF,26,Peru,Bayern Munich,Bundesliga,191,78,Right
+Chile,2026,Player CHI-1,11/05/1998,DF,1,Chile,Manchester City,Premier League,181,71,Right
+Chile,2026,Player CHI-2,12/05/1998,DF,2,Chile,Bayern Munich,Bundesliga,182,72,Right
+Chile,2026,Player CHI-3,13/05/1998,DF,3,Chile,PSG,Ligue 1,183,73,Left
+Chile,2026,Player CHI-4,14/05/1998,MF,4,Chile,Inter Milan,Serie A,184,74,Right
+Chile,2026,Player CHI-5,15/05/1998,MF,5,Chile,Al-Hilal,Saudi Pro League,185,75,Right
+Chile,2026,Player CHI-6,16/05/1998,MF,6,Chile,Real Madrid,LaLiga,186,76,Right
+Chile,2026,Player CHI-7,17/05/1998,FW,7,Chile,Manchester City,Premier League,187,77,Left
+Chile,2026,Player CHI-8,18/05/1998,FW,8,Chile,Bayern Munich,Bundesliga,188,78,Right
+Chile,2026,Player CHI-9,19/05/1998,FW,9,Chile,PSG,Ligue 1,189,79,Right
+Chile,2026,Player CHI-10,20/05/1998,GK,10,Chile,Inter Milan,Serie A,192,86,Right
+Chile,2026,Player CHI-11,21/05/1998,DF,11,Chile,Al-Hilal,Saudi Pro League,191,81,Left
+Chile,2026,Player CHI-12,22/05/1998,DF,12,Chile,Real Madrid,LaLiga,192,82,Right
+Chile,2026,Player CHI-13,23/05/1998,DF,13,Chile,Manchester City,Premier League,193,83,Right
+Chile,2026,Player CHI-14,24/05/1998,MF,14,Chile,Bayern Munich,Bundesliga,194,84,Right
+Chile,2026,Player CHI-15,25/05/1998,MF,15,Chile,PSG,Ligue 1,180,85,Right
+Chile,2026,Player CHI-16,26/05/1998,MF,16,Chile,Inter Milan,Serie A,181,86,Right
+Chile,2026,Player CHI-17,27/05/1998,FW,17,Chile,Al-Hilal,Saudi Pro League,182,87,Right
+Chile,2026,Player CHI-18,10/05/1998,FW,18,Chile,Real Madrid,LaLiga,183,70,Right
+Chile,2026,Player CHI-19,11/05/1998,FW,19,Chile,Manchester City,Premier League,184,71,Right
+Chile,2026,Player CHI-20,12/05/1998,GK,20,Chile,Bayern Munich,Bundesliga,192,86,Right
+Chile,2026,Player CHI-21,13/05/1998,DF,21,Chile,PSG,Ligue 1,186,73,Left
+Chile,2026,Player CHI-22,14/05/1998,DF,22,Chile,Inter Milan,Serie A,187,74,Right
+Chile,2026,Player CHI-23,15/05/1998,DF,23,Chile,Al-Hilal,Saudi Pro League,188,75,Right
+Chile,2026,Player CHI-24,16/05/1998,MF,24,Chile,Real Madrid,LaLiga,189,76,Right
+Chile,2026,Player CHI-25,17/05/1998,MF,25,Chile,Manchester City,Premier League,190,77,Right
+Chile,2026,Player CHI-26,18/05/1998,MF,26,Chile,Bayern Munich,Bundesliga,191,78,Right
+Nigeria,2026,Player NIG-1,11/05/1998,DF,1,Nigeria,Manchester City,Premier League,181,71,Right
+Nigeria,2026,Player NIG-2,12/05/1998,DF,2,Nigeria,Bayern Munich,Bundesliga,182,72,Right
+Nigeria,2026,Player NIG-3,13/05/1998,DF,3,Nigeria,PSG,Ligue 1,183,73,Left
+Nigeria,2026,Player NIG-4,14/05/1998,MF,4,Nigeria,Inter Milan,Serie A,184,74,Right
+Nigeria,2026,Player NIG-5,15/05/1998,MF,5,Nigeria,Al-Hilal,Saudi Pro League,185,75,Right
+Nigeria,2026,Player NIG-6,16/05/1998,MF,6,Nigeria,Real Madrid,LaLiga,186,76,Right
+Nigeria,2026,Player NIG-7,17/05/1998,FW,7,Nigeria,Manchester City,Premier League,187,77,Left
+Nigeria,2026,Player NIG-8,18/05/1998,FW,8,Nigeria,Bayern Munich,Bundesliga,188,78,Right
+Nigeria,2026,Player NIG-9,19/05/1998,FW,9,Nigeria,PSG,Ligue 1,189,79,Right
+Nigeria,2026,Player NIG-10,20/05/1998,GK,10,Nigeria,Inter Milan,Serie A,192,86,Right
+Nigeria,2026,Player NIG-11,21/05/1998,DF,11,Nigeria,Al-Hilal,Saudi Pro League,191,81,Left
+Nigeria,2026,Player NIG-12,22/05/1998,DF,12,Nigeria,Real Madrid,LaLiga,192,82,Right
+Nigeria,2026,Player NIG-13,23/05/1998,DF,13,Nigeria,Manchester City,Premier League,193,83,Right
+Nigeria,2026,Player NIG-14,24/05/1998,MF,14,Nigeria,Bayern Munich,Bundesliga,194,84,Right
+Nigeria,2026,Player NIG-15,25/05/1998,MF,15,Nigeria,PSG,Ligue 1,180,85,Right
+Nigeria,2026,Player NIG-16,26/05/1998,MF,16,Nigeria,Inter Milan,Serie A,181,86,Right
+Nigeria,2026,Player NIG-17,27/05/1998,FW,17,Nigeria,Al-Hilal,Saudi Pro League,182,87,Right
+Nigeria,2026,Player NIG-18,10/05/1998,FW,18,Nigeria,Real Madrid,LaLiga,183,70,Right
+Nigeria,2026,Player NIG-19,11/05/1998,FW,19,Nigeria,Manchester City,Premier League,184,71,Right
+Nigeria,2026,Player NIG-20,12/05/1998,GK,20,Nigeria,Bayern Munich,Bundesliga,192,86,Right
+Nigeria,2026,Player NIG-21,13/05/1998,DF,21,Nigeria,PSG,Ligue 1,186,73,Left
+Nigeria,2026,Player NIG-22,14/05/1998,DF,22,Nigeria,Inter Milan,Serie A,187,74,Right
+Nigeria,2026,Player NIG-23,15/05/1998,DF,23,Nigeria,Al-Hilal,Saudi Pro League,188,75,Right
+Nigeria,2026,Player NIG-24,16/05/1998,MF,24,Nigeria,Real Madrid,LaLiga,189,76,Right
+Nigeria,2026,Player NIG-25,17/05/1998,MF,25,Nigeria,Manchester City,Premier League,190,77,Right
+Nigeria,2026,Player NIG-26,18/05/1998,MF,26,Nigeria,Bayern Munich,Bundesliga,191,78,Right
+Egypt,2026,Player EGY-1,11/05/1998,DF,1,Egypt,Manchester City,Premier League,181,71,Right
+Egypt,2026,Player EGY-2,12/05/1998,DF,2,Egypt,Bayern Munich,Bundesliga,182,72,Right
+Egypt,2026,Player EGY-3,13/05/1998,DF,3,Egypt,PSG,Ligue 1,183,73,Left
+Egypt,2026,Player EGY-4,14/05/1998,MF,4,Egypt,Inter Milan,Serie A,184,74,Right
+Egypt,2026,Player EGY-5,15/05/1998,MF,5,Egypt,Al-Hilal,Saudi Pro League,185,75,Right
+Egypt,2026,Player EGY-6,16/05/1998,MF,6,Egypt,Real Madrid,LaLiga,186,76,Right
+Egypt,2026,Player EGY-7,17/05/1998,FW,7,Egypt,Manchester City,Premier League,187,77,Left
+Egypt,2026,Player EGY-8,18/05/1998,FW,8,Egypt,Bayern Munich,Bundesliga,188,78,Right
+Egypt,2026,Player EGY-9,19/05/1998,FW,9,Egypt,PSG,Ligue 1,189,79,Right
+Egypt,2026,Player EGY-10,20/05/1998,GK,10,Egypt,Inter Milan,Serie A,192,86,Right
+Egypt,2026,Player EGY-11,21/05/1998,DF,11,Egypt,Al-Hilal,Saudi Pro League,191,81,Left
+Egypt,2026,Player EGY-12,22/05/1998,DF,12,Egypt,Real Madrid,LaLiga,192,82,Right
+Egypt,2026,Player EGY-13,23/05/1998,DF,13,Egypt,Manchester City,Premier League,193,83,Right
+Egypt,2026,Player EGY-14,24/05/1998,MF,14,Egypt,Bayern Munich,Bundesliga,194,84,Right
+Egypt,2026,Player EGY-15,25/05/1998,MF,15,Egypt,PSG,Ligue 1,180,85,Right
+Egypt,2026,Player EGY-16,26/05/1998,MF,16,Egypt,Inter Milan,Serie A,181,86,Right
+Egypt,2026,Player EGY-17,27/05/1998,FW,17,Egypt,Al-Hilal,Saudi Pro League,182,87,Right
+Egypt,2026,Player EGY-18,10/05/1998,FW,18,Egypt,Real Madrid,LaLiga,183,70,Right
+Egypt,2026,Player EGY-19,11/05/1998,FW,19,Egypt,Manchester City,Premier League,184,71,Right
+Egypt,2026,Player EGY-20,12/05/1998,GK,20,Egypt,Bayern Munich,Bundesliga,192,86,Right
+Egypt,2026,Player EGY-21,13/05/1998,DF,21,Egypt,PSG,Ligue 1,186,73,Left
+Egypt,2026,Player EGY-22,14/05/1998,DF,22,Egypt,Inter Milan,Serie A,187,74,Right
+Egypt,2026,Player EGY-23,15/05/1998,DF,23,Egypt,Al-Hilal,Saudi Pro League,188,75,Right
+Egypt,2026,Player EGY-24,16/05/1998,MF,24,Egypt,Real Madrid,LaLiga,189,76,Right
+Egypt,2026,Player EGY-25,17/05/1998,MF,25,Egypt,Manchester City,Premier League,190,77,Right
+Egypt,2026,Player EGY-26,18/05/1998,MF,26,Egypt,Bayern Munich,Bundesliga,191,78,Right
+Ivory Coast,2026,Player IVO-1,11/05/1998,DF,1,Ivory Coast,Manchester City,Premier League,181,71,Right
+Ivory Coast,2026,Player IVO-2,12/05/1998,DF,2,Ivory Coast,Bayern Munich,Bundesliga,182,72,Right
+Ivory Coast,2026,Player IVO-3,13/05/1998,DF,3,Ivory Coast,PSG,Ligue 1,183,73,Left
+Ivory Coast,2026,Player IVO-4,14/05/1998,MF,4,Ivory Coast,Inter Milan,Serie A,184,74,Right
+Ivory Coast,2026,Player IVO-5,15/05/1998,MF,5,Ivory Coast,Al-Hilal,Saudi Pro League,185,75,Right
+Ivory Coast,2026,Player IVO-6,16/05/1998,MF,6,Ivory Coast,Real Madrid,LaLiga,186,76,Right
+Ivory Coast,2026,Player IVO-7,17/05/1998,FW,7,Ivory Coast,Manchester City,Premier League,187,77,Left
+Ivory Coast,2026,Player IVO-8,18/05/1998,FW,8,Ivory Coast,Bayern Munich,Bundesliga,188,78,Right
+Ivory Coast,2026,Player IVO-9,19/05/1998,FW,9,Ivory Coast,PSG,Ligue 1,189,79,Right
+Ivory Coast,2026,Player IVO-10,20/05/1998,GK,10,Ivory Coast,Inter Milan,Serie A,192,86,Right
+Ivory Coast,2026,Player IVO-11,21/05/1998,DF,11,Ivory Coast,Al-Hilal,Saudi Pro League,191,81,Left
+Ivory Coast,2026,Player IVO-12,22/05/1998,DF,12,Ivory Coast,Real Madrid,LaLiga,192,82,Right
+Ivory Coast,2026,Player IVO-13,23/05/1998,DF,13,Ivory Coast,Manchester City,Premier League,193,83,Right
+Ivory Coast,2026,Player IVO-14,24/05/1998,MF,14,Ivory Coast,Bayern Munich,Bundesliga,194,84,Right
+Ivory Coast,2026,Player IVO-15,25/05/1998,MF,15,Ivory Coast,PSG,Ligue 1,180,85,Right
+Ivory Coast,2026,Player IVO-16,26/05/1998,MF,16,Ivory Coast,Inter Milan,Serie A,181,86,Right
+Ivory Coast,2026,Player IVO-17,27/05/1998,FW,17,Ivory Coast,Al-Hilal,Saudi Pro League,182,87,Right
+Ivory Coast,2026,Player IVO-18,10/05/1998,FW,18,Ivory Coast,Real Madrid,LaLiga,183,70,Right
+Ivory Coast,2026,Player IVO-19,11/05/1998,FW,19,Ivory Coast,Manchester City,Premier League,184,71,Right
+Ivory Coast,2026,Player IVO-20,12/05/1998,GK,20,Ivory Coast,Bayern Munich,Bundesliga,192,86,Right
+Ivory Coast,2026,Player IVO-21,13/05/1998,DF,21,Ivory Coast,PSG,Ligue 1,186,73,Left
+Ivory Coast,2026,Player IVO-22,14/05/1998,DF,22,Ivory Coast,Inter Milan,Serie A,187,74,Right
+Ivory Coast,2026,Player IVO-23,15/05/1998,DF,23,Ivory Coast,Al-Hilal,Saudi Pro League,188,75,Right
+Ivory Coast,2026,Player IVO-24,16/05/1998,MF,24,Ivory Coast,Real Madrid,LaLiga,189,76,Right
+Ivory Coast,2026,Player IVO-25,17/05/1998,MF,25,Ivory Coast,Manchester City,Premier League,190,77,Right
+Ivory Coast,2026,Player IVO-26,18/05/1998,MF,26,Ivory Coast,Bayern Munich,Bundesliga,191,78,Right
+Cameroon,2026,Player CAM-1,11/05/1998,DF,1,Cameroon,Manchester City,Premier League,181,71,Right
+Cameroon,2026,Player CAM-2,12/05/1998,DF,2,Cameroon,Bayern Munich,Bundesliga,182,72,Right
+Cameroon,2026,Player CAM-3,13/05/1998,DF,3,Cameroon,PSG,Ligue 1,183,73,Left
+Cameroon,2026,Player CAM-4,14/05/1998,MF,4,Cameroon,Inter Milan,Serie A,184,74,Right
+Cameroon,2026,Player CAM-5,15/05/1998,MF,5,Cameroon,Al-Hilal,Saudi Pro League,185,75,Right
+Cameroon,2026,Player CAM-6,16/05/1998,MF,6,Cameroon,Real Madrid,LaLiga,186,76,Right
+Cameroon,2026,Player CAM-7,17/05/1998,FW,7,Cameroon,Manchester City,Premier League,187,77,Left
+Cameroon,2026,Player CAM-8,18/05/1998,FW,8,Cameroon,Bayern Munich,Bundesliga,188,78,Right
+Cameroon,2026,Player CAM-9,19/05/1998,FW,9,Cameroon,PSG,Ligue 1,189,79,Right
+Cameroon,2026,Player CAM-10,20/05/1998,GK,10,Cameroon,Inter Milan,Serie A,192,86,Right
+Cameroon,2026,Player CAM-11,21/05/1998,DF,11,Cameroon,Al-Hilal,Saudi Pro League,191,81,Left
+Cameroon,2026,Player CAM-12,22/05/1998,DF,12,Cameroon,Real Madrid,LaLiga,192,82,Right
+Cameroon,2026,Player CAM-13,23/05/1998,DF,13,Cameroon,Manchester City,Premier League,193,83,Right
+Cameroon,2026,Player CAM-14,24/05/1998,MF,14,Cameroon,Bayern Munich,Bundesliga,194,84,Right
+Cameroon,2026,Player CAM-15,25/05/1998,MF,15,Cameroon,PSG,Ligue 1,180,85,Right
+Cameroon,2026,Player CAM-16,26/05/1998,MF,16,Cameroon,Inter Milan,Serie A,181,86,Right
+Cameroon,2026,Player CAM-17,27/05/1998,FW,17,Cameroon,Al-Hilal,Saudi Pro League,182,87,Right
+Cameroon,2026,Player CAM-18,10/05/1998,FW,18,Cameroon,Real Madrid,LaLiga,183,70,Right
+Cameroon,2026,Player CAM-19,11/05/1998,FW,19,Cameroon,Manchester City,Premier League,184,71,Right
+Cameroon,2026,Player CAM-20,12/05/1998,GK,20,Cameroon,Bayern Munich,Bundesliga,192,86,Right
+Cameroon,2026,Player CAM-21,13/05/1998,DF,21,Cameroon,PSG,Ligue 1,186,73,Left
+Cameroon,2026,Player CAM-22,14/05/1998,DF,22,Cameroon,Inter Milan,Serie A,187,74,Right
+Cameroon,2026,Player CAM-23,15/05/1998,DF,23,Cameroon,Al-Hilal,Saudi Pro League,188,75,Right
+Cameroon,2026,Player CAM-24,16/05/1998,MF,24,Cameroon,Real Madrid,LaLiga,189,76,Right
+Cameroon,2026,Player CAM-25,17/05/1998,MF,25,Cameroon,Manchester City,Premier League,190,77,Right
+Cameroon,2026,Player CAM-26,18/05/1998,MF,26,Cameroon,Bayern Munich,Bundesliga,191,78,Right
+Ghana,2026,Player GHA-1,11/05/1998,DF,1,Ghana,Manchester City,Premier League,181,71,Right
+Ghana,2026,Player GHA-2,12/05/1998,DF,2,Ghana,Bayern Munich,Bundesliga,182,72,Right
+Ghana,2026,Player GHA-3,13/05/1998,DF,3,Ghana,PSG,Ligue 1,183,73,Left
+Ghana,2026,Player GHA-4,14/05/1998,MF,4,Ghana,Inter Milan,Serie A,184,74,Right
+Ghana,2026,Player GHA-5,15/05/1998,MF,5,Ghana,Al-Hilal,Saudi Pro League,185,75,Right
+Ghana,2026,Player GHA-6,16/05/1998,MF,6,Ghana,Real Madrid,LaLiga,186,76,Right
+Ghana,2026,Player GHA-7,17/05/1998,FW,7,Ghana,Manchester City,Premier League,187,77,Left
+Ghana,2026,Player GHA-8,18/05/1998,FW,8,Ghana,Bayern Munich,Bundesliga,188,78,Right
+Ghana,2026,Player GHA-9,19/05/1998,FW,9,Ghana,PSG,Ligue 1,189,79,Right
+Ghana,2026,Player GHA-10,20/05/1998,GK,10,Ghana,Inter Milan,Serie A,192,86,Right
+Ghana,2026,Player GHA-11,21/05/1998,DF,11,Ghana,Al-Hilal,Saudi Pro League,191,81,Left
+Ghana,2026,Player GHA-12,22/05/1998,DF,12,Ghana,Real Madrid,LaLiga,192,82,Right
+Ghana,2026,Player GHA-13,23/05/1998,DF,13,Ghana,Manchester City,Premier League,193,83,Right
+Ghana,2026,Player GHA-14,24/05/1998,MF,14,Ghana,Bayern Munich,Bundesliga,194,84,Right
+Ghana,2026,Player GHA-15,25/05/1998,MF,15,Ghana,PSG,Ligue 1,180,85,Right
+Ghana,2026,Player GHA-16,26/05/1998,MF,16,Ghana,Inter Milan,Serie A,181,86,Right
+Ghana,2026,Player GHA-17,27/05/1998,FW,17,Ghana,Al-Hilal,Saudi Pro League,182,87,Right
+Ghana,2026,Player GHA-18,10/05/1998,FW,18,Ghana,Real Madrid,LaLiga,183,70,Right
+Ghana,2026,Player GHA-19,11/05/1998,FW,19,Ghana,Manchester City,Premier League,184,71,Right
+Ghana,2026,Player GHA-20,12/05/1998,GK,20,Ghana,Bayern Munich,Bundesliga,192,86,Right
+Ghana,2026,Player GHA-21,13/05/1998,DF,21,Ghana,PSG,Ligue 1,186,73,Left
+Ghana,2026,Player GHA-22,14/05/1998,DF,22,Ghana,Inter Milan,Serie A,187,74,Right
+Ghana,2026,Player GHA-23,15/05/1998,DF,23,Ghana,Al-Hilal,Saudi Pro League,188,75,Right
+Ghana,2026,Player GHA-24,16/05/1998,MF,24,Ghana,Real Madrid,LaLiga,189,76,Right
+Ghana,2026,Player GHA-25,17/05/1998,MF,25,Ghana,Manchester City,Premier League,190,77,Right
+Ghana,2026,Player GHA-26,18/05/1998,MF,26,Ghana,Bayern Munich,Bundesliga,191,78,Right
+Tunisia,2026,Player TUN-1,11/05/1998,DF,1,Tunisia,Manchester City,Premier League,181,71,Right
+Tunisia,2026,Player TUN-2,12/05/1998,DF,2,Tunisia,Bayern Munich,Bundesliga,182,72,Right
+Tunisia,2026,Player TUN-3,13/05/1998,DF,3,Tunisia,PSG,Ligue 1,183,73,Left
+Tunisia,2026,Player TUN-4,14/05/1998,MF,4,Tunisia,Inter Milan,Serie A,184,74,Right
+Tunisia,2026,Player TUN-5,15/05/1998,MF,5,Tunisia,Al-Hilal,Saudi Pro League,185,75,Right
+Tunisia,2026,Player TUN-6,16/05/1998,MF,6,Tunisia,Real Madrid,LaLiga,186,76,Right
+Tunisia,2026,Player TUN-7,17/05/1998,FW,7,Tunisia,Manchester City,Premier League,187,77,Left
+Tunisia,2026,Player TUN-8,18/05/1998,FW,8,Tunisia,Bayern Munich,Bundesliga,188,78,Right
+Tunisia,2026,Player TUN-9,19/05/1998,FW,9,Tunisia,PSG,Ligue 1,189,79,Right
+Tunisia,2026,Player TUN-10,20/05/1998,GK,10,Tunisia,Inter Milan,Serie A,192,86,Right
+Tunisia,2026,Player TUN-11,21/05/1998,DF,11,Tunisia,Al-Hilal,Saudi Pro League,191,81,Left
+Tunisia,2026,Player TUN-12,22/05/1998,DF,12,Tunisia,Real Madrid,LaLiga,192,82,Right
+Tunisia,2026,Player TUN-13,23/05/1998,DF,13,Tunisia,Manchester City,Premier League,193,83,Right
+Tunisia,2026,Player TUN-14,24/05/1998,MF,14,Tunisia,Bayern Munich,Bundesliga,194,84,Right
+Tunisia,2026,Player TUN-15,25/05/1998,MF,15,Tunisia,PSG,Ligue 1,180,85,Right
+Tunisia,2026,Player TUN-16,26/05/1998,MF,16,Tunisia,Inter Milan,Serie A,181,86,Right
+Tunisia,2026,Player TUN-17,27/05/1998,FW,17,Tunisia,Al-Hilal,Saudi Pro League,182,87,Right
+Tunisia,2026,Player TUN-18,10/05/1998,FW,18,Tunisia,Real Madrid,LaLiga,183,70,Right
+Tunisia,2026,Player TUN-19,11/05/1998,FW,19,Tunisia,Manchester City,Premier League,184,71,Right
+Tunisia,2026,Player TUN-20,12/05/1998,GK,20,Tunisia,Bayern Munich,Bundesliga,192,86,Right
+Tunisia,2026,Player TUN-21,13/05/1998,DF,21,Tunisia,PSG,Ligue 1,186,73,Left
+Tunisia,2026,Player TUN-22,14/05/1998,DF,22,Tunisia,Inter Milan,Serie A,187,74,Right
+Tunisia,2026,Player TUN-23,15/05/1998,DF,23,Tunisia,Al-Hilal,Saudi Pro League,188,75,Right
+Tunisia,2026,Player TUN-24,16/05/1998,MF,24,Tunisia,Real Madrid,LaLiga,189,76,Right
+Tunisia,2026,Player TUN-25,17/05/1998,MF,25,Tunisia,Manchester City,Premier League,190,77,Right
+Tunisia,2026,Player TUN-26,18/05/1998,MF,26,Tunisia,Bayern Munich,Bundesliga,191,78,Right
+Ukraine,2026,Player UKR-1,11/05/1998,DF,1,Ukraine,Manchester City,Premier League,181,71,Right
+Ukraine,2026,Player UKR-2,12/05/1998,DF,2,Ukraine,Bayern Munich,Bundesliga,182,72,Right
+Ukraine,2026,Player UKR-3,13/05/1998,DF,3,Ukraine,PSG,Ligue 1,183,73,Left
+Ukraine,2026,Player UKR-4,14/05/1998,MF,4,Ukraine,Inter Milan,Serie A,184,74,Right
+Ukraine,2026,Player UKR-5,15/05/1998,MF,5,Ukraine,Al-Hilal,Saudi Pro League,185,75,Right
+Ukraine,2026,Player UKR-6,16/05/1998,MF,6,Ukraine,Real Madrid,LaLiga,186,76,Right
+Ukraine,2026,Player UKR-7,17/05/1998,FW,7,Ukraine,Manchester City,Premier League,187,77,Left
+Ukraine,2026,Player UKR-8,18/05/1998,FW,8,Ukraine,Bayern Munich,Bundesliga,188,78,Right
+Ukraine,2026,Player UKR-9,19/05/1998,FW,9,Ukraine,PSG,Ligue 1,189,79,Right
+Ukraine,2026,Player UKR-10,20/05/1998,GK,10,Ukraine,Inter Milan,Serie A,192,86,Right
+Ukraine,2026,Player UKR-11,21/05/1998,DF,11,Ukraine,Al-Hilal,Saudi Pro League,191,81,Left
+Ukraine,2026,Player UKR-12,22/05/1998,DF,12,Ukraine,Real Madrid,LaLiga,192,82,Right
+Ukraine,2026,Player UKR-13,23/05/1998,DF,13,Ukraine,Manchester City,Premier League,193,83,Right
+Ukraine,2026,Player UKR-14,24/05/1998,MF,14,Ukraine,Bayern Munich,Bundesliga,194,84,Right
+Ukraine,2026,Player UKR-15,25/05/1998,MF,15,Ukraine,PSG,Ligue 1,180,85,Right
+Ukraine,2026,Player UKR-16,26/05/1998,MF,16,Ukraine,Inter Milan,Serie A,181,86,Right
+Ukraine,2026,Player UKR-17,27/05/1998,FW,17,Ukraine,Al-Hilal,Saudi Pro League,182,87,Right
+Ukraine,2026,Player UKR-18,10/05/1998,FW,18,Ukraine,Real Madrid,LaLiga,183,70,Right
+Ukraine,2026,Player UKR-19,11/05/1998,FW,19,Ukraine,Manchester City,Premier League,184,71,Right
+Ukraine,2026,Player UKR-20,12/05/1998,GK,20,Ukraine,Bayern Munich,Bundesliga,192,86,Right
+Ukraine,2026,Player UKR-21,13/05/1998,DF,21,Ukraine,PSG,Ligue 1,186,73,Left
+Ukraine,2026,Player UKR-22,14/05/1998,DF,22,Ukraine,Inter Milan,Serie A,187,74,Right
+Ukraine,2026,Player UKR-23,15/05/1998,DF,23,Ukraine,Al-Hilal,Saudi Pro League,188,75,Right
+Ukraine,2026,Player UKR-24,16/05/1998,MF,24,Ukraine,Real Madrid,LaLiga,189,76,Right
+Ukraine,2026,Player UKR-25,17/05/1998,MF,25,Ukraine,Manchester City,Premier League,190,77,Right
+Ukraine,2026,Player UKR-26,18/05/1998,MF,26,Ukraine,Bayern Munich,Bundesliga,191,78,Right
+Poland,2026,Player POL-1,11/05/1998,DF,1,Poland,Manchester City,Premier League,181,71,Right
+Poland,2026,Player POL-2,12/05/1998,DF,2,Poland,Bayern Munich,Bundesliga,182,72,Right
+Poland,2026,Player POL-3,13/05/1998,DF,3,Poland,PSG,Ligue 1,183,73,Left
+Poland,2026,Player POL-4,14/05/1998,MF,4,Poland,Inter Milan,Serie A,184,74,Right
+Poland,2026,Player POL-5,15/05/1998,MF,5,Poland,Al-Hilal,Saudi Pro League,185,75,Right
+Poland,2026,Player POL-6,16/05/1998,MF,6,Poland,Real Madrid,LaLiga,186,76,Right
+Poland,2026,Player POL-7,17/05/1998,FW,7,Poland,Manchester City,Premier League,187,77,Left
+Poland,2026,Player POL-8,18/05/1998,FW,8,Poland,Bayern Munich,Bundesliga,188,78,Right
+Poland,2026,Player POL-9,19/05/1998,FW,9,Poland,PSG,Ligue 1,189,79,Right
+Poland,2026,Player POL-10,20/05/1998,GK,10,Poland,Inter Milan,Serie A,192,86,Right
+Poland,2026,Player POL-11,21/05/1998,DF,11,Poland,Al-Hilal,Saudi Pro League,191,81,Left
+Poland,2026,Player POL-12,22/05/1998,DF,12,Poland,Real Madrid,LaLiga,192,82,Right
+Poland,2026,Player POL-13,23/05/1998,DF,13,Poland,Manchester City,Premier League,193,83,Right
+Poland,2026,Player POL-14,24/05/1998,MF,14,Poland,Bayern Munich,Bundesliga,194,84,Right
+Poland,2026,Player POL-15,25/05/1998,MF,15,Poland,PSG,Ligue 1,180,85,Right
+Poland,2026,Player POL-16,26/05/1998,MF,16,Poland,Inter Milan,Serie A,181,86,Right
+Poland,2026,Player POL-17,27/05/1998,FW,17,Poland,Al-Hilal,Saudi Pro League,182,87,Right
+Poland,2026,Player POL-18,10/05/1998,FW,18,Poland,Real Madrid,LaLiga,183,70,Right
+Poland,2026,Player POL-19,11/05/1998,FW,19,Poland,Manchester City,Premier League,184,71,Right
+Poland,2026,Player POL-20,12/05/1998,GK,20,Poland,Bayern Munich,Bundesliga,192,86,Right
+Poland,2026,Player POL-21,13/05/1998,DF,21,Poland,PSG,Ligue 1,186,73,Left
+Poland,2026,Player POL-22,14/05/1998,DF,22,Poland,Inter Milan,Serie A,187,74,Right
+Poland,2026,Player POL-23,15/05/1998,DF,23,Poland,Al-Hilal,Saudi Pro League,188,75,Right
+Poland,2026,Player POL-24,16/05/1998,MF,24,Poland,Real Madrid,LaLiga,189,76,Right
+Poland,2026,Player POL-25,17/05/1998,MF,25,Poland,Manchester City,Premier League,190,77,Right
+Poland,2026,Player POL-26,18/05/1998,MF,26,Poland,Bayern Munich,Bundesliga,191,78,Right
+Sweden,2026,Player SWE-1,11/05/1998,DF,1,Sweden,Manchester City,Premier League,181,71,Right
+Sweden,2026,Player SWE-2,12/05/1998,DF,2,Sweden,Bayern Munich,Bundesliga,182,72,Right
+Sweden,2026,Player SWE-3,13/05/1998,DF,3,Sweden,PSG,Ligue 1,183,73,Left
+Sweden,2026,Player SWE-4,14/05/1998,MF,4,Sweden,Inter Milan,Serie A,184,74,Right
+Sweden,2026,Player SWE-5,15/05/1998,MF,5,Sweden,Al-Hilal,Saudi Pro League,185,75,Right
+Sweden,2026,Player SWE-6,16/05/1998,MF,6,Sweden,Real Madrid,LaLiga,186,76,Right
+Sweden,2026,Player SWE-7,17/05/1998,FW,7,Sweden,Manchester City,Premier League,187,77,Left
+Sweden,2026,Player SWE-8,18/05/1998,FW,8,Sweden,Bayern Munich,Bundesliga,188,78,Right
+Sweden,2026,Player SWE-9,19/05/1998,FW,9,Sweden,PSG,Ligue 1,189,79,Right
+Sweden,2026,Player SWE-10,20/05/1998,GK,10,Sweden,Inter Milan,Serie A,192,86,Right
+Sweden,2026,Player SWE-11,21/05/1998,DF,11,Sweden,Al-Hilal,Saudi Pro League,191,81,Left
+Sweden,2026,Player SWE-12,22/05/1998,DF,12,Sweden,Real Madrid,LaLiga,192,82,Right
+Sweden,2026,Player SWE-13,23/05/1998,DF,13,Sweden,Manchester City,Premier League,193,83,Right
+Sweden,2026,Player SWE-14,24/05/1998,MF,14,Sweden,Bayern Munich,Bundesliga,194,84,Right
+Sweden,2026,Player SWE-15,25/05/1998,MF,15,Sweden,PSG,Ligue 1,180,85,Right
+Sweden,2026,Player SWE-16,26/05/1998,MF,16,Sweden,Inter Milan,Serie A,181,86,Right
+Sweden,2026,Player SWE-17,27/05/1998,FW,17,Sweden,Al-Hilal,Saudi Pro League,182,87,Right
+Sweden,2026,Player SWE-18,10/05/1998,FW,18,Sweden,Real Madrid,LaLiga,183,70,Right
+Sweden,2026,Player SWE-19,11/05/1998,FW,19,Sweden,Manchester City,Premier League,184,71,Right
+Sweden,2026,Player SWE-20,12/05/1998,GK,20,Sweden,Bayern Munich,Bundesliga,192,86,Right
+Sweden,2026,Player SWE-21,13/05/1998,DF,21,Sweden,PSG,Ligue 1,186,73,Left
+Sweden,2026,Player SWE-22,14/05/1998,DF,22,Sweden,Inter Milan,Serie A,187,74,Right
+Sweden,2026,Player SWE-23,15/05/1998,DF,23,Sweden,Al-Hilal,Saudi Pro League,188,75,Right
+Sweden,2026,Player SWE-24,16/05/1998,MF,24,Sweden,Real Madrid,LaLiga,189,76,Right
+Sweden,2026,Player SWE-25,17/05/1998,MF,25,Sweden,Manchester City,Premier League,190,77,Right
+Sweden,2026,Player SWE-26,18/05/1998,MF,26,Sweden,Bayern Munich,Bundesliga,191,78,Right
+Switzerland,2026,Player SWI-1,11/05/1998,DF,1,Switzerland,Manchester City,Premier League,181,71,Right
+Switzerland,2026,Player SWI-2,12/05/1998,DF,2,Switzerland,Bayern Munich,Bundesliga,182,72,Right
+Switzerland,2026,Player SWI-3,13/05/1998,DF,3,Switzerland,PSG,Ligue 1,183,73,Left
+Switzerland,2026,Player SWI-4,14/05/1998,MF,4,Switzerland,Inter Milan,Serie A,184,74,Right
+Switzerland,2026,Player SWI-5,15/05/1998,MF,5,Switzerland,Al-Hilal,Saudi Pro League,185,75,Right
+Switzerland,2026,Player SWI-6,16/05/1998,MF,6,Switzerland,Real Madrid,LaLiga,186,76,Right
+Switzerland,2026,Player SWI-7,17/05/1998,FW,7,Switzerland,Manchester City,Premier League,187,77,Left
+Switzerland,2026,Player SWI-8,18/05/1998,FW,8,Switzerland,Bayern Munich,Bundesliga,188,78,Right
+Switzerland,2026,Player SWI-9,19/05/1998,FW,9,Switzerland,PSG,Ligue 1,189,79,Right
+Switzerland,2026,Player SWI-10,20/05/1998,GK,10,Switzerland,Inter Milan,Serie A,192,86,Right
+Switzerland,2026,Player SWI-11,21/05/1998,DF,11,Switzerland,Al-Hilal,Saudi Pro League,191,81,Left
+Switzerland,2026,Player SWI-12,22/05/1998,DF,12,Switzerland,Real Madrid,LaLiga,192,82,Right
+Switzerland,2026,Player SWI-13,23/05/1998,DF,13,Switzerland,Manchester City,Premier League,193,83,Right
+Switzerland,2026,Player SWI-14,24/05/1998,MF,14,Switzerland,Bayern Munich,Bundesliga,194,84,Right
+Switzerland,2026,Player SWI-15,25/05/1998,MF,15,Switzerland,PSG,Ligue 1,180,85,Right
+Switzerland,2026,Player SWI-16,26/05/1998,MF,16,Switzerland,Inter Milan,Serie A,181,86,Right
+Switzerland,2026,Player SWI-17,27/05/1998,FW,17,Switzerland,Al-Hilal,Saudi Pro League,182,87,Right
+Switzerland,2026,Player SWI-18,10/05/1998,FW,18,Switzerland,Real Madrid,LaLiga,183,70,Right
+Switzerland,2026,Player SWI-19,11/05/1998,FW,19,Switzerland,Manchester City,Premier League,184,71,Right
+Switzerland,2026,Player SWI-20,12/05/1998,GK,20,Switzerland,Bayern Munich,Bundesliga,192,86,Right
+Switzerland,2026,Player SWI-21,13/05/1998,DF,21,Switzerland,PSG,Ligue 1,186,73,Left
+Switzerland,2026,Player SWI-22,14/05/1998,DF,22,Switzerland,Inter Milan,Serie A,187,74,Right
+Switzerland,2026,Player SWI-23,15/05/1998,DF,23,Switzerland,Al-Hilal,Saudi Pro League,188,75,Right
+Switzerland,2026,Player SWI-24,16/05/1998,MF,24,Switzerland,Real Madrid,LaLiga,189,76,Right
+Switzerland,2026,Player SWI-25,17/05/1998,MF,25,Switzerland,Manchester City,Premier League,190,77,Right
+Switzerland,2026,Player SWI-26,18/05/1998,MF,26,Switzerland,Bayern Munich,Bundesliga,191,78,Right
+Austria,2026,Player AUS-1,11/05/1998,DF,1,Austria,Manchester City,Premier League,181,71,Right
+Austria,2026,Player AUS-2,12/05/1998,DF,2,Austria,Bayern Munich,Bundesliga,182,72,Right
+Austria,2026,Player AUS-3,13/05/1998,DF,3,Austria,PSG,Ligue 1,183,73,Left
+Austria,2026,Player AUS-4,14/05/1998,MF,4,Austria,Inter Milan,Serie A,184,74,Right
+Austria,2026,Player AUS-5,15/05/1998,MF,5,Austria,Al-Hilal,Saudi Pro League,185,75,Right
+Austria,2026,Player AUS-6,16/05/1998,MF,6,Austria,Real Madrid,LaLiga,186,76,Right
+Austria,2026,Player AUS-7,17/05/1998,FW,7,Austria,Manchester City,Premier League,187,77,Left
+Austria,2026,Player AUS-8,18/05/1998,FW,8,Austria,Bayern Munich,Bundesliga,188,78,Right
+Austria,2026,Player AUS-9,19/05/1998,FW,9,Austria,PSG,Ligue 1,189,79,Right
+Austria,2026,Player AUS-10,20/05/1998,GK,10,Austria,Inter Milan,Serie A,192,86,Right
+Austria,2026,Player AUS-11,21/05/1998,DF,11,Austria,Al-Hilal,Saudi Pro League,191,81,Left
+Austria,2026,Player AUS-12,22/05/1998,DF,12,Austria,Real Madrid,LaLiga,192,82,Right
+Austria,2026,Player AUS-13,23/05/1998,DF,13,Austria,Manchester City,Premier League,193,83,Right
+Austria,2026,Player AUS-14,24/05/1998,MF,14,Austria,Bayern Munich,Bundesliga,194,84,Right
+Austria,2026,Player AUS-15,25/05/1998,MF,15,Austria,PSG,Ligue 1,180,85,Right
+Austria,2026,Player AUS-16,26/05/1998,MF,16,Austria,Inter Milan,Serie A,181,86,Right
+Austria,2026,Player AUS-17,27/05/1998,FW,17,Austria,Al-Hilal,Saudi Pro League,182,87,Right
+Austria,2026,Player AUS-18,10/05/1998,FW,18,Austria,Real Madrid,LaLiga,183,70,Right
+Austria,2026,Player AUS-19,11/05/1998,FW,19,Austria,Manchester City,Premier League,184,71,Right
+Austria,2026,Player AUS-20,12/05/1998,GK,20,Austria,Bayern Munich,Bundesliga,192,86,Right
+Austria,2026,Player AUS-21,13/05/1998,DF,21,Austria,PSG,Ligue 1,186,73,Left
+Austria,2026,Player AUS-22,14/05/1998,DF,22,Austria,Inter Milan,Serie A,187,74,Right
+Austria,2026,Player AUS-23,15/05/1998,DF,23,Austria,Al-Hilal,Saudi Pro League,188,75,Right
+Austria,2026,Player AUS-24,16/05/1998,MF,24,Austria,Real Madrid,LaLiga,189,76,Right
+Austria,2026,Player AUS-25,17/05/1998,MF,25,Austria,Manchester City,Premier League,190,77,Right
+Austria,2026,Player AUS-26,18/05/1998,MF,26,Austria,Bayern Munich,Bundesliga,191,78,Right
+Denmark,2026,Player DEN-1,11/05/1998,DF,1,Denmark,Manchester City,Premier League,181,71,Right
+Denmark,2026,Player DEN-2,12/05/1998,DF,2,Denmark,Bayern Munich,Bundesliga,182,72,Right
+Denmark,2026,Player DEN-3,13/05/1998,DF,3,Denmark,PSG,Ligue 1,183,73,Left
+Denmark,2026,Player DEN-4,14/05/1998,MF,4,Denmark,Inter Milan,Serie A,184,74,Right
+Denmark,2026,Player DEN-5,15/05/1998,MF,5,Denmark,Al-Hilal,Saudi Pro League,185,75,Right
+Denmark,2026,Player DEN-6,16/05/1998,MF,6,Denmark,Real Madrid,LaLiga,186,76,Right
+Denmark,2026,Player DEN-7,17/05/1998,FW,7,Denmark,Manchester City,Premier League,187,77,Left
+Denmark,2026,Player DEN-8,18/05/1998,FW,8,Denmark,Bayern Munich,Bundesliga,188,78,Right
+Denmark,2026,Player DEN-9,19/05/1998,FW,9,Denmark,PSG,Ligue 1,189,79,Right
+Denmark,2026,Player DEN-10,20/05/1998,GK,10,Denmark,Inter Milan,Serie A,192,86,Right
+Denmark,2026,Player DEN-11,21/05/1998,DF,11,Denmark,Al-Hilal,Saudi Pro League,191,81,Left
+Denmark,2026,Player DEN-12,22/05/1998,DF,12,Denmark,Real Madrid,LaLiga,192,82,Right
+Denmark,2026,Player DEN-13,23/05/1998,DF,13,Denmark,Manchester City,Premier League,193,83,Right
+Denmark,2026,Player DEN-14,24/05/1998,MF,14,Denmark,Bayern Munich,Bundesliga,194,84,Right
+Denmark,2026,Player DEN-15,25/05/1998,MF,15,Denmark,PSG,Ligue 1,180,85,Right
+Denmark,2026,Player DEN-16,26/05/1998,MF,16,Denmark,Inter Milan,Serie A,181,86,Right
+Denmark,2026,Player DEN-17,27/05/1998,FW,17,Denmark,Al-Hilal,Saudi Pro League,182,87,Right
+Denmark,2026,Player DEN-18,10/05/1998,FW,18,Denmark,Real Madrid,LaLiga,183,70,Right
+Denmark,2026,Player DEN-19,11/05/1998,FW,19,Denmark,Manchester City,Premier League,184,71,Right
+Denmark,2026,Player DEN-20,12/05/1998,GK,20,Denmark,Bayern Munich,Bundesliga,192,86,Right
+Denmark,2026,Player DEN-21,13/05/1998,DF,21,Denmark,PSG,Ligue 1,186,73,Left
+Denmark,2026,Player DEN-22,14/05/1998,DF,22,Denmark,Inter Milan,Serie A,187,74,Right
+Denmark,2026,Player DEN-23,15/05/1998,DF,23,Denmark,Al-Hilal,Saudi Pro League,188,75,Right
+Denmark,2026,Player DEN-24,16/05/1998,MF,24,Denmark,Real Madrid,LaLiga,189,76,Right
+Denmark,2026,Player DEN-25,17/05/1998,MF,25,Denmark,Manchester City,Premier League,190,77,Right
+Denmark,2026,Player DEN-26,18/05/1998,MF,26,Denmark,Bayern Munich,Bundesliga,191,78,Right
+Turkey,2026,Player TUR-1,11/05/1998,DF,1,Turkey,Manchester City,Premier League,181,71,Right
+Turkey,2026,Player TUR-2,12/05/1998,DF,2,Turkey,Bayern Munich,Bundesliga,182,72,Right
+Turkey,2026,Player TUR-3,13/05/1998,DF,3,Turkey,PSG,Ligue 1,183,73,Left
+Turkey,2026,Player TUR-4,14/05/1998,MF,4,Turkey,Inter Milan,Serie A,184,74,Right
+Turkey,2026,Player TUR-5,15/05/1998,MF,5,Turkey,Al-Hilal,Saudi Pro League,185,75,Right
+Turkey,2026,Player TUR-6,16/05/1998,MF,6,Turkey,Real Madrid,LaLiga,186,76,Right
+Turkey,2026,Player TUR-7,17/05/1998,FW,7,Turkey,Manchester City,Premier League,187,77,Left
+Turkey,2026,Player TUR-8,18/05/1998,FW,8,Turkey,Bayern Munich,Bundesliga,188,78,Right
+Turkey,2026,Player TUR-9,19/05/1998,FW,9,Turkey,PSG,Ligue 1,189,79,Right
+Turkey,2026,Player TUR-10,20/05/1998,GK,10,Turkey,Inter Milan,Serie A,192,86,Right
+Turkey,2026,Player TUR-11,21/05/1998,DF,11,Turkey,Al-Hilal,Saudi Pro League,191,81,Left
+Turkey,2026,Player TUR-12,22/05/1998,DF,12,Turkey,Real Madrid,LaLiga,192,82,Right
+Turkey,2026,Player TUR-13,23/05/1998,DF,13,Turkey,Manchester City,Premier League,193,83,Right
+Turkey,2026,Player TUR-14,24/05/1998,MF,14,Turkey,Bayern Munich,Bundesliga,194,84,Right
+Turkey,2026,Player TUR-15,25/05/1998,MF,15,Turkey,PSG,Ligue 1,180,85,Right
+Turkey,2026,Player TUR-16,26/05/1998,MF,16,Turkey,Inter Milan,Serie A,181,86,Right
+Turkey,2026,Player TUR-17,27/05/1998,FW,17,Turkey,Al-Hilal,Saudi Pro League,182,87,Right
+Turkey,2026,Player TUR-18,10/05/1998,FW,18,Turkey,Real Madrid,LaLiga,183,70,Right
+Turkey,2026,Player TUR-19,11/05/1998,FW,19,Turkey,Manchester City,Premier League,184,71,Right
+Turkey,2026,Player TUR-20,12/05/1998,GK,20,Turkey,Bayern Munich,Bundesliga,192,86,Right
+Turkey,2026,Player TUR-21,13/05/1998,DF,21,Turkey,PSG,Ligue 1,186,73,Left
+Turkey,2026,Player TUR-22,14/05/1998,DF,22,Turkey,Inter Milan,Serie A,187,74,Right
+Turkey,2026,Player TUR-23,15/05/1998,DF,23,Turkey,Al-Hilal,Saudi Pro League,188,75,Right
+Turkey,2026,Player TUR-24,16/05/1998,MF,24,Turkey,Real Madrid,LaLiga,189,76,Right
+Turkey,2026,Player TUR-25,17/05/1998,MF,25,Turkey,Manchester City,Premier League,190,77,Right
+Turkey,2026,Player TUR-26,18/05/1998,MF,26,Turkey,Bayern Munich,Bundesliga,191,78,Right
+Serbia,2026,Player SER-1,11/05/1998,DF,1,Serbia,Manchester City,Premier League,181,71,Right
+Serbia,2026,Player SER-2,12/05/1998,DF,2,Serbia,Bayern Munich,Bundesliga,182,72,Right
+Serbia,2026,Player SER-3,13/05/1998,DF,3,Serbia,PSG,Ligue 1,183,73,Left
+Serbia,2026,Player SER-4,14/05/1998,MF,4,Serbia,Inter Milan,Serie A,184,74,Right
+Serbia,2026,Player SER-5,15/05/1998,MF,5,Serbia,Al-Hilal,Saudi Pro League,185,75,Right
+Serbia,2026,Player SER-6,16/05/1998,MF,6,Serbia,Real Madrid,LaLiga,186,76,Right
+Serbia,2026,Player SER-7,17/05/1998,FW,7,Serbia,Manchester City,Premier League,187,77,Left
+Serbia,2026,Player SER-8,18/05/1998,FW,8,Serbia,Bayern Munich,Bundesliga,188,78,Right
+Serbia,2026,Player SER-9,19/05/1998,FW,9,Serbia,PSG,Ligue 1,189,79,Right
+Serbia,2026,Player SER-10,20/05/1998,GK,10,Serbia,Inter Milan,Serie A,192,86,Right
+Serbia,2026,Player SER-11,21/05/1998,DF,11,Serbia,Al-Hilal,Saudi Pro League,191,81,Left
+Serbia,2026,Player SER-12,22/05/1998,DF,12,Serbia,Real Madrid,LaLiga,192,82,Right
+Serbia,2026,Player SER-13,23/05/1998,DF,13,Serbia,Manchester City,Premier League,193,83,Right
+Serbia,2026,Player SER-14,24/05/1998,MF,14,Serbia,Bayern Munich,Bundesliga,194,84,Right
+Serbia,2026,Player SER-15,25/05/1998,MF,15,Serbia,PSG,Ligue 1,180,85,Right
+Serbia,2026,Player SER-16,26/05/1998,MF,16,Serbia,Inter Milan,Serie A,181,86,Right
+Serbia,2026,Player SER-17,27/05/1998,FW,17,Serbia,Al-Hilal,Saudi Pro League,182,87,Right
+Serbia,2026,Player SER-18,10/05/1998,FW,18,Serbia,Real Madrid,LaLiga,183,70,Right
+Serbia,2026,Player SER-19,11/05/1998,FW,19,Serbia,Manchester City,Premier League,184,71,Right
+Serbia,2026,Player SER-20,12/05/1998,GK,20,Serbia,Bayern Munich,Bundesliga,192,86,Right
+Serbia,2026,Player SER-21,13/05/1998,DF,21,Serbia,PSG,Ligue 1,186,73,Left
+Serbia,2026,Player SER-22,14/05/1998,DF,22,Serbia,Inter Milan,Serie A,187,74,Right
+Serbia,2026,Player SER-23,15/05/1998,DF,23,Serbia,Al-Hilal,Saudi Pro League,188,75,Right
+Serbia,2026,Player SER-24,16/05/1998,MF,24,Serbia,Real Madrid,LaLiga,189,76,Right
+Serbia,2026,Player SER-25,17/05/1998,MF,25,Serbia,Manchester City,Premier League,190,77,Right
+Serbia,2026,Player SER-26,18/05/1998,MF,26,Serbia,Bayern Munich,Bundesliga,191,78,Right
+Scotland,2026,Player SCO-1,11/05/1998,DF,1,Scotland,Manchester City,Premier League,181,71,Right
+Scotland,2026,Player SCO-2,12/05/1998,DF,2,Scotland,Bayern Munich,Bundesliga,182,72,Right
+Scotland,2026,Player SCO-3,13/05/1998,DF,3,Scotland,PSG,Ligue 1,183,73,Left
+Scotland,2026,Player SCO-4,14/05/1998,MF,4,Scotland,Inter Milan,Serie A,184,74,Right
+Scotland,2026,Player SCO-5,15/05/1998,MF,5,Scotland,Al-Hilal,Saudi Pro League,185,75,Right
+Scotland,2026,Player SCO-6,16/05/1998,MF,6,Scotland,Real Madrid,LaLiga,186,76,Right
+Scotland,2026,Player SCO-7,17/05/1998,FW,7,Scotland,Manchester City,Premier League,187,77,Left
+Scotland,2026,Player SCO-8,18/05/1998,FW,8,Scotland,Bayern Munich,Bundesliga,188,78,Right
+Scotland,2026,Player SCO-9,19/05/1998,FW,9,Scotland,PSG,Ligue 1,189,79,Right
+Scotland,2026,Player SCO-10,20/05/1998,GK,10,Scotland,Inter Milan,Serie A,192,86,Right
+Scotland,2026,Player SCO-11,21/05/1998,DF,11,Scotland,Al-Hilal,Saudi Pro League,191,81,Left
+Scotland,2026,Player SCO-12,22/05/1998,DF,12,Scotland,Real Madrid,LaLiga,192,82,Right
+Scotland,2026,Player SCO-13,23/05/1998,DF,13,Scotland,Manchester City,Premier League,193,83,Right
+Scotland,2026,Player SCO-14,24/05/1998,MF,14,Scotland,Bayern Munich,Bundesliga,194,84,Right
+Scotland,2026,Player SCO-15,25/05/1998,MF,15,Scotland,PSG,Ligue 1,180,85,Right
+Scotland,2026,Player SCO-16,26/05/1998,MF,16,Scotland,Inter Milan,Serie A,181,86,Right
+Scotland,2026,Player SCO-17,27/05/1998,FW,17,Scotland,Al-Hilal,Saudi Pro League,182,87,Right
+Scotland,2026,Player SCO-18,10/05/1998,FW,18,Scotland,Real Madrid,LaLiga,183,70,Right
+Scotland,2026,Player SCO-19,11/05/1998,FW,19,Scotland,Manchester City,Premier League,184,71,Right
+Scotland,2026,Player SCO-20,12/05/1998,GK,20,Scotland,Bayern Munich,Bundesliga,192,86,Right
+Scotland,2026,Player SCO-21,13/05/1998,DF,21,Scotland,PSG,Ligue 1,186,73,Left
+Scotland,2026,Player SCO-22,14/05/1998,DF,22,Scotland,Inter Milan,Serie A,187,74,Right
+Scotland,2026,Player SCO-23,15/05/1998,DF,23,Scotland,Al-Hilal,Saudi Pro League,188,75,Right
+Scotland,2026,Player SCO-24,16/05/1998,MF,24,Scotland,Real Madrid,LaLiga,189,76,Right
+Scotland,2026,Player SCO-25,17/05/1998,MF,25,Scotland,Manchester City,Premier League,190,77,Right
+Scotland,2026,Player SCO-26,18/05/1998,MF,26,Scotland,Bayern Munich,Bundesliga,191,78,Right

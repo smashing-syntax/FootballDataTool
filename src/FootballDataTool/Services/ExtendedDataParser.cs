@@ -1,0 +1,601 @@
+using FootballDataTool.Models;
+using System.Text.RegularExpressions;
+using Match = FootballDataTool.Models.Match;
+
+namespace FootballDataTool.Services;
+
+/// <summary>
+/// Service for parsing extended match data from CSV records into rich structured models.
+/// Handles lineups, goalscorers, substitutions, cards, etc.
+/// </summary>
+public class ExtendedDataParser
+{
+    /// <summary>
+    /// Parses extended data from a CSV record if available.
+    /// Returns null if no extended data is present.
+    /// </summary>
+    public static MatchExtendedData? ParseExtendedData(CsvMatchRecord record, Match match)
+    {
+        // Check if we have any extended data
+        bool hasExtendedData = HasAnyExtendedData(record);
+        
+        if (!hasExtendedData)
+            return null;
+
+        var extendedData = new MatchExtendedData();
+
+        // Parse managers
+        extendedData.HomeManager = record.HomeManager;
+        extendedData.AwayManager = record.AwayManager;
+
+        // Parse formations
+        extendedData.HomeFormation = record.HomeFormation;
+        extendedData.AwayFormation = record.AwayFormation;
+
+        // Parse venue
+        if (!string.IsNullOrWhiteSpace(record.Stadium))
+        {
+            extendedData.Stadium = new Stadium
+            {
+                Name = record.Stadium
+            };
+
+            if (int.TryParse(record.StadiumCapacity, out int capacity))
+                extendedData.Stadium.Capacity = capacity;
+        }
+
+        // Parse attendance
+        if (int.TryParse(record.Attendance, out int attendance))
+            extendedData.Attendance = attendance;
+
+        // Parse lineups
+        extendedData.HomeStartingLineup = ParsePlayerList(record.HomeLineup);
+        extendedData.AwayStartingLineup = ParsePlayerList(record.AwayLineup);
+        extendedData.HomeSubstitutes = ParsePlayerList(record.HomeSubstitutes);
+        extendedData.AwaySubstitutes = ParsePlayerList(record.AwaySubstitutes);
+
+        // Parse goalscorers
+        extendedData.Goals.AddRange(ParseGoals(record.HomeGoalscorers, match.HomeTeam, true));
+        extendedData.Goals.AddRange(ParseGoals(record.AwayGoalscorers, match.AwayTeam, false));
+        extendedData.Goals = extendedData.Goals.OrderBy(g => g.Minute).ThenBy(g => g.AddedTimeMinute ?? 0).ToList();
+
+        // Parse substitutions
+        extendedData.Substitutions.AddRange(ParseSubstitutions(record.HomeSubstitutions, match.HomeTeam));
+        extendedData.Substitutions.AddRange(ParseSubstitutions(record.AwaySubstitutions, match.AwayTeam));
+        extendedData.Substitutions = extendedData.Substitutions.OrderBy(s => s.Minute).ThenBy(s => s.AddedTimeMinute ?? 0).ToList();
+
+        // Parse cards
+        extendedData.Cards.AddRange(ParseCards(record.HomeYellowCards, match.HomeTeam, CardType.Yellow));
+        extendedData.Cards.AddRange(ParseCards(record.AwayYellowCards, match.AwayTeam, CardType.Yellow));
+        extendedData.Cards.AddRange(ParseCards(record.HomeRedCards, match.HomeTeam, CardType.Red));
+        extendedData.Cards.AddRange(ParseCards(record.AwayRedCards, match.AwayTeam, CardType.Red));
+        extendedData.Cards = extendedData.Cards.OrderBy(c => c.Minute).ThenBy(c => c.AddedTimeMinute ?? 0).ToList();
+
+        // Parse match officials
+        extendedData.Referee = record.Referee;
+        if (!string.IsNullOrWhiteSpace(record.AssistantReferee1))
+            extendedData.AssistantReferees.Add(record.AssistantReferee1);
+        if (!string.IsNullOrWhiteSpace(record.AssistantReferee2))
+            extendedData.AssistantReferees.Add(record.AssistantReferee2);
+        extendedData.FourthOfficial = record.FourthOfficial;
+        extendedData.VarReferee = record.VarReferee;
+
+        // Parse weather
+        if (!string.IsNullOrWhiteSpace(record.Temperature) || !string.IsNullOrWhiteSpace(record.WeatherConditions))
+        {
+            extendedData.Weather = new WeatherConditions
+            {
+                Conditions = record.WeatherConditions
+            };
+
+            if (decimal.TryParse(record.Temperature, out decimal temp))
+                extendedData.Weather.Temperature = temp;
+        }
+
+        // Parse injuries
+        extendedData.HomeInjuries = ParseInjuries(record.HomeInjuries, match.Date ?? DateTime.Today);
+        extendedData.AwayInjuries = ParseInjuries(record.AwayInjuries, match.Date ?? DateTime.Today);
+
+        // Parse player appearances (minutes played)
+        extendedData.HomeAppearances = ParseAppearances(record.HomeMinutesPlayed, match.HomeTeam, 
+            extendedData.HomeStartingLineup, extendedData.HomeSubstitutes);
+        extendedData.AwayAppearances = ParseAppearances(record.AwayMinutesPlayed, match.AwayTeam,
+            extendedData.AwayStartingLineup, extendedData.AwaySubstitutes);
+
+        // Populate goals and assists in appearances from goal events
+        PopulateGoalsAndAssists(extendedData);
+
+        return extendedData;
+    }
+
+    private static bool HasAnyExtendedData(CsvMatchRecord record)
+    {
+        return !string.IsNullOrWhiteSpace(record.HomeManager)
+            || !string.IsNullOrWhiteSpace(record.AwayManager)
+            || !string.IsNullOrWhiteSpace(record.HomeFormation)
+            || !string.IsNullOrWhiteSpace(record.Stadium)
+            || !string.IsNullOrWhiteSpace(record.Attendance)
+            || !string.IsNullOrWhiteSpace(record.HomeGoalscorers)
+            || !string.IsNullOrWhiteSpace(record.AwayGoalscorers)
+            || !string.IsNullOrWhiteSpace(record.HomeLineup)
+            || !string.IsNullOrWhiteSpace(record.AwayLineup)
+            || !string.IsNullOrWhiteSpace(record.HomeSubstitutions)
+            || !string.IsNullOrWhiteSpace(record.AssistantReferee1)
+            || !string.IsNullOrWhiteSpace(record.Temperature)
+            || !string.IsNullOrWhiteSpace(record.HomeInjuries)
+            || !string.IsNullOrWhiteSpace(record.AwayInjuries)
+            || !string.IsNullOrWhiteSpace(record.HomeMinutesPlayed)
+            || !string.IsNullOrWhiteSpace(record.AwayMinutesPlayed);
+    }
+
+    /// <summary>
+    /// Parses a delimited list of players (semi-colon or comma separated).
+    /// Formats supported:
+    /// - "Player Name, Another Player"
+    /// - "1. Player Name; 2. Another Player"
+    /// - "1. Player Name (25); 2. Another Player (28)"
+    /// - "Player Name [25], Another Player [28]"
+    /// - "1. Player Name (25) [GK]; 2. Another (23) [DEF]"
+    /// </summary>
+    private static List<Player> ParsePlayerList(string? playerList)
+    {
+        if (string.IsNullOrWhiteSpace(playerList))
+            return new List<Player>();
+
+        var delimiter = playerList.Contains(';') ? ';' : ',';
+        var players = new List<Player>();
+
+        foreach (var playerStr in playerList.Split(delimiter, StringSplitOptions.RemoveEmptyEntries))
+        {
+            var trimmed = playerStr.Trim();
+            if (string.IsNullOrWhiteSpace(trimmed))
+                continue;
+
+            var player = ParsePlayerEntry(trimmed);
+            if (player != null)
+                players.Add(player);
+        }
+
+        return players;
+    }
+
+    /// <summary>
+    /// Parses a single player entry with optional number, name, age, and position.
+    /// Examples:
+    /// - "Player Name"
+    /// - "1. Player Name"
+    /// - "1. Player Name (25)"
+    /// - "Player Name [25]"
+    /// - "1. Player Name (25) [GK]"
+    /// - "Player Name (25, GK)"
+    /// </summary>
+    private static Player? ParsePlayerEntry(string entry)
+    {
+        if (string.IsNullOrWhiteSpace(entry))
+            return null;
+
+        var player = new Player();
+
+        // Try comprehensive format: "1. Player Name (25) [GK]" or "1. Player Name (25, GK)"
+        var fullMatch = PlayerFullRegex.Match(entry);
+        if (fullMatch.Success)
+        {
+            if (fullMatch.Groups[1].Success)
+                player.ShirtNumber = int.Parse(fullMatch.Groups[1].Value);
+
+            player.Name = fullMatch.Groups[2].Value.Trim();
+
+            if (fullMatch.Groups[3].Success && int.TryParse(fullMatch.Groups[3].Value, out int age))
+                player.Age = age;
+
+            if (fullMatch.Groups[4].Success)
+                player.Position = fullMatch.Groups[4].Value.Trim();
+
+            return player;
+        }
+
+        // Try with square brackets for age: "Player Name [25]"
+        var ageSquareMatch = PlayerAgeSquareRegex.Match(entry);
+        if (ageSquareMatch.Success)
+        {
+            player.Name = ageSquareMatch.Groups[1].Value.Trim();
+            player.Age = int.Parse(ageSquareMatch.Groups[2].Value);
+            return player;
+        }
+
+        // Try number and name: "1. Player Name"
+        var numberMatch = PlayerNumberRegex.Match(entry);
+        if (numberMatch.Success)
+        {
+            player.ShirtNumber = int.Parse(numberMatch.Groups[1].Value);
+            player.Name = numberMatch.Groups[2].Value.Trim();
+            return player;
+        }
+
+        // Just a name
+        player.Name = entry.Trim();
+        return player;
+    }
+
+    /// <summary>
+    /// Parses goalscorers string.
+    /// Formats supported:
+    /// - "Player1 45', Player2 67'"
+    /// - "Player1 (45), Player2 (67)"
+    /// - "Player1 45' (pen), Player2 67' (assist: Assister)"
+    /// </summary>
+    private static List<GoalEvent> ParseGoals(string? goalscorers, string team, bool isHome)
+    {
+        if (string.IsNullOrWhiteSpace(goalscorers))
+            return new List<GoalEvent>();
+
+        var goals = new List<GoalEvent>();
+        
+        // Split by common delimiters
+        var entries = goalscorers.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var entry in entries)
+        {
+            var goal = ParseGoalEntry(entry.Trim(), team);
+            if (goal != null)
+                goals.Add(goal);
+        }
+
+        return goals;
+    }
+
+    private static GoalEvent? ParseGoalEntry(string entry, string team)
+    {
+        // Match patterns like: "Player Name 45'" or "Player Name (45)" or "Player Name 45+2'"
+        var match = GoalRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var goal = new GoalEvent
+        {
+            Scorer = new Player { Name = match.Groups[1].Value.Trim() },
+            Minute = int.Parse(match.Groups[2].Value),
+            TeamScoring = team
+        };
+
+        // Check for added time
+        if (match.Groups[3].Success)
+            goal.AddedTimeMinute = int.Parse(match.Groups[3].Value);
+
+        // Check for goal type indicators
+        var remainder = entry[(match.Index + match.Length)..].ToLower();
+        
+        if (remainder.Contains("pen") || remainder.Contains("(p)"))
+            goal.Type = GoalType.Penalty;
+        else if (remainder.Contains("og") || remainder.Contains("own"))
+            goal.Type = GoalType.OwnGoal;
+        else if (remainder.Contains("fk") || remainder.Contains("free kick"))
+            goal.Type = GoalType.DirectFreeKick;
+        else
+            goal.Type = GoalType.Open;
+
+        // Check for assister
+        var assistMatch = AssistRegex.Match(remainder);
+        if (assistMatch.Success)
+        {
+            goal.Assister = new Player { Name = assistMatch.Groups[1].Value.Trim() };
+        }
+
+        return goal;
+    }
+
+    /// <summary>
+    /// Parses substitutions.
+    /// Format: "Player On ← Player Off 60'" or "Player On -> Player Off (60)"
+    /// </summary>
+    private static List<SubstitutionEvent> ParseSubstitutions(string? substitutions, string team)
+    {
+        if (string.IsNullOrWhiteSpace(substitutions))
+            return new List<SubstitutionEvent>();
+
+        var subs = new List<SubstitutionEvent>();
+        var entries = substitutions.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var entry in entries)
+        {
+            var sub = ParseSubstitutionEntry(entry.Trim(), team);
+            if (sub != null)
+                subs.Add(sub);
+        }
+
+        return subs;
+    }
+
+    private static SubstitutionEvent? ParseSubstitutionEntry(string entry, string team)
+    {
+        // Match patterns with various arrow styles
+        var match = SubstitutionRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var sub = new SubstitutionEvent
+        {
+            PlayerOn = new Player { Name = match.Groups[1].Value.Trim() },
+            PlayerOff = new Player { Name = match.Groups[2].Value.Trim() },
+            Minute = int.Parse(match.Groups[3].Value),
+            Team = team
+        };
+
+        // Check for added time
+        if (match.Groups[4].Success)
+            sub.AddedTimeMinute = int.Parse(match.Groups[4].Value);
+
+        return sub;
+    }
+
+    /// <summary>
+    /// Parses cards.
+    /// Format: "Player1 45', Player2 67'"
+    /// </summary>
+    private static List<CardEvent> ParseCards(string? cards, string team, CardType type)
+    {
+        if (string.IsNullOrWhiteSpace(cards))
+            return new List<CardEvent>();
+
+        var cardEvents = new List<CardEvent>();
+        var entries = cards.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var entry in entries)
+        {
+            var card = ParseCardEntry(entry.Trim(), team, type);
+            if (card != null)
+                cardEvents.Add(card);
+        }
+
+        return cardEvents;
+    }
+
+    private static CardEvent? ParseCardEntry(string entry, string team, CardType type)
+    {
+        var match = CardRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var card = new CardEvent
+        {
+            Player = new Player { Name = match.Groups[1].Value.Trim() },
+            Minute = int.Parse(match.Groups[2].Value),
+            Team = team,
+            Type = type
+        };
+
+        // Check for added time
+        if (match.Groups[3].Success)
+            card.AddedTimeMinute = int.Parse(match.Groups[3].Value);
+
+        return card;
+    }
+
+    // Regex patterns
+    private static readonly Regex PlayerNumberRegex = new(@"^(\d+)\.\s*(.+)$", RegexOptions.Compiled);
+
+    // Comprehensive player format: "1. Player Name (25) [GK]" or "1. Player Name (25, GK)"
+    private static readonly Regex PlayerFullRegex = new(
+        @"^(?:(\d+)\.\s*)?(.+?)(?:\s*\((\d+)(?:,\s*([^\)]+))?\))?(?:\s*\[([^\]]+)\])?$", 
+        RegexOptions.Compiled);
+
+    // Player with age in square brackets: "Player Name [25]"
+    private static readonly Regex PlayerAgeSquareRegex = new(@"^(.+?)\s*\[(\d+)\]$", RegexOptions.Compiled);
+
+    private static readonly Regex GoalRegex = new(@"^(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?['\s]*", RegexOptions.Compiled);
+    private static readonly Regex AssistRegex = new(@"assist:?\s*(.+?)(?:\s|$|\)|\])", RegexOptions.Compiled);
+    private static readonly Regex SubstitutionRegex = new(@"^(.+?)\s*(?:←|<-|->|→)\s*(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?", RegexOptions.Compiled);
+    private static readonly Regex CardRegex = new(@"^(.+?)\s*[(\[]?(\d+)(?:\+(\d+))?[)\]]?", RegexOptions.Compiled);
+
+    // Injury format: "Player Name (Injury Type, dd/MM/yyyy - dd/MM/yyyy)" or "Player Name (Hamstring, 01/09/2023 - 15/09/2023)"
+    private static readonly Regex InjuryRegex = new(
+        @"^(.+?)\s*\(([^,]+),\s*(\d{1,2}/\d{1,2}/\d{4})(?:\s*-\s*(\d{1,2}/\d{1,2}/\d{4}))?\)", 
+        RegexOptions.Compiled);
+
+    // Minutes format: "Player Name 90'" or "Player Name (65')" or "Player Name 65"
+    private static readonly Regex MinutesRegex = new(@"^(.+?)\s*[(\[]?(\d+)['\)]?$", RegexOptions.Compiled);
+
+    /// <summary>
+    /// Parses injury list.
+    /// Format: "Player1 (Hamstring, 01/09/2023 - 15/09/2023); Player2 (Knee, 10/08/2023 - )"
+    /// </summary>
+    private static List<Injury> ParseInjuries(string? injuries, DateTime matchDate)
+    {
+        if (string.IsNullOrWhiteSpace(injuries))
+            return new List<Injury>();
+
+        var injuryList = new List<Injury>();
+        var entries = injuries.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var entry in entries)
+        {
+            var injury = ParseInjuryEntry(entry.Trim(), matchDate);
+            if (injury != null)
+                injuryList.Add(injury);
+        }
+
+        return injuryList;
+    }
+
+    private static Injury? ParseInjuryEntry(string entry, DateTime matchDate)
+    {
+        var match = InjuryRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var playerName = match.Groups[1].Value.Trim();
+        var injuryType = match.Groups[2].Value.Trim();
+        var injuryDateStr = match.Groups[3].Value;
+        var returnDateStr = match.Groups[4].Success ? match.Groups[4].Value : null;
+
+        if (!DateTime.TryParseExact(injuryDateStr, "dd/MM/yyyy", null, 
+            System.Globalization.DateTimeStyles.None, out DateTime injuryDate))
+            return null;
+
+        DateTime? returnDate = null;
+        if (!string.IsNullOrWhiteSpace(returnDateStr))
+        {
+            DateTime.TryParseExact(returnDateStr, "dd/MM/yyyy", null, 
+                System.Globalization.DateTimeStyles.None, out DateTime parsed);
+            returnDate = parsed;
+        }
+
+        // Calculate severity based on duration
+        var severity = InjurySeverity.Minor;
+        if (returnDate.HasValue)
+        {
+            var days = (returnDate.Value - injuryDate).Days;
+            severity = days switch
+            {
+                <= 7 => InjurySeverity.Minor,
+                <= 28 => InjurySeverity.Moderate,
+                <= 90 => InjurySeverity.Serious,
+                _ => InjurySeverity.LongTerm
+            };
+        }
+        else
+        {
+            // If still injured on match date, estimate severity
+            var daysOut = (matchDate - injuryDate).Days;
+            severity = daysOut switch
+            {
+                <= 7 => InjurySeverity.Minor,
+                <= 28 => InjurySeverity.Moderate,
+                <= 90 => InjurySeverity.Serious,
+                _ => InjurySeverity.LongTerm
+            };
+        }
+
+        return new Injury
+        {
+            Player = new Player { Name = playerName },
+            InjuryType = injuryType,
+            InjuryDate = injuryDate,
+            ReturnDate = returnDate,
+            Severity = severity
+        };
+    }
+
+    /// <summary>
+    /// Parses player appearances with minutes played.
+    /// Format: "Player1 90'; Player2 65'; Player3 (20')"
+    /// If no minutes data is provided, creates appearances from lineups with estimated minutes.
+    /// </summary>
+    private static List<PlayerAppearance> ParseAppearances(string? minutesData, string team, 
+        List<Player> starters, List<Player> substitutes)
+    {
+        var appearances = new List<PlayerAppearance>();
+
+        if (!string.IsNullOrWhiteSpace(minutesData))
+        {
+            // Parse explicit minutes data
+            var entries = minutesData.Split([';', ','], StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var entry in entries)
+            {
+                var appearance = ParseAppearanceEntry(entry.Trim(), team);
+                if (appearance != null)
+                    appearances.Add(appearance);
+            }
+        }
+        else
+        {
+            // Generate default appearances from lineups
+            // Starters assumed to play 90 minutes, subs assumed unused
+            foreach (var player in starters)
+            {
+                appearances.Add(new PlayerAppearance
+                {
+                    Player = player,
+                    Team = team,
+                    IsStarting = true,
+                    MinutesPlayed = 90
+                });
+            }
+
+            foreach (var player in substitutes)
+            {
+                appearances.Add(new PlayerAppearance
+                {
+                    Player = player,
+                    Team = team,
+                    IsStarting = false,
+                    MinutesPlayed = 0
+                });
+            }
+        }
+
+        return appearances;
+    }
+
+    private static PlayerAppearance? ParseAppearanceEntry(string entry, string team)
+    {
+        var match = MinutesRegex.Match(entry);
+        if (!match.Success)
+            return null;
+
+        var playerName = match.Groups[1].Value.Trim();
+        var minutes = int.Parse(match.Groups[2].Value);
+
+        return new PlayerAppearance
+        {
+            Player = new Player { Name = playerName },
+            Team = team,
+            IsStarting = minutes > 60, // Rough heuristic
+            MinutesPlayed = minutes
+        };
+    }
+
+    /// <summary>
+    /// Populates goals and assists in player appearances from goal events.
+    /// This links the parsed goal data to the player appearance records.
+    /// </summary>
+    private static void PopulateGoalsAndAssists(MatchExtendedData extendedData)
+    {
+        if (extendedData.Goals.Count == 0)
+            return;
+
+        // Create lookup dictionaries for fast access
+        var homeAppearances = extendedData.HomeAppearances.ToDictionary(
+            a => a.Player.Name, 
+            a => a,
+            StringComparer.OrdinalIgnoreCase
+        );
+
+        var awayAppearances = extendedData.AwayAppearances.ToDictionary(
+            a => a.Player.Name, 
+            a => a,
+            StringComparer.OrdinalIgnoreCase
+        );
+
+        // Process each goal event
+        foreach (var goal in extendedData.Goals)
+        {
+            // Add goal to scorer's appearance
+            var scorerAppearances = goal.TeamScoring == extendedData.HomeStartingLineup.FirstOrDefault()?.Name 
+                || homeAppearances.ContainsKey(goal.Scorer.Name)
+                ? homeAppearances 
+                : awayAppearances;
+
+            if (scorerAppearances.TryGetValue(goal.Scorer.Name, out var scorerAppearance))
+            {
+                scorerAppearance.Goals++;
+            }
+
+            // Add assist to assister's appearance (if exists)
+            if (goal.Assister != null)
+            {
+                var assisterAppearances = goal.TeamScoring == extendedData.HomeStartingLineup.FirstOrDefault()?.Name 
+                    || homeAppearances.ContainsKey(goal.Assister.Name)
+                    ? homeAppearances 
+                    : awayAppearances;
+
+                if (assisterAppearances.TryGetValue(goal.Assister.Name, out var assisterAppearance))
+                {
+                    assisterAppearance.Assists++;
+                }
+            }
+        }
+    }
+}
+

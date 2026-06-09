@@ -1,0 +1,177 @@
+{
+  "team": "Chelsea",
+  "season": "2023/24",
+  "startingManager": {
+    "name": "Mauricio Pochettino",
+    "age": 51,
+    "dateOfBirth": "1972-03-02",
+    "nationality": "Argentina",
+    "appointmentDate": "2023-07-01",
+    "yearsOfExperience": 15,
+    "previousClubs": ["Espanyol", "Southampton", "Tottenham", "Paris Saint-Germain"],
+    "preferredFormations": ["4-2-3-1", "4-3-3"]
+  },
+  "managerialChanges": [
+    {
+      "outgoingManager": {
+        "name": "Graham Potter",
+        "age": 48,
+        "dateOfBirth": "1975-05-20",
+        "nationality": "England",
+        "appointmentDate": "2022-09-08",
+        "yearsOfExperience": 12
+      },
+      "incomingManager": {
+        "name": "Frank Lampard",
+        "age": 44,
+        "dateOfBirth": "1978-06-20",
+        "nationality": "England",
+        "yearsOfExperience": 4
+      },
+      "changeDate": "2023-04-02",
+      "reason": "Poor results",
+      "isCaretaker": true,
+      "recordBeforeChange": "11W 8D 12L"
+    },
+    {
+      "outgoingManager": {
+        "name": "Frank Lampard",
+        "age": 45,
+        "dateOfBirth": "1978-06-20"
+      },
+      "incomingManager": {
+        "name": "Mauricio Pochettino",
+        "age": 51,
+        "dateOfBirth": "1972-03-02"
+      },
+      "changeDate": "2023-07-01",
+      "reason": "End of caretaker period",
+      "isCaretaker": false
+    }
+  ],
+  "summerSignings": [
+    {
+      "player": {
+        "name": "Moises Caicedo",
+        "shirtNumber": 25,
+        "position": "Midfielder",
+        "nationality": "Ecuador",
+        "dateOfBirth": "2001-11-02"
+      },
+      "fromClub": "Brighton",
+      "toClub": "Chelsea",
+      "transferDate": "2023-08-14",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 115000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 21,
+      "contractYears": 8,
+      "contractExpiry": "2031-06-30",
+      "isLoan": false,
+      "notes": "British record transfer"
+    },
+    {
+      "player": {
+        "name": "Romeo Lavia",
+        "shirtNumber": 45,
+        "position": "Midfielder",
+        "nationality": "Belgium",
+        "dateOfBirth": "2004-01-06"
+      },
+      "fromClub": "Southampton",
+      "toClub": "Chelsea",
+      "transferDate": "2023-08-18",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 58000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 19,
+      "contractYears": 7,
+      "contractExpiry": "2030-06-30",
+      "isLoan": false
+    },
+    {
+      "player": {
+        "name": "Cole Palmer",
+        "shirtNumber": 20,
+        "position": "Midfielder",
+        "nationality": "England",
+        "dateOfBirth": "2002-05-06"
+      },
+      "fromClub": "Manchester City",
+      "toClub": "Chelsea",
+      "transferDate": "2023-09-01",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 42500000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 21,
+      "contractYears": 7,
+      "contractExpiry": "2030-06-30",
+      "isLoan": false
+    }
+  ],
+  "summerDepartures": [
+    {
+      "player": {
+        "name": "Kai Havertz",
+        "position": "Midfielder",
+        "dateOfBirth": "1999-06-11"
+      },
+      "fromClub": "Chelsea",
+      "toClub": "Arsenal",
+      "transferDate": "2023-06-28",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 65000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 24,
+      "isLoan": false
+    },
+    {
+      "player": {
+        "name": "Mason Mount",
+        "position": "Midfielder",
+        "dateOfBirth": "1999-01-10"
+      },
+      "fromClub": "Chelsea",
+      "toClub": "Manchester United",
+      "transferDate": "2023-07-05",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 55000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 24,
+      "isLoan": false,
+      "notes": "Academy graduate departure"
+    },
+    {
+      "player": {
+        "name": "Mateo Kovacic",
+        "position": "Midfielder",
+        "dateOfBirth": "1994-05-06"
+      },
+      "fromClub": "Chelsea",
+      "toClub": "Manchester City",
+      "transferDate": "2023-06-27",
+      "window": "Summer",
+      "type": "Permanent",
+      "fee": 25000000,
+      "feeCurrency": "GBP",
+      "playerAgeAtTransfer": 29,
+      "isLoan": false
+    }
+  ],
+  "winterSignings": [],
+  "winterDepartures": [],
+  "homeStadium": {
+    "name": "Stamford Bridge",
+    "city": "London",
+    "country": "England",
+    "capacity": 40343,
+    "yearOpened": 1877,
+    "hasRoof": true,
+    "surfaceType": "Grass"
+  }
+}
