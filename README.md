@@ -6,6 +6,13 @@ A C# .NET 8 console application that loads raw CSV football season data with **a
 
 - 🔍 **Automatic Season Detection** - Detects season and league from CSV data or filename
 - 🌍 **Multi-League Support** - Works with Premier League, La Liga, Serie A, Bundesliga, and more
+- 🏆 **Tournament Support** - **NEW!** Full support for World Cup, Champions League, Europa League, and knockout tournaments
+  - Group stages with group identifiers
+  - Knockout rounds (R32, R16, QF, SF, Finals)
+  - Two-legged ties with aggregate scoring
+  - Single-elimination tournaments
+  - See [Tournament Guide](data/templates/TOURNAMENT-GUIDE.md)
+
 - 📊 **Rich Visualizations**:
 
 | View | Description |

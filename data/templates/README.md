@@ -16,7 +16,7 @@ This folder contains **blank templates** for creating your football season datas
 
 ### 1. `matches.csv` - Match Data Template
 
-**Purpose:** Record all match results and events for the season.
+**Purpose:** Record all match results and events for the season **or tournament**.
 
 **Minimum Required Columns:**
 - `HomeTeam`, `AwayTeam`, `FTHG`, `FTAG`
@@ -24,10 +24,17 @@ This folder contains **blank templates** for creating your football season datas
 **Recommended Columns:**
 - `Div`, `Season`, `GW`, `Date`, `FTR`, `Referee`
 
-**All 33 Columns Available:**
+**Tournament Columns (Optional):**
+- `Stage` (e.g., GS, R16, QF, SF, F) - for knockout tournaments
+- `Group` (e.g., A, B, C) - for group stages
+- `Leg` (1 or 2) - for two-legged ties
+
+**All Columns Available:**
 Full match data including lineups, goalscorers, substitutions, cards, injuries, minutes played, etc.
 
-**📖 See:** `TEMPLATE-GUIDE.md` for complete field reference
+**📖 See:** 
+- `TEMPLATE-GUIDE.md` for complete field reference
+- `TOURNAMENT-GUIDE.md` for World Cup, Champions League, and knockout tournament support 🏆
 
 ---
 
@@ -41,11 +48,21 @@ Full match data including lineups, goalscorers, substitutions, cards, injuries, 
 - ✅ Mid-season birthdays handled automatically
 - ✅ 97% less repetition
 
+**Two Naming Conventions Available:**
+
+1. **League/Transfer Format** (`squads.csv`):
+   - Uses `PreviousClub`, `PreviousLeague` (tracks where players came from)
+
+2. **Tournament Format** (`squads_tournament.csv`):
+   - Uses `CurrentClub`, `ClubLeague` (clearer for World Cup, Champions League)
+
+**Both work identically** - they're aliases for the same fields! Use whichever makes more sense for your data.
+
 **Required Columns:**
 - `Team`, `Season`, `PlayerName`, `DateOfBirth`, `Position`
 
 **Optional Columns:**
-- `ShirtNumber`, `Nationality`, `PreviousClub`, `Height`, `PreferredFoot`, `JoinDate`
+- `ShirtNumber`, `Nationality`, `PreviousClub`/`CurrentClub`, `PreviousLeague`/`ClubLeague`
 
 **📖 See:** `SQUAD-DATA-GUIDE.md` for details
 

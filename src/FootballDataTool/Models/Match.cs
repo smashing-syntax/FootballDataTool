@@ -9,6 +9,25 @@ public class Match
     public int HomeGoals { get; set; }
     public int AwayGoals { get; set; }
 
+    // Tournament/knockout stage data (optional)
+    /// <summary>
+    /// Tournament stage (e.g., GroupStage, RoundOf16, Final). 
+    /// Defaults to League for regular season matches.
+    /// </summary>
+    public TournamentStage Stage { get; set; } = TournamentStage.League;
+
+    /// <summary>
+    /// Group identifier for group stage matches (e.g., "A", "B", "Group A").
+    /// Null for knockout stages and league matches.
+    /// </summary>
+    public string? Group { get; set; }
+
+    /// <summary>
+    /// Leg number for two-legged knockout ties (1 or 2). 
+    /// Null for single-leg matches and league games.
+    /// </summary>
+    public int? Leg { get; set; }
+
     // Basic metadata (optional)
     public DateTime? Date { get; set; }
     public TimeSpan? Time { get; set; }
@@ -26,6 +45,21 @@ public class Match
     public int AwayPoints => AwayGoals > HomeGoals ? 3 : HomeGoals == AwayGoals ? 1 : 0;
 
     public string ScoreString => $"{HomeGoals}-{AwayGoals}";
+
+    /// <summary>
+    /// Returns true if this match is part of a knockout tournament (single elimination).
+    /// </summary>
+    public bool IsKnockout => Stage.IsKnockout();
+
+    /// <summary>
+    /// Returns true if this match is part of a group stage.
+    /// </summary>
+    public bool IsGroupStage => Stage == TournamentStage.GroupStage;
+
+    /// <summary>
+    /// Returns true if this is a regular league match.
+    /// </summary>
+    public bool IsLeague => Stage == TournamentStage.League;
 
     // Convenience properties that check extended data
     public bool HasLineupData => ExtendedData?.HomeStartingLineup.Count > 0 

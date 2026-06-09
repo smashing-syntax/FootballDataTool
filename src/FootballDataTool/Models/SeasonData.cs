@@ -354,4 +354,240 @@ public class SeasonData
             SquadCsvLoader.EnrichPlayer(player, squadData, matchDate);
         }
     }
+
+    // ========== TOURNAMENT-SPECIFIC QUERIES ==========
+
+    /// <summary>
+    /// Get all group stage matches.
+    /// </summary>
+    public List<Match> GetGroupStageMatches() =>
+        Matches.Where(m => m.IsGroupStage).ToList();
+
+    /// <summary>
+    /// Get all knockout stage matches.
+    /// </summary>
+    public List<Match> GetKnockoutMatches() =>
+        Matches.Where(m => m.IsKnockout).ToList();
+
+    /// <summary>
+    /// Get matches from a specific group.
+    /// </summary>
+    public List<Match> GetMatchesByGroup(string group) =>
+        Matches.Where(m => m.Group != null && m.Group.Equals(group, StringComparison.OrdinalIgnoreCase)).ToList();
+
+    /// <summary>
+    /// Get matches from a specific tournament stage.
+    /// </summary>
+    public List<Match> GetMatchesByStage(TournamentStage stage) =>
+        Matches.Where(m => m.Stage == stage).ToList();
+
+    /// <summary>
+    /// Get all groups present in the dataset.
+    /// </summary>
+    public List<string> GetAllGroups() =>
+        Matches.Where(m => m.Group != null)
+            .Select(m => m.Group!)
+            .Distinct()
+            .OrderBy(g => g)
+            .ToList();
+
+    /// <summary>
+    /// Get group standings (sorted by points, then goal difference).
+    /// Only includes group stage matches from the specified group.
+    /// </summary>
+    public List<TeamRecord> GetGroupStandings(string group)
+    {
+        var groupMatches = GetMatchesByGroup(group);
+        if (!groupMatches.Any())
+            return new List<TeamRecord>();
+
+        var analyzer = new MatchAnalyzer(groupMatches);
+        return analyzer.GetStandings();
+    }
+
+    /// <summary>
+    /// Get all two-legged ties (matches with Leg 1 or 2).
+    /// Returns tuples of (first leg, second leg).
+    /// </summary>
+    public List<(Match FirstLeg, Match SecondLeg)> GetTwoLeggedTies()
+    {
+        var firstLegs = Matches.Where(m => m.Leg == 1).ToList();
+        var secondLegs = Matches.Where(m => m.Leg == 2).ToList();
+
+        var ties = new List<(Match FirstLeg, Match SecondLeg)>();
+
+        foreach (var firstLeg in firstLegs)
+        {
+            var secondLeg = secondLegs.FirstOrDefault(sl =>
+                sl.Stage == firstLeg.Stage &&
+                ((sl.HomeTeam == firstLeg.AwayTeam && sl.AwayTeam == firstLeg.HomeTeam) ||
+                 (sl.HomeTeam == firstLeg.HomeTeam && sl.AwayTeam == firstLeg.AwayTeam)));
+
+            if (secondLeg != null)
+                ties.Add((firstLeg, secondLeg));
+        }
+
+        return ties;
+    }
+
+    /// <summary>
+    /// Calculate aggregate score for a two-legged tie.
+    /// Returns (team1 total goals, team2 total goals).
+    /// </summary>
+    public (int Team1Goals, int Team2Goals) GetAggregateScore(Match firstLeg, Match secondLeg)
+    {
+        // Determine which team is "team1" and "team2"
+        string team1 = firstLeg.HomeTeam;
+        string team2 = firstLeg.AwayTeam;
+
+        int team1Goals = firstLeg.HomeGoals;
+        int team2Goals = firstLeg.AwayGoals;
+
+        // Add second leg goals
+        if (secondLeg.HomeTeam == team1)
+        {
+            team1Goals += secondLeg.HomeGoals;
+            team2Goals += secondLeg.AwayGoals;
+        }
+        else
+        {
+            team1Goals += secondLeg.AwayGoals;
+            team2Goals += secondLeg.HomeGoals;
+        }
+
+        return (team1Goals, team2Goals);
+    }
+
+    // ========== PHYSICAL STATS ANALYTICS ==========
+
+    /// <summary>
+    /// Get average height by position across all players.
+    /// </summary>
+    public Dictionary<string, double> GetAverageHeightByPosition()
+    {
+        return GetAllPlayers()
+            .Where(p => p.Height.HasValue && !string.IsNullOrWhiteSpace(p.Position))
+            .GroupBy(p => p.Position!)
+            .ToDictionary(
+                g => g.Key,
+                g => Math.Round(g.Average(p => p.Height!.Value), 1)
+            );
+    }
+
+    /// <summary>
+    /// Get average weight by position across all players.
+    /// </summary>
+    public Dictionary<string, double> GetAverageWeightByPosition()
+    {
+        return GetAllPlayers()
+            .Where(p => p.Weight.HasValue && !string.IsNullOrWhiteSpace(p.Position))
+            .GroupBy(p => p.Position!)
+            .ToDictionary(
+                g => g.Key,
+                g => Math.Round(g.Average(p => p.Weight!.Value), 1)
+            );
+    }
+
+    /// <summary>
+    /// Get average BMI by position across all players.
+    /// </summary>
+    public Dictionary<string, double> GetAverageBMIByPosition()
+    {
+        return GetAllPlayers()
+            .Where(p => p.BMI.HasValue && !string.IsNullOrWhiteSpace(p.Position))
+            .GroupBy(p => p.Position!)
+            .ToDictionary(
+                g => g.Key,
+                g => Math.Round(g.Average(p => p.BMI!.Value), 2)
+            );
+    }
+
+    /// <summary>
+    /// Get preferred foot distribution across all players.
+    /// </summary>
+    public Dictionary<string, int> GetPreferredFootDistribution()
+    {
+        return GetAllPlayers()
+            .Where(p => !string.IsNullOrWhiteSpace(p.PreferredFoot))
+            .GroupBy(p => p.PreferredFoot!)
+            .ToDictionary(g => g.Key, g => g.Count());
+    }
+
+    /// <summary>
+    /// Get height brackets analysis (e.g., which height ranges perform best).
+    /// Groups players by 5cm brackets and returns goal/assist counts.
+    /// </summary>
+    public List<(string HeightBracket, int Players, int Goals, int Assists)> GetPerformanceByHeightBracket()
+    {
+        var results = new List<(string, int, int, int)>();
+
+        var playersWithHeight = GetAllPlayers()
+            .Where(p => p.Height.HasValue)
+            .ToList();
+
+        if (!playersWithHeight.Any())
+            return results;
+
+        var minHeight = playersWithHeight.Min(p => p.Height!.Value);
+        var maxHeight = playersWithHeight.Max(p => p.Height!.Value);
+
+        // Create 5cm brackets
+        for (int h = (minHeight / 5) * 5; h <= maxHeight; h += 5)
+        {
+            var bracket = $"{h}-{h + 4}cm";
+            var playersInBracket = playersWithHeight
+                .Where(p => p.Height!.Value >= h && p.Height.Value < h + 5)
+                .ToList();
+
+            if (!playersInBracket.Any())
+                continue;
+
+            int totalGoals = 0;
+            int totalAssists = 0;
+
+            // Get goals and assists from team stats
+            foreach (var team in Teams.Values)
+            {
+                var scorers = team.TopScorers();
+                var assisters = team.TopAssisters();
+
+                foreach (var player in playersInBracket)
+                {
+                    var scorer = scorers.FirstOrDefault(s => 
+                        s.Player.Name.Equals(player.Name, StringComparison.OrdinalIgnoreCase));
+                    if (scorer != default)
+                        totalGoals += scorer.Goals;
+
+                    var assister = assisters.FirstOrDefault(a => 
+                        a.Player.Name.Equals(player.Name, StringComparison.OrdinalIgnoreCase));
+                    if (assister != default)
+                        totalAssists += assister.Assists;
+                }
+            }
+
+            results.Add((bracket, playersInBracket.Count, totalGoals, totalAssists));
+        }
+
+        return results.OrderBy(r => int.Parse(r.Item1.Split('-')[0].Replace("cm", ""))).ToList();
+    }
+
+    /// <summary>
+    /// Get tallest and shortest players with their stats.
+    /// </summary>
+    public (List<Player> Tallest, List<Player> Shortest) GetHeightExtremes(int count = 5)
+    {
+        var playersWithHeight = GetAllPlayers().Where(p => p.Height.HasValue).ToList();
+
+        var tallest = playersWithHeight
+            .OrderByDescending(p => p.Height!.Value)
+            .Take(count)
+            .ToList();
+
+        var shortest = playersWithHeight
+            .OrderBy(p => p.Height!.Value)
+            .Take(count)
+            .ToList();
+
+        return (tallest, shortest);
+    }
 }

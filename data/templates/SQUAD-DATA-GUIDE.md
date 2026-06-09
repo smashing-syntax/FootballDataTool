@@ -8,11 +8,24 @@ Squad CSV files contain player biographical data (birthdays, nationalities, etc.
 
 ## 📋 Format
 
+### For League/Transfer Squads:
 ```csv
-Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,PreviousClub,Height,PreferredFoot,JoinDate
-Arsenal,2014/15,Mesut Ozil,1988-10-15,Attacking Midfielder,11,Germany,Real Madrid,180,Left,2013-09-02
-Chelsea,2014/15,Eden Hazard,1991-01-07,Winger,10,Belgium,Lille,173,Both,2012-06-04
+Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,PreviousClub,PreviousLeague,Height,Weight,PreferredFoot
+Arsenal,2014/15,Mesut Ozil,1988-10-15,AM,11,Germany,Real Madrid,La Liga,180,76,Left
+Chelsea,2014/15,Eden Hazard,1991-01-07,LW,10,Belgium,Lille,Ligue 1,173,74,Right
 ```
+
+### For Tournament Squads:
+```csv
+Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,CurrentClub,ClubLeague,Height,Weight,PreferredFoot
+Argentina,2022,Lionel Messi,1987-06-24,FW,10,Argentina,Paris Saint-Germain,Ligue 1,170,72,Left
+France,2022,Kylian Mbappé,1998-12-20,LW,10,France,Paris Saint-Germain,Ligue 1,178,73,Right
+```
+
+**Note:** 
+- `PreviousClub`/`PreviousLeague` and `CurrentClub`/`ClubLeague` are **aliases** - they map to the same field! Use whichever makes more sense for your data.
+- Physical attributes (`Height`, `Weight`, `PreferredFoot`) are optional but enable fun analytics like height brackets and BMI by position!
+- BMI is automatically calculated if both height and weight are provided.
 
 ---
 

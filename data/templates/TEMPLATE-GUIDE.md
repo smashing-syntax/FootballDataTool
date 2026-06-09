@@ -39,6 +39,29 @@ This guide explains how to fill in each field in the template CSVs for FootballD
 
 ---
 
+### 🏆 TOURNAMENT FIELDS (For World Cup, Champions League, etc.)
+
+| Field | Format | Example | Notes |
+|-------|--------|---------|-------|
+| `Stage` | Code | `GS`, `R16`, `QF`, `SF`, `F` | Tournament stage (see codes below) |
+| `Group` | Text | `A`, `B`, `Group C` | Group identifier for group stages |
+| `Leg` | Number | `1`, `2` | Leg number for two-legged ties |
+
+**Stage Codes:**
+- `GS` = Group Stage
+- `R64` = Round of 64
+- `R32` = Round of 32
+- `R16` = Round of 16
+- `QF` = Quarter-final
+- `SF` = Semi-final
+- `3P` = 3rd Place Playoff
+- `F` = Final
+- Leave blank for regular league matches
+
+**📖 See:** `TOURNAMENT-GUIDE.md` for complete tournament documentation
+
+---
+
 ### 👥 MANAGERS & FORMATIONS
 
 | Field | Format | Example | Notes |

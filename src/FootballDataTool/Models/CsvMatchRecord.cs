@@ -19,6 +19,23 @@ public class CsvMatchRecord
     public string? AwayGoals { get; set; }
     public string? Result { get; set; }
 
+    // Tournament/knockout stage data (optional)
+    /// <summary>
+    /// Tournament stage (e.g., "GS", "R16", "QF", "SF", "F").
+    /// Empty/null for regular league matches.
+    /// </summary>
+    public string? Stage { get; set; }
+
+    /// <summary>
+    /// Group identifier for group stage matches (e.g., "A", "B", "Group A").
+    /// </summary>
+    public string? Group { get; set; }
+
+    /// <summary>
+    /// Leg number for two-legged knockout ties (1 or 2).
+    /// </summary>
+    public string? Leg { get; set; }
+
     // Match officials
     public string? Referee { get; set; }
     public string? AssistantReferee1 { get; set; }

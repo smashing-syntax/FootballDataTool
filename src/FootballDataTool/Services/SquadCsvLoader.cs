@@ -1,5 +1,6 @@
 using CsvHelper;
 using CsvHelper.Configuration;
+using CsvHelper.Configuration.Attributes;
 using FootballDataTool.Models;
 using System.Globalization;
 
@@ -85,7 +86,9 @@ public class SquadCsvLoader
             Name = record.PlayerName,
             Position = record.Position,
             Nationality = record.Nationality,
-            PreviousClub = record.PreviousClub
+            PreviousClub = record.PreviousClub,
+            PreviousLeague = record.PreviousLeague,
+            PreferredFoot = record.PreferredFoot
         };
 
         // Parse date of birth
@@ -109,6 +112,20 @@ public class SquadCsvLoader
         {
             if (int.TryParse(record.ShirtNumber, out int number))
                 player.ShirtNumber = number;
+        }
+
+        // Parse height (in cm)
+        if (!string.IsNullOrWhiteSpace(record.Height))
+        {
+            if (int.TryParse(record.Height, out int height))
+                player.Height = height;
+        }
+
+        // Parse weight (in kg)
+        if (!string.IsNullOrWhiteSpace(record.Weight))
+        {
+            if (int.TryParse(record.Weight, out int weight))
+                player.Weight = weight;
         }
 
         return player;
@@ -161,7 +178,11 @@ public class SquadCsvLoader
         player.Position ??= squadPlayer.Position;
         player.Nationality ??= squadPlayer.Nationality;
         player.PreviousClub ??= squadPlayer.PreviousClub;
+        player.PreviousLeague ??= squadPlayer.PreviousLeague;
         player.ShirtNumber ??= squadPlayer.ShirtNumber;
+        player.Height ??= squadPlayer.Height;
+        player.Weight ??= squadPlayer.Weight;
+        player.PreferredFoot ??= squadPlayer.PreferredFoot;
 
         // Calculate age at match date
         if (player.DateOfBirth.HasValue)
@@ -188,8 +209,35 @@ public class SquadCsvRecord
     public string Position { get; set; } = string.Empty;
     public string ShirtNumber { get; set; } = string.Empty;
     public string Nationality { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Player's club team.
+    /// Accepts both "PreviousClub" (for transfers/league squads) and "CurrentClub"/"ClubTeam" (for tournaments).
+    /// </summary>
+    [Name("PreviousClub", "CurrentClub", "ClubTeam", "Club")]
     public string PreviousClub { get; set; } = string.Empty;
-    public string Height { get; set; } = string.Empty; // Not used yet, for future
-    public string PreferredFoot { get; set; } = string.Empty; // Not used yet, for future
+
+    /// <summary>
+    /// League that the player's club team plays in.
+    /// Accepts both "PreviousLeague" and "CurrentLeague"/"ClubLeague".
+    /// </summary>
+    [Name("PreviousLeague", "CurrentLeague", "ClubLeague", "League")]
+    public string PreviousLeague { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Player's height in centimeters.
+    /// </summary>
+    public string Height { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Player's weight in kilograms.
+    /// </summary>
+    public string Weight { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Player's preferred foot (Left, Right, Both).
+    /// </summary>
+    public string PreferredFoot { get; set; } = string.Empty;
+
     public string JoinDate { get; set; } = string.Empty; // Not used yet, for future
 }

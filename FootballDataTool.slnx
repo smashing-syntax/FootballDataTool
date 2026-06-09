@@ -2,6 +2,9 @@
   <Folder Name="/src/">
     <Project Path="src/FootballDataTool/FootballDataTool.csproj" />
   </Folder>
+  <Folder Name="/src/py developer scripts/">
+    <File Path="fetch_squads.py" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/FootballDataTool.Tests/FootballDataTool.Tests.csproj" />
   </Folder>

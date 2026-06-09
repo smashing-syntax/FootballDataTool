@@ -20,6 +20,11 @@ public class CsvDataService
     private static readonly string[] ResultColumns = ["FTR", "Res", "Result", "FullTimeResult"];
     private static readonly string[] RefereeColumns = ["Referee", "Ref"];
 
+    // Tournament/knockout stage columns
+    private static readonly string[] StageColumns = ["Stage", "TournamentStage", "Round", "KnockoutRound", "Phase"];
+    private static readonly string[] GroupColumns = ["Group", "GroupName", "Pool"];
+    private static readonly string[] LegColumns = ["Leg", "LegNumber"];
+
     // Extended field columns
     private static readonly string[] HomeManagerColumns = ["HomeManager", "Home Manager", "HManager"];
     private static readonly string[] AwayManagerColumns = ["AwayManager", "Away Manager", "AManager"];
@@ -135,6 +140,11 @@ public class CsvDataService
             ["Result"] = FindColumnIndex(headers, ResultColumns),
             ["Referee"] = FindColumnIndex(headers, RefereeColumns),
 
+            // Tournament fields (optional)
+            ["Stage"] = FindColumnIndex(headers, StageColumns),
+            ["Group"] = FindColumnIndex(headers, GroupColumns),
+            ["Leg"] = FindColumnIndex(headers, LegColumns),
+
             // Extended fields - all optional
             ["HomeManager"] = FindColumnIndex(headers, HomeManagerColumns),
             ["AwayManager"] = FindColumnIndex(headers, AwayManagerColumns),
@@ -206,6 +216,11 @@ public class CsvDataService
                     case "Time": record.Time = value; break;
                     case "Result": record.Result = value; break;
                     case "Referee": record.Referee = value; break;
+
+                    // Tournament fields
+                    case "Stage": record.Stage = value; break;
+                    case "Group": record.Group = value; break;
+                    case "Leg": record.Leg = value; break;
 
                     // Extended fields
                     case "HomeManager": record.HomeManager = value; break;
@@ -281,7 +296,10 @@ public class CsvDataService
                 AwayGoals = awayGoals,
                 Date = TryParseDate(record.Date),
                 Time = TryParseTime(record.Time),
-                Referee = record.Referee
+                Referee = record.Referee,
+                Stage = TryParseStage(record.Stage),
+                Group = record.Group,
+                Leg = TryParseInt(record.Leg, out int leg) ? leg : null
             };
 
             if (TryParseInt(record.Gameweek, out int gw))
@@ -375,5 +393,13 @@ public class CsvDataService
             return dt.TimeOfDay;
 
         return null;
+    }
+
+    private static TournamentStage TryParseStage(string? value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+            return TournamentStage.League;
+
+        return TournamentStageExtensions.Parse(value);
     }
 }

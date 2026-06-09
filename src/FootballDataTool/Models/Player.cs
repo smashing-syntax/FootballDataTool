@@ -37,6 +37,37 @@ public class Player
     public int? PreviousClubPosition { get; set; }
 
     /// <summary>
+    /// Player's height in centimeters.
+    /// </summary>
+    public int? Height { get; set; }
+
+    /// <summary>
+    /// Player's weight in kilograms.
+    /// </summary>
+    public int? Weight { get; set; }
+
+    /// <summary>
+    /// Player's preferred foot (Left, Right, Both).
+    /// </summary>
+    public string? PreferredFoot { get; set; }
+
+    /// <summary>
+    /// Body Mass Index calculated from height and weight.
+    /// BMI = weight(kg) / (height(m)²)
+    /// </summary>
+    public double? BMI 
+    { 
+        get
+        {
+            if (!Height.HasValue || !Weight.HasValue || Height.Value == 0)
+                return null;
+
+            double heightInMeters = Height.Value / 100.0;
+            return Math.Round(Weight.Value / (heightInMeters * heightInMeters), 2);
+        }
+    }
+
+    /// <summary>
     /// Zodiac sign based on date of birth.
     /// </summary>
     public string? ZodiacSign => DateOfBirth.HasValue ? CalculateZodiacSign(DateOfBirth.Value) : null;
