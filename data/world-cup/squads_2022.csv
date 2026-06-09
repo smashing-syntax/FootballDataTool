@@ -1,0 +1,552 @@
+﻿Team,Season,PlayerName,DateOfBirth,Position,ShirtNumber,Nationality,CurrentClub,ClubLeague,Height,Weight,PreferredFoot
+Belgium,2022,T. Courtois,N/A,GK,1.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,S. Lammens,N/A,GK,12.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,M. Penders,N/A,GK,13.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,T. Castagne,N/A,DF,21.0,Belgium,Club Data,League Data,180,75,Left
+Belgium,2022,M. De Cuyper,N/A,DF,5.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,K. De Winter,N/A,DF,16.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,Z. Debast,N/A,DF,2.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,B. Mechele,N/A,DF,4.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,T. Meunier,N/A,DF,15.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,N. Ngoy,N/A,DF,25.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,J. Seys,N/A,DF,18.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,A. Theate,N/A,DF,3.0,Belgium,Club Data,League Data,180,75,Left
+Belgium,2022,K. De Bruyne,N/A,MF,7.0,Belgium,Club Data,League Data,180,75,Left
+Belgium,2022,A. Onana,N/A,MF,24.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,N. Raskin,N/A,MF,23.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,A. Saelemaekers,N/A,FW,22.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,Y. Tielemans,N/A,MF,8.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,D. Moreira,N/A,FW,19.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,H. Vanaken,N/A,MF,20.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,A. Witsel,N/A,MF,6.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,J. Doku,N/A,MF,11.0,Belgium,Club Data,League Data,180,75,Left
+Belgium,2022,M. Fernandez-Pardo,N/A,FW,26.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,R. Lukaku,N/A,FW,9.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,D. Lukebakio,N/A,FW,14.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,C. De Ketelaere,N/A,FW,17.0,Belgium,Club Data,League Data,180,75,Right
+Belgium,2022,L. Trossard,N/A,MF,10.0,Belgium,Club Data,League Data,180,75,Right
+France,2022,M. Maignan,N/A,GK,16.0,France,Club Data,League Data,180,75,Right
+France,2022,R. Risser,N/A,GK,23.0,France,Club Data,League Data,180,75,Right
+France,2022,B. Samba,N/A,GK,1.0,France,Club Data,League Data,180,75,Right
+France,2022,L. Digne,N/A,DF,3.0,France,Club Data,League Data,180,75,Left
+France,2022,M. Gusto,N/A,DF,2.0,France,Club Data,League Data,180,75,Right
+France,2022,L. Hernández,N/A,DF,21.0,France,Club Data,League Data,180,75,Left
+France,2022,T. Hernández,N/A,DF,19.0,France,Club Data,League Data,180,75,Right
+France,2022,I. Konaté,N/A,DF,15.0,France,Club Data,League Data,180,75,Right
+France,2022,J. Koundé,N/A,DF,5.0,France,Club Data,League Data,180,75,Right
+France,2022,M. Lacroix,N/A,DF,26.0,France,Club Data,League Data,180,75,Right
+France,2022,W. Saliba,N/A,DF,17.0,France,Club Data,League Data,180,75,Right
+France,2022,D. Upamecano,N/A,DF,4.0,France,Club Data,League Data,180,75,Right
+France,2022,R. Cherki,N/A,MF,24.0,France,Club Data,League Data,180,75,Right
+France,2022,N. Kanté,N/A,MF,13.0,France,Club Data,League Data,180,75,Right
+France,2022,M. Koné,N/A,MF,6.0,France,Club Data,League Data,180,75,Right
+France,2022,A. Rabiot,N/A,MF,14.0,France,Club Data,League Data,180,75,Right
+France,2022,A. Tchouaméni,N/A,MF,8.0,France,Club Data,League Data,180,75,Right
+France,2022,W. Zaïre-Emery,N/A,MF,18.0,France,Club Data,League Data,180,75,Right
+France,2022,M. Akliouche,N/A,MF,25.0,France,Club Data,League Data,180,75,Right
+France,2022,B. Barcola,N/A,FW,12.0,France,Club Data,League Data,180,75,Right
+France,2022,J. Mateta,N/A,FW,22.0,France,Club Data,League Data,180,75,Right
+France,2022,O. Dembélé,N/A,FW,7.0,France,Club Data,League Data,180,75,Left
+France,2022,D. Doué,N/A,FW,20.0,France,Club Data,League Data,180,75,Right
+France,2022,Kylian Mbappé,N/A,FW,10.0,France,Club Data,League Data,180,75,Right
+France,2022,M. Thuram,N/A,MF,9.0,France,Club Data,League Data,180,75,Right
+France,2022,M. Olise,N/A,MF,11.0,France,Club Data,League Data,180,75,Left
+Croatia,2022,D. Kotarski,N/A,GK,23.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,D. Livakovic,N/A,GK,1.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,I. Pandur,N/A,GK,12.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,D. Caleta-Car,N/A,DF,5.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,M. Erlic,N/A,DF,25.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,J. Gvardiol,N/A,DF,4.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,M. Pongracic,N/A,DF,3.0,Croatia,Club Data,League Data,180,75,Left
+Croatia,2022,J. Stanisic,N/A,MF,2.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,J. Sutalo,N/A,DF,6.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,L. Vuskovic,N/A,DF,22.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,M. Baturina,N/A,FW,16.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,T. Fruk,N/A,MF,19.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,K. Jakic,N/A,MF,18.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,M. Kovacic,N/A,MF,8.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,L. Modric,N/A,MF,10.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,N. Moro,N/A,MF,7.0,Croatia,Club Data,League Data,180,75,Left
+Croatia,2022,M. Pasalic,N/A,MF,15.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,L. Sucic,N/A,MF,21.0,Croatia,Club Data,League Data,180,75,Left
+Croatia,2022,P. Sucic,N/A,FW,17.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,N. Vlasic,N/A,MF,13.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,A. Budimir,N/A,FW,11.0,Croatia,Club Data,League Data,180,75,Left
+Croatia,2022,A. Kramaric,N/A,FW,9.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,I. Matanovic,N/A,FW,20.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,P. Musa,N/A,FW,26.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,M. Pasalic,N/A,FW,24.0,Croatia,Club Data,League Data,180,75,Right
+Croatia,2022,I. Perisic,N/A,MF,14.0,Croatia,Club Data,League Data,180,75,Right
+Brazil,2022,Alisson Becker,N/A,GK,1.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Ederson,N/A,GK,23.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Weverton,N/A,GK,12.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Alex Sandro,N/A,DF,6.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Bremer,N/A,DF,14.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Gabriel Magalhães,N/A,DF,3.0,Brazil,Club Data,League Data,180,75,Left
+Brazil,2022,Ibañez,N/A,DF,24.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Léo Pereira,N/A,DF,15.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Marquinhos,N/A,DF,4.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Douglas Santos,N/A,DF,16.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Wesley,N/A,DF,2.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Danilo,N/A,DF,13.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Bruno Guimarães,N/A,MF,8.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Casemiro,N/A,MF,5.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Fabinho,N/A,MF,17.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Lucas Paquetá,N/A,MF,20.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Danilo Santos,N/A,MF,18.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Matheus Cunha,N/A,FW,9.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Endrick,N/A,FW,19.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Luiz Henrique,N/A,MF,21.0,Brazil,Club Data,League Data,180,75,Left
+Brazil,2022,Gabriel Martinelli,N/A,FW,22.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Neymar,N/A,FW,10.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Raphinha,N/A,MF,11.0,Brazil,Club Data,League Data,180,75,Left
+Brazil,2022,Rayan,N/A,FW,26.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Thiago,N/A,FW,25.0,Brazil,Club Data,League Data,180,75,Right
+Brazil,2022,Vinícius Júnior,N/A,MF,7.0,Brazil,Club Data,League Data,180,75,Left
+Uruguay,2022,S. Mele,N/A,GK,12.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,F. Muslera,N/A,GK,23.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,S. Rochet,N/A,GK,1.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,R. Araújo,N/A,DF,4.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,S. Bueno,N/A,DF,24.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,S. Cáceres,N/A,DF,3.0,Uruguay,Club Data,League Data,180,75,Left
+Uruguay,2022,J. Giménez,N/A,DF,2.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,M. Olivera,N/A,DF,16.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,G. Varela,N/A,DF,13.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,M. Viña,N/A,DF,17.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,R. Bentancur,N/A,MF,6.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,E. Martínez,N/A,MF,15.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,J. Sanabria,N/A,MF,25.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,M. Ugarte,N/A,MF,5.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,F. Valverde,N/A,MF,8.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,R. Zalazar,N/A,MF,26.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,G. de Arrascaeta,N/A,MF,10.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,N. de la Cruz,N/A,MF,7.0,Uruguay,Club Data,League Data,180,75,Left
+Uruguay,2022,M. Araújo,N/A,MF,20.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,A. Canobbio,N/A,MF,14.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,R. Aguirre,N/A,FW,19.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,J. Piquerez,N/A,FW,22.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,D. Núñez,N/A,FW,9.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,F. Pellistri,N/A,FW,11.0,Uruguay,Club Data,League Data,180,75,Left
+Uruguay,2022,B. Rodríguez,N/A,FW,18.0,Uruguay,Club Data,League Data,180,75,Right
+Uruguay,2022,F. Viñas,N/A,FW,21.0,Uruguay,Club Data,League Data,180,75,Left
+Spain,2022,Joan García,N/A,GK,13.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,David Raya,N/A,GK,1.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Unai Simón,N/A,GK,23.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Pau Cubarsí Paredes,N/A,DF,22.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Marc Cucurella,N/A,DF,24.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Eric García,N/A,DF,4.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Álex Grimaldo,N/A,DF,3.0,Spain,Club Data,League Data,180,75,Left
+Spain,2022,Aymeric Laporte,N/A,DF,14.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Marcos Llorente,N/A,MF,5.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Pedro Porro,N/A,DF,12.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Marc Pubill,N/A,DF,2.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Gavi,N/A,MF,9.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Mikel Merino,N/A,MF,6.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Pedri,N/A,MF,20.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Rodri,N/A,MF,16.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Fabián Ruiz,N/A,MF,8.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Martín Zubimendi,N/A,MF,18.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Álex Baena,N/A,MF,15.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Dani Olmo,N/A,MF,10.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Borja Iglesias,N/A,FW,26.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Lamine Yamal,N/A,FW,19.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Víctor Muñoz,N/A,FW,25.0,Spain,Club Data,League Data,180,75,Right
+Spain,2022,Mikel Oyarzabal,N/A,FW,21.0,Spain,Club Data,League Data,180,75,Left
+Spain,2022,Yeremy Pino,N/A,MF,11.0,Spain,Club Data,League Data,180,75,Left
+Spain,2022,Ferran Torres,N/A,MF,7.0,Spain,Club Data,League Data,180,75,Left
+Spain,2022,Nico Williams,N/A,FW,17.0,Spain,Club Data,League Data,180,75,Right
+England,2022,D. Henderson,N/A,GK,13.0,England,Club Data,League Data,180,75,Right
+England,2022,J. Pickford,N/A,GK,1.0,England,Club Data,League Data,180,75,Right
+England,2022,J. Trafford,N/A,GK,23.0,England,Club Data,League Data,180,75,Right
+England,2022,D. Burn,N/A,DF,15.0,England,Club Data,League Data,180,75,Right
+England,2022,M. Guéhi,N/A,DF,6.0,England,Club Data,League Data,180,75,Right
+England,2022,R. James,N/A,DF,24.0,England,Club Data,League Data,180,75,Right
+England,2022,E. Konsa,N/A,DF,2.0,England,Club Data,League Data,180,75,Right
+England,2022,T. Livramento,N/A,DF,12.0,England,Club Data,League Data,180,75,Right
+England,2022,N. Oreilly,N/A,DF,3.0,England,Club Data,League Data,180,75,Left
+England,2022,J. Quansah,N/A,DF,26.0,England,Club Data,League Data,180,75,Right
+England,2022,D. Spence,N/A,DF,25.0,England,Club Data,League Data,180,75,Right
+England,2022,J. Stones,N/A,DF,5.0,England,Club Data,League Data,180,75,Right
+England,2022,E. Anderson,N/A,MF,8.0,England,Club Data,League Data,180,75,Right
+England,2022,J. Bellingham,N/A,MF,10.0,England,Club Data,League Data,180,75,Right
+England,2022,E. Eze,N/A,MF,21.0,England,Club Data,League Data,180,75,Left
+England,2022,J. Henderson,N/A,MF,14.0,England,Club Data,League Data,180,75,Right
+England,2022,K. Mainoo,N/A,MF,16.0,England,Club Data,League Data,180,75,Right
+England,2022,D. Rice,N/A,MF,4.0,England,Club Data,League Data,180,75,Right
+England,2022,M. Rogers,N/A,MF,17.0,England,Club Data,League Data,180,75,Right
+England,2022,A. Gordon,N/A,FW,18.0,England,Club Data,League Data,180,75,Right
+England,2022,H. Kane,N/A,FW,9.0,England,Club Data,League Data,180,75,Right
+England,2022,N. Madueke,N/A,FW,20.0,England,Club Data,League Data,180,75,Right
+England,2022,M. Rashford,N/A,MF,11.0,England,Club Data,League Data,180,75,Left
+England,2022,B. Saka,N/A,FW,7.0,England,Club Data,League Data,180,75,Left
+England,2022,I. Toney,N/A,FW,22.0,England,Club Data,League Data,180,75,Right
+England,2022,O. Watkins,N/A,MF,19.0,England,Club Data,League Data,180,75,Right
+Japan,2022,T. Hayakawa,N/A,GK,23.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,K. Osako,N/A,GK,12.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,Z. Suzuki,N/A,GK,1.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,K. Itakura,N/A,DF,4.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,H. Ito,N/A,DF,21.0,Japan,Club Data,League Data,180,75,Left
+Japan,2022,Y. Nagatomo,N/A,DF,5.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,A. Seko,N/A,DF,20.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,Y. Sugawara,N/A,DF,2.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,J. Suzuki,N/A,DF,25.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,S. Taniguchi,N/A,DF,3.0,Japan,Club Data,League Data,180,75,Left
+Japan,2022,T. Tomiyasu,N/A,DF,15.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,T. Watanabe,N/A,DF,16.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,R. Doan,N/A,MF,10.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,W. Endo,N/A,MF,6.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,D. Kamada,N/A,MF,15.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,K. Sano,N/A,MF,24.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,A. Tanaka,N/A,MF,7.0,Japan,Club Data,League Data,180,75,Left
+Japan,2022,J. Ito,N/A,FW,14.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,T. Kubo,N/A,FW,8.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,D. Maeda,N/A,FW,11.0,Japan,Club Data,League Data,180,75,Left
+Japan,2022,Keito Nakamura,N/A,MF,13.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,Y. Suzuki,N/A,MF,17.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,K. Goto,N/A,FW,9.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,Koki Ogawa,N/A,FW,19.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,K. Shiogai,N/A,FW,26.0,Japan,Club Data,League Data,180,75,Right
+Japan,2022,A. Ueda,N/A,FW,18.0,Japan,Club Data,League Data,180,75,Right
+Senegal,2022,M. Diaw,N/A,GK,23.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,Y. Diouf,N/A,GK,1.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,É. Mendy,N/A,GK,16.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,E. Diouf,N/A,DF,25.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,I. Jakobs,N/A,MF,14.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,K. Koulibaly,N/A,DF,3.0,Senegal,Club Data,League Data,180,75,Left
+Senegal,2022,A. Mendy,N/A,DF,24.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,M. Niakhaté,N/A,DF,19.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,M. Sarr,N/A,DF,2.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,A. Seck,N/A,DF,4.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,K. Diatta,N/A,DF,15.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,L. Camara,N/A,MF,8.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,P. Ciss,N/A,MF,6.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,H. Diarra,N/A,FW,21.0,Senegal,Club Data,League Data,180,75,Left
+Senegal,2022,I. Gueye,N/A,MF,5.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,P. Gueye,N/A,MF,26.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,Bara Ndiaye,N/A,MF,27.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,P. Sarr,N/A,MF,17.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,Assane Diao,N/A,FW,7.0,Senegal,Club Data,League Data,180,75,Left
+Senegal,2022,B. Dieng,N/A,FW,9.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,N. Jackson,N/A,FW,11.0,Senegal,Club Data,League Data,180,75,Left
+Senegal,2022,S. Mané,N/A,FW,10.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,I. Mbaye,N/A,FW,27.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,C. Ndiaye,N/A,FW,12.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,I. Ndiaye,N/A,MF,13.0,Senegal,Club Data,League Data,180,75,Right
+Senegal,2022,I. Sarr,N/A,FW,18.0,Senegal,Club Data,League Data,180,75,Right
+Serbia,2022,V. Ilić,N/A,GK,12.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,L. LijeskiÄ,N/A,GK,23.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,V. Milinković-Savić,N/A,GK,23.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,Đ. Petrović,N/A,GK,21.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,P. Rajković,N/A,GK,1.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,F. Stanković,N/A,GK,1.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,S. Bukinac,N/A,DF,25.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,S. Eraković,N/A,DF,16.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,N. Milenković,N/A,DF,4.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,M. Milikic,N/A,DF,13.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,O. MimoviÄ,N/A,DF,2.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,K. Nedeljković,N/A,DF,17.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,S. Pavlović,N/A,DF,3.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,P. Petrović,N/A,DF,3.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,N. Simić,N/A,DF,4.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,A. Terzić,N/A,DF,22.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,V. Dragojević,N/A,MF,6.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,M. Gaćinović,N/A,MF,21.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,N. Gudelj,N/A,MF,6.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,F. Kostić,N/A,MF,11.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,V. Kostov,N/A,MF,10.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,S. Lukić,N/A,MF,10.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,A. MaksimoviÄ,N/A,MF,20.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,S. Milinković-Savić,N/A,MF,20.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,N. Petrović,N/A,MF,5.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,L. Samardžić,N/A,MF,20.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,P. Stanić,N/A,MF,24.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,A. Stanković,N/A,MF,10.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,A. Živković,N/A,MF,14.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,D. Zukić,N/A,MF,8.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,V. Birmančević,N/A,MF,7.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,M. Ivanović,N/A,FW,19.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,D. Joveljić,N/A,FW,19.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,L. Jović,N/A,FW,8.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,A. Mitrović,N/A,FW,9.0,Serbia,Club Data,League Data,180,75,Right
+Serbia,2022,L. Ranđelović,N/A,MF,11.0,Serbia,Club Data,League Data,180,75,Left
+Serbia,2022,P. Ratkov,N/A,FW,9.0,Serbia,Club Data,League Data,180,75,Right
+Switzerland,2022,M. Keller,N/A,GK,21.0,Switzerland,Club Data,League Data,180,75,Left
+Switzerland,2022,G. Kobel,N/A,GK,1.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,Y. Mvogo,N/A,GK,12.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,M. Akanji,N/A,DF,5.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,A. Amenda,N/A,DF,24.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,E. Cömert,N/A,DF,18.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,N. Elvedi,N/A,DF,4.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,L. Jaquez,N/A,DF,25.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,M. Muheim,N/A,DF,2.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,R. Rodríguez,N/A,DF,13.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,S. Widmer,N/A,DF,3.0,Switzerland,Club Data,League Data,180,75,Left
+Switzerland,2022,M. Aebischer,N/A,MF,20.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,R. Freuler,N/A,MF,8.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,A. Jashari,N/A,MF,14.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,D. Sow,N/A,MF,15.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,G. Xhaka,N/A,MF,10.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,D. Zakaria,N/A,MF,6.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,C. Fassnacht,N/A,MF,16.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,C. Itten,N/A,FW,26.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,F. Rieder,N/A,MF,22.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,R. Vargas,N/A,FW,17.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,Z. Amdouni,N/A,FW,23.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,B. Embolo,N/A,FW,7.0,Switzerland,Club Data,League Data,180,75,Left
+Switzerland,2022,J. Manzambi,N/A,FW,9.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,N. Okafor,N/A,FW,19.0,Switzerland,Club Data,League Data,180,75,Right
+Switzerland,2022,D. Ndoye,N/A,MF,11.0,Switzerland,Club Data,League Data,180,75,Left
+Germany,2022,O. Baumann,N/A,GK,12.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,M. Neuer,N/A,GK,1.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,A. Nübel,N/A,GK,21.0,Germany,Club Data,League Data,180,75,Left
+Germany,2022,W. Anton,N/A,DF,3.0,Germany,Club Data,League Data,180,75,Left
+Germany,2022,N. Brown,N/A,DF,18.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,D. Raum,N/A,DF,22.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,A. Rüdiger,N/A,DF,2.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,N. Schlotterbeck,N/A,DF,15.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,J. Tah,N/A,DF,4.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,M. Thiaw,N/A,DF,24.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,J. Kimmich,N/A,DF,6.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,N. Amiri,N/A,MF,20.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,L. Goretzka,N/A,MF,8.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,P. Groß,N/A,MF,13.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,L. Karl,N/A,MF,25.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,J. Leweling,N/A,FW,9.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,J. Musiala,N/A,MF,10.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,F. Nmecha,N/A,MF,23.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,A. Pavlovic,N/A,MF,5.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,L. Sané,N/A,MF,19.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,A. Stiller,N/A,MF,16.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,F. Wirtz,N/A,MF,17.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,K. Havertz,N/A,FW,7.0,Germany,Club Data,League Data,180,75,Left
+Germany,2022,M. Beier,N/A,FW,14.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,D. Undav,N/A,FW,26.0,Germany,Club Data,League Data,180,75,Right
+Germany,2022,N. Woltemade,N/A,FW,11.0,Germany,Club Data,League Data,180,75,Left
+Argentina,2022,E. Martínez,N/A,GK,23.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,J. Musso,N/A,GK,1.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,G. Rulli,N/A,GK,12.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,L. Balerdi,N/A,DF,2.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,Lisandro Martínez,N/A,DF,6.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,F. Medina,N/A,DF,25.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,N. Molina,N/A,DF,26.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,G. Montiel,N/A,DF,4.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,N. Otamendi,N/A,DF,19.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,C. Romero,N/A,DF,13.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,N. Tagliafico,N/A,DF,3.0,Argentina,Club Data,League Data,180,75,Left
+Argentina,2022,V. Barco,N/A,MF,8.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,E. Fernández,N/A,MF,24.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,G. Lo Celso,N/A,MF,11.0,Argentina,Club Data,League Data,180,75,Left
+Argentina,2022,A. Mac Allister,N/A,MF,20.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,E. Palacios,N/A,MF,14.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,L. Paredes,N/A,MF,5.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,N. González,N/A,FW,15.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,R. De Paul,N/A,MF,7.0,Argentina,Club Data,League Data,180,75,Left
+Argentina,2022,T. Almada,N/A,FW,16.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,J. Álvarez,N/A,FW,9.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,N. Paz,N/A,FW,18.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,J. López,N/A,FW,21.0,Argentina,Club Data,League Data,180,75,Left
+Argentina,2022,Lautaro Martínez,N/A,FW,22.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,L. Messi,N/A,FW,10.0,Argentina,Club Data,League Data,180,75,Right
+Argentina,2022,G. Simeone,N/A,MF,17.0,Argentina,Club Data,League Data,180,75,Right
+Portugal,2022,Diogo Costa,N/A,GK,1.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,José Sá,N/A,GK,12.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Rui Silva,N/A,GK,22.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Tomás Araújo,N/A,DF,4.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,João Cancelo,N/A,DF,20.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Diogo Dalot,N/A,DF,5.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Rúben Dias,N/A,DF,3.0,Portugal,Club Data,League Data,180,75,Left
+Portugal,2022,Gonçalo Inácio,N/A,DF,14.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Nuno Mendes,N/A,DF,25.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Nélson Semedo,N/A,DF,2.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Renato Veiga,N/A,DF,13.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Samú Costa,N/A,MF,24.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Bruno Fernandes,N/A,MF,8.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,João Neves,N/A,MF,15.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Rúben Neves,N/A,MF,21.0,Portugal,Club Data,League Data,180,75,Left
+Portugal,2022,Matheus Nunes,N/A,MF,6.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Bernardo Silva,N/A,MF,10.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Vitinha,N/A,MF,23.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Francisco Conceição,N/A,MF,26.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Gonçalo Guedes,N/A,FW,19.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,João Félix,N/A,FW,11.0,Portugal,Club Data,League Data,180,75,Left
+Portugal,2022,Rafael Leão,N/A,MF,17.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Pedro Neto,N/A,FW,18.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Gonçalo Ramos,N/A,FW,9.0,Portugal,Club Data,League Data,180,75,Right
+Portugal,2022,Cristiano Ronaldo,N/A,FW,7.0,Portugal,Club Data,League Data,180,75,Left
+Portugal,2022,Trincão,N/A,FW,16.0,Portugal,Club Data,League Data,180,75,Right
+Tunisia,2022,S. Ben Hsan,N/A,GK,22.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,C. Abdelmouhib,N/A,GK,1.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,A. Dahmen,N/A,GK,16.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,A. Abdi,N/A,DF,2.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,A. Arous,N/A,DF,5.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,A. Ben Hmida,N/A,DF,21.0,Tunisia,Club Data,League Data,180,75,Left
+Tunisia,2022,D. Bronn,N/A,DF,6.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,R. Chikhaoui,N/A,DF,24.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,M. Neffati,N/A,DF,23.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,O. Rekik,N/A,DF,4.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,M. Talbi,N/A,DF,3.0,Tunisia,Club Data,League Data,180,75,Left
+Tunisia,2022,Y. Valery,N/A,DF,20.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,M. Ben Ouanes,N/A,MF,12.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,K. Ayari,N/A,MF,14.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,Ismaël Gharbi,N/A,FW,11.0,Tunisia,Club Data,League Data,180,75,Left
+Tunisia,2022,R. Khedira,N/A,MF,13.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,H. Mejbri,N/A,MF,10.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,E. Skhiri,N/A,MF,17.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,A. Ben Slimane,N/A,MF,25.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,H. Mahmoud,N/A,MF,15.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,S. Tounekti,N/A,FW,26.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,E. Achouri,N/A,MF,7.0,Tunisia,Club Data,League Data,180,75,Left
+Tunisia,2022,F. Chaouat,N/A,FW,19.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,R. Elloumi,N/A,FW,18.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,H. Mastouri,N/A,FW,9.0,Tunisia,Club Data,League Data,180,75,Right
+Tunisia,2022,E. Saad,N/A,FW,8.0,Tunisia,Club Data,League Data,180,75,Right
+Costa Rica,2022,K. Chamorro,N/A,GK,18.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,A. Madríz,N/A,GK,23.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,P. Sequeira,N/A,GK,1.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,J. Azofeifa,N/A,DF,3.0,Costa Rica,Club Data,League Data,180,75,Left
+Costa Rica,2022,F. Faerrón,N/A,DF,5.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,D. López,N/A,DF,21.0,Costa Rica,Club Data,League Data,180,75,Left
+Costa Rica,2022,J. Mitchell,N/A,DF,3.0,Costa Rica,Club Data,League Data,180,75,Left
+Costa Rica,2022,A. Salazar,N/A,MF,4.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,G. Taylor,N/A,DF,2.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,J. Vargas,N/A,DF,4.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,G. Villalobos,N/A,DF,2.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,J. Alcócer,N/A,MF,10.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,D. Araya,N/A,DF,8.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,J. Brenes,N/A,MF,13.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,O. Galo,N/A,MF,14.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,H. Quirós,N/A,DF,20.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,Á. Zamora,N/A,FW,21.0,Costa Rica,Club Data,League Data,180,75,Left
+Costa Rica,2022,W. Madrigal,N/A,FW,17.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,C. Mora,N/A,MF,22.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,C. Pérez,N/A,FW,22.0,Costa Rica,Club Data,League Data,180,75,Right
+Costa Rica,2022,A. Rojas,N/A,FW,7.0,Costa Rica,Club Data,League Data,180,75,Left
+Costa Rica,2022,A. Soto,N/A,FW,12.0,Costa Rica,Club Data,League Data,180,75,Right
+Morocco,2022,Y. Bounou,N/A,GK,1.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,M. Mohamedi,N/A,GK,12.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Tagnaouti,N/A,GK,22.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,N. Aguerd,N/A,DF,5.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,I. Diop,N/A,DF,14.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,Z. El Ouahdi,N/A,DF,13.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Hakimi,N/A,DF,2.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,R. Halhal,N/A,DF,25.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,N. Mazraoui,N/A,DF,3.0,Morocco,Club Data,League Data,180,75,Left
+Morocco,2022,C. Riad,N/A,DF,18.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Salah-Eddine,N/A,DF,26.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,Y. Belammari,N/A,DF,19.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,S. Amrabat,N/A,MF,4.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Bouaddi,N/A,MF,6.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,N. El Aynaoui,N/A,MF,24.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,B. El Khannouss,N/A,MF,23.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,S. El Mourabet,N/A,MF,15.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Ounahi,N/A,MF,8.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,I. Saibari,N/A,FW,11.0,Morocco,Club Data,League Data,180,75,Left
+Morocco,2022,C. Talbi,N/A,MF,7.0,Morocco,Club Data,League Data,180,75,Left
+Morocco,2022,Gessime Yassine,N/A,FW,16.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,Brahim Díaz,N/A,MF,10.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Amaimouni,N/A,MF,21.0,Morocco,Club Data,League Data,180,75,Left
+Morocco,2022,A. El Kaabi,N/A,FW,20.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,A. Ezzalzouli,N/A,MF,17.0,Morocco,Club Data,League Data,180,75,Right
+Morocco,2022,S. Rahimi,N/A,FW,9.0,Morocco,Club Data,League Data,180,75,Right
+Wales,2022,K. Darlow,N/A,GK,1.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,T. King,N/A,GK,21.0,Wales,Club Data,League Data,180,75,Left
+Wales,2022,D. Ward,N/A,GK,12.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,E. Ampadu,N/A,DF,5.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,B. Cabango,N/A,DF,13.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,J. Dasilva,N/A,DF,15.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,R. Kpakio,N/A,DF,17.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,D. Lawlor,N/A,DF,16.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,R. Norrington-Davies,N/A,DF,18.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,J. Rodon,N/A,DF,6.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,N. Williams,N/A,DF,3.0,Wales,Club Data,League Data,180,75,Left
+Wales,2022,Kai Andrews,N/A,MF,10.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,N. Broadhead,N/A,MF,23.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,J. Colwill,N/A,MF,8.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,D. James,N/A,MF,20.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,J. James,N/A,MF,17.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,J. Sheehan,N/A,MF,22.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,H. Wilson,N/A,MF,8.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,D. Brooks,N/A,MF,7.0,Wales,Club Data,League Data,180,75,Left
+Wales,2022,L. Cullen,N/A,FW,10.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,M. Harris,N/A,FW,18.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,B. Johnson,N/A,MF,11.0,Wales,Club Data,League Data,180,75,Left
+Wales,2022,L. Koumas,N/A,FW,9.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,R. Matondo,N/A,FW,9.0,Wales,Club Data,League Data,180,75,Right
+Wales,2022,S. Thomas,N/A,FW,19.0,Wales,Club Data,League Data,180,75,Right
+Netherlands,2022,M. Flekken,N/A,GK,23.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,R. Roefs,N/A,GK,13.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,B. Verbruggen,N/A,GK,1.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,N. Aké,N/A,DF,5.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,D. Dumfries,N/A,DF,22.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,J. Hato,N/A,DF,25.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,J. Timber,N/A,DF,2.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,V. van Dijk,N/A,DF,4.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,J. van Hecke,N/A,DF,6.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,M. van de Ven,N/A,DF,15.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,M. Wieffer,N/A,DF,12.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,R. Gravenberch,N/A,MF,8.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,T. Koopmeiners,N/A,MF,20.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,T. Reijnders,N/A,MF,14.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,G. Til,N/A,MF,16.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,Q. Timber,N/A,MF,26.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,F. de Jong,N/A,MF,21.0,Netherlands,Club Data,League Data,180,75,Left
+Netherlands,2022,M. de Roon,N/A,MF,3.0,Netherlands,Club Data,League Data,180,75,Left
+Netherlands,2022,J. Kluivert,N/A,FW,7.0,Netherlands,Club Data,League Data,180,75,Left
+Netherlands,2022,B. Brobbey,N/A,FW,19.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,M. Depay,N/A,FW,10.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,C. Gakpo,N/A,FW,11.0,Netherlands,Club Data,League Data,180,75,Left
+Netherlands,2022,N. Lang,N/A,FW,17.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,D. Malen,N/A,FW,18.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,C. Summerville,N/A,FW,24.0,Netherlands,Club Data,League Data,180,75,Right
+Netherlands,2022,W. Weghorst,N/A,FW,9.0,Netherlands,Club Data,League Data,180,75,Right
+Ghana,2022,B. Asare,N/A,GK,16.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,J. Anang,N/A,GK,12.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,L. Zigi,N/A,GK,1.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,J. Adjetey,N/A,DF,4.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,D. Luckassen,N/A,DF,23.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,G. Mensah,N/A,DF,14.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,A. Seidu,N/A,DF,2.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,J. Opoku,N/A,DF,18.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,K. Peprah Oppong,N/A,DF,21.0,Ghana,Club Data,League Data,180,75,Left
+Ghana,2022,A. Mumin,N/A,DF,6.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,M. Senaya,N/A,DF,26.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,A. Baba,N/A,DF,17.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,E. Owusu,N/A,MF,15.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,T. Partey,N/A,MF,5.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,K. Sibo,N/A,MF,8.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,Caleb Marfo Yirenkyi,N/A,MF,3.0,Ghana,Club Data,League Data,180,75,Left
+Ghana,2022,A. Semenyo,N/A,FW,11.0,Ghana,Club Data,League Data,180,75,Left
+Ghana,2022,A. Boakye,N/A,MF,20.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,A. Fatawu,N/A,MF,7.0,Ghana,Club Data,League Data,180,75,Left
+Ghana,2022,P. Adu,N/A,MF,25.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,B. Thomas-Asante,N/A,FW,10.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,J. Ayew,N/A,FW,9.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,C. Bonsu Baah,N/A,FW,13.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,I. Williams,N/A,FW,19.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,E. Nuamah,N/A,FW,24.0,Ghana,Club Data,League Data,180,75,Right
+Ghana,2022,K. Sulemana,N/A,FW,22.0,Ghana,Club Data,League Data,180,75,Right
+Cameroon,2022,D. Epassy,N/A,GK,16.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,S. Ngapandouetnbu,N/A,GK,23.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,Blondy Rudolph Nna Noukeu,N/A,GK,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,H. Ousmanou,N/A,GK,25.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,S. Eloundou,N/A,DF,12.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,O. Kamdem,N/A,DF,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,K. Keben,N/A,DF,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,S. Keller,N/A,DF,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,S. Kotto,N/A,DF,17.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,C. Malone,N/A,DF,3.0,Cameroon,Club Data,League Data,180,75,Left
+Cameroon,2022,E. Moungam,N/A,DF,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,M. Nagida,N/A,DF,18.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,D. Yongwa,N/A,DF,13.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,F. Ambina,N/A,MF,21.0,Cameroon,Club Data,League Data,180,75,Left
+Cameroon,2022,A. Avom,N/A,MF,15.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,R. Fosso,N/A,MF,6.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,Arnold Mael Kamdem,N/A,MF,27.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,F. Monyebe,N/A,MF,,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,K. Nifanso,N/A,MF,20.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,Etta Eyong,N/A,FW,21.0,Cameroon,Club Data,League Data,180,75,Left
+Cameroon,2022,Christian Kofane,N/A,FW,26.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,B. Mbeumo,N/A,FW,10.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,D. Namaso,N/A,FW,14.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,J. Tchatchoua,N/A,FW,2.0,Cameroon,Club Data,League Data,180,75,Right
+Cameroon,2022,Matah Yondjio,N/A,FW,9.0,Cameroon,Club Data,League Data,180,75,Right

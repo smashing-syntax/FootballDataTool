@@ -93,6 +93,16 @@ dotnet run --project src/FootballDataTool -- /path/to/your/season.csv
 
 The app automatically uses `data/sample_season.csv` when no path is provided.
 
+## Data Acquisition
+
+Need to populate your own CSV files? Check out the **[scripts](scripts/)** folder for data scraping tools:
+
+- **[API-Sports Scrapers](scripts/api-sports/)** - Python scripts for fetching squad and fixture data from API-Sports
+  - Generic CLI tool for any league/season
+  - Configuration-based scraper
+  - Multi-season automation
+  - See [scripts/api-sports/README.md](scripts/api-sports/README.md) for details
+
 ## CSV Format
 
 The tool accepts flexible CSV formats with automatic metadata detection. **Any conventional football data CSV will work!**
@@ -198,6 +208,15 @@ FootballDataTool/
 ├── tests/FootballDataTool.Tests/
 │   ├── MatchAnalyzerTests.cs      # Unit tests for analytics
 │   └── CsvDataServiceTests.cs     # Unit tests for CSV parsing
+├── scripts/                       # 🆕 Data acquisition scripts
+│   └── api-sports/                # API-Sports Python scrapers
+│       ├── fetch_data_generic.py              # CLI-based scraper
+│       ├── fetch_data_config.py               # Config-based scraper
+│       ├── fetch_premier_league_multi_season.py  # Multi-season automation
+│       ├── scraper_launcher.bat               # Windows GUI launcher
+│       ├── requirements.txt                   # Python dependencies
+│       ├── README.md                          # Detailed documentation
+│       └── QUICK_REFERENCE.md                 # Command reference
 ├── data/
 │   ├── sample_season.csv                      # 6-team, 10-gameweek sample
 │   ├── premier_league_2023-24.csv             # Premier League basic
